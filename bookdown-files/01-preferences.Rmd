@@ -1,0 +1,33 @@
+---
+editor_options:
+  markdown:
+    wrap: 72
+---
+
+# Preferences for redistribution 
+
+The literature on redistributive preferences has proposed different mechanisms for explaining the demand for redistribution, such as the self-interest model [@Meltzer1981], risk exposure hypothesis [@rehm09], the prospective upward mobility hypothesis [@Benabou2001], the information approach [@Bartels2008], and value-driven explanations [@Feldman2001; @Kulin2013]. However, this body of literature has paid less attention to the role of perception on the emergence of redistributive preferences, especially how people perceive their standing in the social ladder, conceptualised as subjective social status (SSS) [@slomczynski1987; @Evans2004; @Lundberg2008]. 
+
+
+## Self-interest
+
+
+
+## Prospective upward mobility
+
+## Risk 
+
+## Values
+
+## Subjective inequality
+
+## Political variables
+
+- trust
+
+
+
+
+
+
+

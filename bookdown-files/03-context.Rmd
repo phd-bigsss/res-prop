@@ -1,0 +1,15 @@
+---
+editor_options:
+  markdown:
+    wrap: 72
+---
+
+# Context
+
+- economic inequality
+
+- social segregation
+
+- welfare regime  
+
+

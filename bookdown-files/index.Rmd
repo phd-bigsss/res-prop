@@ -1,0 +1,67 @@
+---
+title: "Social Comparison, subjetive social status and preferences for redistribution"
+subtitle: ""
+author: "Julio Iturra"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [bib/proposal.bib, packages.bib, book-ocs.bib]
+biblio-style: apalike
+link-citations: yes
+linkcolor: blue
+# description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+geometry: "left=4cm, right=3cm, top=2.5cm, bottom=2.5cm"
+fontsize: 12pt
+linestretch: 1.5
+toc-depth: 1
+lof: True
+lot: True
+# lang: es
+github-repo: "project-bigsss/res-prop"
+url: "https://github.com/project-bigsss/res-prop"
+always_allow_html: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE,
+                      message = FALSE, 
+                      cache = FALSE,
+                      out.width = '75%',
+                      fig.pos= "H",
+                      fig.align = 'center')
+# knitr::opts_knit$set(base.url = "../") #relative path for .html output file
+# knitr::opts_knit$set(root.dir = "../") #relative path for chunks within .rmd files
+options(scipen=999)
+rm(list=ls())
+options(knitr.kable.NA = '',linesep = "")
+options(knitr.graphics.error = FALSE)
+# Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
+```
+
+```{r message=FALSE, warning=FALSE, include=FALSE, echo=FALSE}
+pacman::p_load(knitr, kableExtra, dplyr,flextable,pander)
+```
+
+```{r echo=FALSE }
+is_word_output <- function(fmt = knitr:::pandoc_to()) {
+  length(fmt) == 1 && fmt == "docx"
+}
+
+table_format = if(is_html_output()) {
+  "html"
+} else if(is_latex_output()) {
+  "latex"
+}
+
+eval01 = if(is_html_output() | is_latex_output()) {T} else {F}
+
+
+fullw = if(is_html_output()) {T} else if(is_latex_output()) {F}
+fsize = if(is_html_output()) {14} else if(is_latex_output()) {8}
+```
+
+# Abstract {-}
+
+In recent years, the relationship between social comparison and redistributive preferences has been little developed in the sociological literature. However, in recent years the study of redistributive preferences has turned its attention towards the processes which shape individuals' perceptions of their position in the social hierarchy under the concept of subjective social status. This literature focused on the micro-foundations of these processes, in which the prevalent explanatory mechanism is the reference group heuristic approach related to social comparison processes. However, this literature has not explicitly addressed the relationship between social comparison and redistributive preferences. Therefore, this proposal seeks to address this gap in the literature empirically. In this respect, the main research question of this project aims to analyse the link between subjective social status, social comparison and redistributive preferences. In order to answer this question, there are three studies proposed. The first study aims to empirically analyse the relationship between subjective social status, social comparison and redistributive preferences in a cross-national comparative approach using the three waves of the Social Inequality module of the International Social Survey Programme through hybrid multilevel models. The hypothetical model behind this study posits that higher economic inequality negatively moderates the positive association of subjective social status and redistributive preferences. Secondly, we propose a comparative study between Chile and Germany through an online Factorial Survey. A series of vignettes of different social statuses are presented to respondents in a fictitious scenario to generate various situations of social comparison. The central hypothesis is that low-status individuals will have lower subjective status when a higher status vignette is presented, hypothetically, leading to higher redistributive preferences. Lastly, using data from the Chilean Longitudinal Social Survey, I seek to longitudinally examine the relation of subjective social status, social comparison over redistributive preferences in Chile, the society with the higher levels of economic inequality in Latin America. Based on this evidence, I seek to contribute substantively to the debate on redistributive preferences and develop an empirical agenda to address the role of social comparison on preference formation in countries from the global south. 
+
+

@@ -1,0 +1,408 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  12pt,
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{setspace}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[left=4cm, right=3cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\usepackage[utf8]{inputenc}
+% \usepackage[spanish,es-tabla]{babel}
+% \usepackage[fixlanguage]{babelbib}
+\usepackage{geometry}
+\geometry{letterpaper,left=2cm,top=2cm, right=2cm}
+\usepackage{times}           
+\usepackage{caption}
+\captionsetup[figure, table]{labelfont={bf},labelformat={default},labelsep=period}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{pdfpages} %para pdf portada
+
+% fuente: https://stackoverflow.com/questions/45963505/coverpage-and-copyright-notice-before-title-in-r-bookdown
+%\let\oldmaketitle\maketitle 
+%\AtBeginDocument{\let\maketitle\relax}
+
+% \renewcommand{\tablename}{Tabla}
+% \ifxetex
+%   \usepackage{polyglossia}
+%   \setmainlanguage{spanish}
+%   % Tabla en lugar de cuadro
+%   \gappto\captionsspanish{\renewcommand{\tablename}{Tabla}
+%           \renewcommand{\listtablename}{Índice de tablas}}
+% \else
+%   % \usepackage[spanish,es-tabla]{babel}
+% \fi
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Social Comparison, subjetive social status and preferences for redistribution},
+  pdfauthor={Julio Iturra},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Social Comparison, subjetive social status and preferences for redistribution}
+\author{Julio Iturra}
+\date{2022-10-18}
+
+\begin{document}
+\maketitle
+
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\listoffigures
+\listoftables
+\setstretch{1.5}
+\hypertarget{abstract}{%
+\chapter*{Abstract}\label{abstract}}
+\addcontentsline{toc}{chapter}{Abstract}
+
+In recent years, the relationship between social comparison and redistributive preferences has been little developed in the sociological literature. However, in recent years the study of redistributive preferences has turned its attention towards the processes which shape individuals' perceptions of their position in the social hierarchy under the concept of subjective social status. This literature focused on the micro-foundations of these processes, in which the prevalent explanatory mechanism is the reference group heuristic approach related to social comparison processes. However, this literature has not explicitly addressed the relationship between social comparison and redistributive preferences. Therefore, this proposal seeks to address this gap in the literature empirically. In this respect, the main research question of this project aims to analyse the link between subjective social status, social comparison and redistributive preferences. In order to answer this question, there are three studies proposed. The first study aims to empirically analyse the relationship between subjective social status, social comparison and redistributive preferences in a cross-national comparative approach using the three waves of the Social Inequality module of the International Social Survey Programme through hybrid multilevel models. The hypothetical model behind this study posits that higher economic inequality negatively moderates the positive association of subjective social status and redistributive preferences. Secondly, we propose a comparative study between Chile and Germany through an online Factorial Survey. A series of vignettes of different social statuses are presented to respondents in a fictitious scenario to generate various situations of social comparison. The central hypothesis is that low-status individuals will have lower subjective status when a higher status vignette is presented, hypothetically, leading to higher redistributive preferences. Lastly, using data from the Chilean Longitudinal Social Survey, I seek to longitudinally examine the relation of subjective social status, social comparison over redistributive preferences in Chile, the society with the higher levels of economic inequality in Latin America. Based on this evidence, I seek to contribute substantively to the debate on redistributive preferences and develop an empirical agenda to address the role of social comparison on preference formation in countries from the global south.
+
+\hypertarget{introduction}{%
+\chapter{Introduction}\label{introduction}}
+
+How individuals perceive the world around them has been a central issue in sociology and social psychology. In this regard, the literature on preference formation suggests that these rely on normative structures such as values, ideological or political conceptions about the world (\protect\hyperlink{ref-Janmaat2013}{Janmaat, 2013}; \protect\hyperlink{ref-smithCulturalValuesModerate2018}{Smith et al., 2018}).
+
+In addition, the theoretical and empirical development in sociological social justice research has focused on the role of situations and societal context over justice evaluations and distributive preferences (\protect\hyperlink{ref-Liebig-Sauer2016}{Liebig \& Sauer, 2016}).
+
+\hypertarget{preferences-for-redistribution}{%
+\chapter{Preferences for redistribution}\label{preferences-for-redistribution}}
+
+The literature on redistributive preferences has proposed different mechanisms for explaining the demand for redistribution, such as the self-interest model (\protect\hyperlink{ref-Meltzer1981}{Meltzer \& Richard, 1981}), risk exposure hypothesis (\protect\hyperlink{ref-rehm09}{Rehm, 2009}), the prospective upward mobility hypothesis (\protect\hyperlink{ref-Benabou2001}{Benabou \& Ok, 2001}), the information approach (\protect\hyperlink{ref-Bartels2008}{Bartels, 2008}), and value-driven explanations (\protect\hyperlink{ref-Feldman2001}{Feldman \& Steenbergen, 2001}; \protect\hyperlink{ref-Kulin2013}{Kulin \& Svallfors, 2013}). However, this body of literature has paid less attention to the role of perception on the emergence of redistributive preferences, especially how people perceive their standing in the social ladder, conceptualised as subjective social status (SSS) (\protect\hyperlink{ref-Evans2004}{Evans \& Kelley, 2004}; \protect\hyperlink{ref-Lundberg2008}{Lundberg \& Kristenson, 2008}; \protect\hyperlink{ref-slomczynski1987}{Słomczyński \& Kacprowicz, 1986}).
+
+\hypertarget{self-interest}{%
+\section{Self-interest}\label{self-interest}}
+
+\hypertarget{prospective-upward-mobility}{%
+\section{Prospective upward mobility}\label{prospective-upward-mobility}}
+
+\hypertarget{risk}{%
+\section{Risk}\label{risk}}
+
+\hypertarget{values}{%
+\section{Values}\label{values}}
+
+\hypertarget{subjective-inequality}{%
+\section{Subjective inequality}\label{subjective-inequality}}
+
+\hypertarget{political-variables}{%
+\section{Political variables}\label{political-variables}}
+
+\begin{itemize}
+\tightlist
+\item
+  trust
+\item
+\end{itemize}
+
+\hypertarget{social-comparison}{%
+\chapter{Social comparison}\label{social-comparison}}
+
+\begin{itemize}
+\item
+  Theory
+\item
+  Reality and reference groups
+\item
+  Social networks
+\end{itemize}
+
+The evidence indicates that individuals' perception of their social standing strongly ties with social comparison as a micro-level phenomenon. Hence, the socioeconomic composition of the reference groups is a crucial feature to comprehend the consequences of comparison (\protect\hyperlink{ref-kim_social_2021}{Kim \& Lee, 2021}).
+
+Thus, individuals first create their subjective image of society, and therefore, they allocate themselves on the social ladder (\protect\hyperlink{ref-Evans2004}{Evans \& Kelley, 2004}, \protect\hyperlink{ref-Evans2017}{2017}). However, in addition to the micro-level relation described, the role of macro-level factors that could moderate the relation between subjective social status and redistributive preferences is a far less explored part of the presented conceptual dilemma (\protect\hyperlink{ref-Bobzien2019}{Bobzien, 2019}; \protect\hyperlink{ref-Lindemann2014}{Lindemann \& Saar, 2014}).
+
+The empirical evidence on subjective social status suggests that social comparison is a robust explanatory mechanism for estimating their relative position in society. In this respect, the study of social comparison can be traced back to the Festinger (\protect\hyperlink{ref-festinger1954theory}{1954}) classic theory, which has had a significant development in Social Psychology and Sociology, which can be summarised in two theoretical traditions. On the one hand, an approach based on the Equity Theory developed by Adams (\protect\hyperlink{ref-Adams1965}{1965}) assumes an exchange situation between individuals of \emph{similar} characteristics, in which the core idea is the proportionality of outcomes concerning inputs. Thus, if the exchange situation results in inequality, it is considered just.
+
+On the other hand, we can mention the theoretical and empirical work of Merton \& Rossi (\protect\hyperlink{ref-Merton1968}{1968}) on the Relative Deprivation Theory (RD) as an alternative approach for studying social comparison. In their view, the role of perception is much more salient in the evaluation process because one of the fundamental assumptions is that individuals can have an \emph{asymmetric} social standing, which affects how individuals evaluate the result of an exchange. Furthermore, an important argument that Wegener (\protect\hyperlink{ref-Wegener1990}{1990}) suggests is that judgments about distributional outcomes are linked with previous perceptions of actual distribution. Still, these are relative to the observer's position on the social hierarchy, and their distributional perception can be illusionary and lead to biased judgments (\protect\hyperlink{ref-Wegener1987}{Wegener, 1987}).
+
+The redistributive preferences literature has not directly considered the influence of how individuals perceive themselves (and others) on the social ladder. Based on the approach proposed by Wegener (\protect\hyperlink{ref-Wegener1987}{1987}) regarding the judgments formation process, it could be argued that a less developed aspect in redistributive preferences literature is the role of social comparison as an explanatory mechanism. In this line, I propose that it is necessary to have in consideration a body of literature that comprises the relevance of reference groups on social status perception (\protect\hyperlink{ref-Andersson2018a}{Andersson, 2018}; \protect\hyperlink{ref-Evans2017}{Evans \& Kelley, 2017}) as a critical factor for understanding the role of the perception of economic inequality on the emergence and changes of redistributive preferences (\protect\hyperlink{ref-Castillo2011}{Castillo, 2011}; \protect\hyperlink{ref-Smith1981}{Kluegel \& Smith, 1981}; \protect\hyperlink{ref-Schroder2017_soc_jus}{Schröder, 2017}). Recent empirical evidence suggests a positive association between perceived salary gaps, perceived structural inequality, and redistributive preferences (\protect\hyperlink{ref-Bobzien2019}{Bobzien, 2019}; \protect\hyperlink{ref-Fatke2018}{Fatke, 2018}; \protect\hyperlink{ref-Garcia-Sanchez19}{García-Sánchez et al., 2019}). However, these results do not offer concrete evidence about social comparison but a theoretical and analytical argument that links the phenomenon with the perceived economic inequality based on the ``reference group and reality blend'' (R\&R-blend) hypothesis (\protect\hyperlink{ref-Evans1992}{Evans et al., 1992}).
+
+The theoretical development of the R\&R-blend approach relies on the empirical effort for explaining the individual perception of structural inequality (\protect\hyperlink{ref-Evans1992}{Evans et al., 1992}; \protect\hyperlink{ref-Evans2017}{Evans \& Kelley, 2017}) and subjective social status (\protect\hyperlink{ref-Evans2004}{Evans \& Kelley, 2004}; \protect\hyperlink{ref-KelleyEvans1995}{Kelley \& Evans, 1995}). In this respect, there are two core dimensions. On the one hand, objective circumstances are represented by individuals' location on the social hierarchy, characterised by socioeconomic characteristics such as income or wealth, educational level, or occupations. In the words of Kelley \& Evans (\protect\hyperlink{ref-KelleyEvans1995}{1995}), these ``material forces'' affect the social status perception and class identification (\protect\hyperlink{ref-Elbert2018}{Elbert \& Pérez, 2018}; \protect\hyperlink{ref-Jackman1973}{Jackman \& Jackman, 1973}), but they are not the only factors that affect individual perceptions about social standing and economic inequality. On the other hand, this literature suggests that socioeconomic status entails a ``social closure'' generated by homophily that could lead to higher homogeneity within reference groups in terms of the socioeconomic characteristics of family and friends (\protect\hyperlink{ref-Evans2004}{Evans \& Kelley, 2004}). The ongoing argument is that the similarity within and between reference groups affects how individuals perceive society. These circumstances derive into a phenomenon described as a type of availability heuristic called `subjective-sampling' through which individuals perceive images of the social structure that are systematically biased due to the homogeneity of their reference groups (\protect\hyperlink{ref-Evans2017}{Evans \& Kelley, 2017}; \protect\hyperlink{ref-KelleyEvans1995}{Kelley \& Evans, 1995}; \protect\hyperlink{ref-kim_social_2021}{Kim \& Lee, 2021}). In this regard, Evans \& Kelley (\protect\hyperlink{ref-Evans2004}{2004}) suggests that close network ties are composed of members with similar status characteristics. As a result, individuals tend to perceive themselves in the middle of the social hierarchy (\protect\hyperlink{ref-Castillo2013}{Castillo et al., 2013}; \protect\hyperlink{ref-ChenWilliams2018}{Chen \& Williams, 2018}; \protect\hyperlink{ref-Lindemann2014}{Lindemann \& Saar, 2014}). In sum, the R\&R-blend hypothesis does not suggest that material factors exclusively influence perceptions. Still, the evidence also suggests that these perceptions are strongly affected by the exposure to reference groups, a phenomenon that is deeply rooted in social comparison (\protect\hyperlink{ref-visser_attitudes_2004}{Visser \& Mirabile, 2004}).
+
+The link between social comparison and redistributive preferences has been little studied. Still, there has been recent evidence suggesting that social comparison influences preferences. However, an essential component is \emph{who} are the individuals or groups under comparison. The argument in this literature posits that \emph{Ego's} perceived social status is generated by social comparison processes, which can be theoretically explained by the mechanism described in the R\&R-blend hypothesis. Following this argument, individuals that perceive themselves to be on the lowest (highest) social rungs of social hierarchy experience more (less) relative deprivation (\protect\hyperlink{ref-Smith-eta2020_relative-deprivation}{Smith et al., 2020}).
+
+In comparison to the canonical economic self-interest hypothesis (\protect\hyperlink{ref-Benabou2001}{Benabou \& Ok, 2001}; \protect\hyperlink{ref-Meltzer1981}{Meltzer \& Richard, 1981}), the R\&R-blend hypothesis suggests that the relative location of individuals on the income distribution shapes their individual preferences for supporting redistribution. The relevance of studying social comparison as an explanatory mechanism of redistributive preferences relies on focusing on the status characteristics of the closest network. In this respect, the R\&R-blend hypothesis assumes that social comparison \emph{always} focuses on individuals with similar features from the nearest network but does not consider the contact with individuals or groups of different status that lead to variations on perceptual outcomes derived from an \emph{asymmetric} social comparison. Thus, recent evidence in social psychology suggests that studying social comparison comprise three aspects that need to be considered: \emph{direction} (e.g., upward, downward), \emph{target} (e.g., friend, stranger), and \emph{dimension} (e.g., status, appearance) (\protect\hyperlink{ref-arigo_methods_2020}{Arigo et al., 2020})
+
+Condon \& Wichowsky (\protect\hyperlink{ref-Condon2020}{2020}) argues that research on social comparison focuses on distinguishing \emph{absolute} and \emph{relative} status characteristics. As they posit, individuals with lower status feel greater social distance from the wealthy respond with significant concern about inequality and higher support for social spending. As a result, when status differences are more salient, social distance is perceived as inequality. Based on a randomised survey experiment, Condon \& Wichowsky (\protect\hyperlink{ref-Condon2020}{2020}) manipulated the social status perception using two treatment conditions. First, they presented two different vignettes to the respondents that simulated a situation that leads to upward and downward comparison. In this respect, they took the argument from subjective health literature, based on the negative association of economic inequality with subjective well-being (\protect\hyperlink{ref-Buttrick-etal_2017}{Buttrick et al., 2017}; \protect\hyperlink{ref-Hajdu2014}{Hajdu \& Hajdu, 2014}) and life satisfaction (\protect\hyperlink{ref-CheungLucas2014}{Cheung \& Lucas, 2016}) to empirically test the effect of social comparison on redistributive preferences.
+
+In this respect, Jasso (\protect\hyperlink{ref-Jasso1990}{1990}) suggests that upward comparisons trigger negative judgments about economic distribution and feelings of deprivation that boost negative perceptions about economic inequality, decreasing life satisfaction and subjective well-being (\protect\hyperlink{ref-Olivos-etal2020}{Olivos et al., 2020}). A key empirical finding presented by Condon \& Wichowsky (\protect\hyperlink{ref-Condon2020}{2020}) is that they initially hypothesised that upward (downward) comparison should derive in more (less) demand for redistribution, understood as the government's responsibility to reduce income differences between the rich and poor. Nevertheless, they found that upward social comparison had a null effect in this `general' redistributive measure, but an essential positive impact in specific policy issues such as social security, education, food, and unemployment insurance. Another significant result is that they tested the ``median-voter'' hypothesis, conducting causal heterogeneity analysis to determine if the causal effect had the same size on different income groups. They found that the more significant effect is among the middle-income individuals, especially among the top income individuals, because they tend to compare themselves with the top income percentile.
+
+\hypertarget{context}{%
+\chapter{Context}\label{context}}
+
+\begin{itemize}
+\item
+  economic inequality
+\item
+  social segregation
+\item
+  welfare regime
+\end{itemize}
+
+\hypertarget{plan}{%
+\chapter{Plan}\label{plan}}
+
+Main research question
+
+Considering the theoretical and empirical elements presented above, I would like to contribute to the redistributive preference literature and discuss the role of social comparison as a relevant explanatory mechanism. As a result, my main research question is \emph{What is the role of social comparison on redistributive preferences formation?}. In this respect, the first part of my research is to assess the relevance of subjective social status on redistributive preferences from a comparative perspective, considering that individuals' perception of their position in society can be understood as an outcome that derives from the social comparison that is also affected by a contextual characteristic such as objective income inequality at the country level (\protect\hyperlink{ref-Evans2004}{Evans \& Kelley, 2004}; \protect\hyperlink{ref-IturraMellado2019}{Iturra \& Mellado, 2018}; \protect\hyperlink{ref-Lindemann2014}{Lindemann \& Saar, 2014}).
+
+The second part of my research is based on data from a five-wave panel survey conducted in Chile by the Centre for Social Conflict and Cohesion Studies (2016-2020). This data will allow understanding the role of subjective social status on redistributive preferences from a longitudinal perspective, focusing on how the changes on perceived economic inequality over time could moderate the impact of social comparison outcomes.
+
+Based on the model proposed by Condon \& Wichowsky (\protect\hyperlink{ref-Condon2020}{2020}), in the third part of my research, I would like to incorporate elements from the distributive justice literature to provide a complete image of the role of reference groups on social comparison and how these factors are associated with redistributive preferences. As Jasso (\protect\hyperlink{ref-Jasso1990}{1990}) suggested, the evaluation process is affected by both observer's and observed characteristics, allowing us to estimate how these factors impact a specific outcome. In this respect, on this stage, I will conduct a factorial survey design in Chile and Germany to assess the interplay of the observer characteristic with a set of different vignette characteristics on status perception and redistributive preferences.
+
+\hypertarget{references}{%
+\chapter*{References}\label{references}}
+\addcontentsline{toc}{chapter}{References}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-Adams1965}{}}%
+Adams, J. S. (1965). Inequity {In Social Exchange}. In \emph{Advances in experimental social psychology} (New York:, pp. 267--299).
+
+\leavevmode\vadjust pre{\hypertarget{ref-Andersson2018a}{}}%
+Andersson, M. A. (2018). An {Odd Ladder} to {Climb}: {Socioeconomic Differences Across Levels} of {Subjective Social Status}. \emph{Social Indicators Research}, \emph{136}(2), 621--643. \url{https://doi.org/10.1007/s11205-017-1559-7}
+
+\leavevmode\vadjust pre{\hypertarget{ref-arigo_methods_2020}{}}%
+Arigo, D., Mogle, J. A., Brown, M. M., Pasko, K., Travers, L., Sweeder, L., \& Smyth, J. M. (2020). Methods to {Assess Social Comparison Processes Within Persons} in {Daily Life}: {A Scoping Review}. \emph{Frontiers in Psychology}, \emph{10}, 2909. \url{https://doi.org/10.3389/fpsyg.2019.02909}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Bartels2008}{}}%
+Bartels, L. (2008). Do {Americans Care About Inequality}? In \emph{Unequail {Democracy}. {The Political Economy} of the {New Gilded Age}} (Second Edi, pp. 105--105). {Princeton University Press - Priceton And Oxford}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Benabou2001}{}}%
+Benabou, R., \& Ok, E. A. (2001). \emph{Social {Mobility} and the {Demand} for {Redistribution}: {The Poum Hypothesis}}. \emph{116}(2), 447--487.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Bobzien2019}{}}%
+Bobzien, L. (2019). Polarized perceptions, polarized preferences? {Understanding} the relationship between inequality and preferences for redistribution. \emph{Journal of European Social Policy}, 095892871987928. \url{https://doi.org/10.1177/0958928719879282}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Buttrick-etal_2017}{}}%
+Buttrick, N. R., Heintzelman, S. J., \& Oishi, S. (2017). Inequality and well-being. \emph{Current Opinion in Psychology}, \emph{18}, 15--20. \url{https://doi.org/10.1016/j.copsyc.2017.07.016}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Castillo2011}{}}%
+Castillo, J. C. (2011). Legitimacy of {Inequality} in a {Highly Unequal Context}: {Evidence} from the {Chilean Case}. \emph{Social Justice Research}, \emph{24}(4), 314--340. \url{https://doi.org/10.1007/s11211-011-0144-5}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Castillo2013}{}}%
+Castillo, J. C., Miranda, D., \& Madero-Cabib, I. (2013). Todos somos de clase media: {Sobre} el estatus social subjetivo en {Chile}. \emph{Latin American Research Review}, \emph{48}(1).
+
+\leavevmode\vadjust pre{\hypertarget{ref-ChenWilliams2018}{}}%
+Chen, Y., \& Williams, M. (2018). Subjective {Social Status} in {Transitioning China}: {Trends} and {Determinants}: {Subjective Social Status} in {Transitioning China}. \emph{Social Science Quarterly}, \emph{99}(1), 406--422. \url{https://doi.org/10.1111/ssqu.12401}
+
+\leavevmode\vadjust pre{\hypertarget{ref-CheungLucas2014}{}}%
+Cheung, F., \& Lucas, R. E. (2016). Income inequality is associated with stronger social comparison effects: {The} effect of relative income on life satisfaction. \emph{Journal of Personality and Social Psychology}, \emph{110}(2), 332--341. \url{https://doi.org/10.1037/pspp0000059}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Condon2020}{}}%
+Condon, M., \& Wichowsky, A. (2020). Inequality in the {Social Mind}: {Social Comparison} and {Support} for {Redistribution}. \emph{The Journal of Politics}, \emph{82}(1), 149--161. \url{https://doi.org/10.1086/705686}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Elbert2018}{}}%
+Elbert, R., \& Pérez, P. (2018). The identity of class in {Latin America} : {Objective} class position and subjective class identification in {Argentina} and {Chile} ( 2009 ). \emph{Current Sociology}, 1--24. \url{https://doi.org/10.1177/0011392117749685}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Evans2004}{}}%
+Evans, M. D. R., \& Kelley, J. (2004). Subjective {Social Location}: {Data From} 21 {Nations}. \emph{International Journal of Public Opinion Research}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Evans2017}{}}%
+Evans, M. D. R., \& Kelley, J. (2017). Communism, {Capitalism}, and {Images} of {Class}: {Effects} of {Reference Groups}, {Reality}, and {Regime} in 43 {Nations} and 110,000 {Individuals}, 1987-2009. \emph{Cross-Cultural Research}, \emph{51}(514), 315--359. \url{https://doi.org/10.1177/1069397116677963}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Evans1992}{}}%
+Evans, M. D. R., Kelley, J., \& Kolosi, T. (1992). Images of {Class}: {Public Perceptions} in {Hungary} and {Australia}. \emph{American Sociological Review}, \emph{57}(4), 461. \url{https://doi.org/10.2307/2096095}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Fatke2018}{}}%
+Fatke, M. (2018). Inequality {Perceptions}, {Preferences Conducive} to {Redistribution}, and the {Conditioning Role} of {Social Position}. \emph{Societies}, \emph{8}(4), 99. \url{https://doi.org/10.3390/soc8040099}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Feldman2001}{}}%
+Feldman, S., \& Steenbergen, M. R. (2001). The {Humanitarian Foundation} of {Public Support} for {Social Welfare The Humanitarian Foundation} of {Public Support} for {Social Welfare}. \emph{American Journal of Political Science}, \emph{45}(3), 658--677.
+
+\leavevmode\vadjust pre{\hypertarget{ref-festinger1954theory}{}}%
+Festinger, L. (1954). A {Theory} of {Social Comparison Processes}. \emph{Human Relations}, \emph{7}(2), 117--140. \url{https://doi.org/10.1177/001872675400700202}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Garcia-Sanchez19}{}}%
+García-Sánchez, E., Obsorne, D., Willis, G. B., \& Rodríguez-Bailón, R. (2019). Attitudes towards redistribution and the interplay between perceptions and beliefs about inequality. \emph{British Journal of Social Psychology}, bjso.12326. \url{https://doi.org/10.1111/bjso.12326}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Hajdu2014}{}}%
+Hajdu, T., \& Hajdu, G. (2014). Reduction of {Income Inequality} and {Subjective Well-Being} in {Europe}. \emph{Economics: The Open-Access, Open-Assessment E-Journal}, \emph{8}(2014-35), 1. \url{https://doi.org/10.5018/economics-ejournal.ja.2014-35}
+
+\leavevmode\vadjust pre{\hypertarget{ref-IturraMellado2019}{}}%
+Iturra, J., \& Mellado, D. (2018). Subjective social status in three {Latin American} countries: {The} case of {Argentina}, {Chile} and {Venezuela}. \emph{Revista Contenido Cultura y Ciencias Sociales}, \emph{8}, 1--20.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Jackman1973}{}}%
+Jackman, M. R., \& Jackman, R. W. (1973). An {Interpretation} of the {Relation Between Objective} and {Subjective Social Status}. \emph{American Sociological Review}, \emph{38}(5), 569--582.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Janmaat2013}{}}%
+Janmaat, J. G. (2013). Subjective inequality: {A} review of international comparative studies on people's views about inequality. \emph{Archives Europeennes de Sociologie}, \emph{54}(03), 357--389. \url{https://doi.org/10.1017/S0003975613000209}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Jasso1990}{}}%
+Jasso, G. (1990). Methods for the {Theoretical} and {Empirical Analysis} of {Comparison Processes}. \emph{Sociological Methodology}, \emph{20}, 369. \url{https://doi.org/10.2307/271091}
+
+\leavevmode\vadjust pre{\hypertarget{ref-KelleyEvans1995}{}}%
+Kelley, J., \& Evans, M. D. R. (1995). Class and class conflict in six western nations. \emph{American Sociological Review}, \emph{60}(2), 157--178.
+
+\leavevmode\vadjust pre{\hypertarget{ref-kim_social_2021}{}}%
+Kim, J. H., \& Lee, C. S. (2021). Social {Capital} and {Subjective Social Status}: {Heterogeneity} within {East Asia}. \emph{Social Indicators Research}. \url{https://doi.org/10.1007/s11205-020-02548-9}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Smith1981}{}}%
+Kluegel, J. R., \& Smith, E. R. (1981). Beliefs {About Stratification}. \emph{Annual Review of Sociology}, 29--56.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Kulin2013}{}}%
+Kulin, J., \& Svallfors, S. (2013). Class, values, and attitudes towards redistribution: {A European} comparison. \emph{European Sociological Review}, \emph{29}(2), 155--167. \url{https://doi.org/10.1093/esr/jcr046}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Liebig-Sauer2016}{}}%
+Liebig, S., \& Sauer, C. (2016). Sociology of {Justice}. In C. Sabbagh \& M. Schmitt (Eds.), \emph{Handbook of {Social Justice Theory} and {Research}} (pp. 37--59). {Springer New York}. \url{https://doi.org/10.1007/978-1-4939-3216-0_3}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Lindemann2014}{}}%
+Lindemann, K., \& Saar, E. (2014). Contextual {Effects} on {Subjective Social Position}: {Evidence} from {European Countries}. \emph{International Journal of Comparative Sociology}, \emph{55}(1), 3--23. \url{https://doi.org/10.1177/0020715214527101}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Lundberg2008}{}}%
+Lundberg, J., \& Kristenson, M. (2008). Is {Subjective Status Influenced} by {Psychosocial Factors}? \emph{Social Indicators Research}, \emph{89}(3), 375--390. \url{https://doi.org/10.1007/sl}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Meltzer1981}{}}%
+Meltzer, A. H., \& Richard, S. (1981). A {Rational Theory} of {Government}. \emph{Journal of Political Economy}, \emph{89}(5), 914--927. \url{https://doi.org/10.1007/BF00141072}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Merton1968}{}}%
+Merton, R. K., \& Rossi, A. (1968). Contributions to the {Theory} of {Reference Group Behavior}. \emph{Social Theory and Social Structure}, 279--334.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Olivos-etal2020}{}}%
+Olivos, F., Olivos-Jara, P., \& Browne, M. (2020). Asymmetric {Social Comparison} and {Life Satisfaction} in {Social Networks}. \emph{Journal of Happiness Studies}. \url{https://doi.org/10.1007/s10902-020-00234-8}
+
+\leavevmode\vadjust pre{\hypertarget{ref-rehm09}{}}%
+Rehm, P. (2009). Risks and {Redistribution}. {An Individual-Level Analysis}. \emph{Comparative Political Studies}, \emph{42}(7), 855--881.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Schroder2017_soc_jus}{}}%
+Schröder, M. (2017). Is {Income Inequality Related} to {Tolerance} for {Inequality}? \emph{Social Justice Research}, \emph{30}(1), 23--47. \url{https://doi.org/10.1007/s11211-016-0276-8}
+
+\leavevmode\vadjust pre{\hypertarget{ref-slomczynski1987}{}}%
+Słomczyński, K. M., \& Kacprowicz, G. (1986). The {Subjective Evaluation} of {Social Status}. \emph{International Journal of Sociology}, \emph{16}(1/2), 124--143.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Smith-eta2020_relative-deprivation}{}}%
+Smith, H. J., Pettigrew, T. F., \& Huo, Y. J. (2020). Relative {Deprivation Theory}: {Advances} and {Applications}. In \emph{Social {Comparison}, {Judgment}, and {Behavior}} (pp. 495--526). {Oxford University Press}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-smithCulturalValuesModerate2018}{}}%
+Smith, H. J., Ryan, D. A., Jaurique, A., Pettigrew, T. F., Jetten, J., Ariyanto, A., Autin, F., Ayub, N., Badea, C., Besta, T., Butera, F., Costa-Lopes, R., Cui, L., Fantini, C., Finchilescu, G., Gaertner, L., Gollwitzer, M., Gómez, Á., González, R., \ldots{} Wohl, M. (2018). Cultural {Values Moderate} the {Impact} of {Relative Deprivation}. \emph{Journal of Cross-Cultural Psychology}, \emph{49}(8), 1183--1218. \url{https://doi.org/10.1177/0022022118784213}
+
+\leavevmode\vadjust pre{\hypertarget{ref-visser_attitudes_2004}{}}%
+Visser, P. S., \& Mirabile, R. R. (2004). Attitudes in the {Social Context}: {The Impact} of {Social Network Composition} on {Individual-Level Attitude Strength}. \emph{Journal of Personality and Social Psychology}, \emph{87}(6), 779--795. \url{https://doi.org/10.1037/0022-3514.87.6.779}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Wegener1990}{}}%
+Wegener, B. (1990). Equity, relative deprivation, and the value consensus paradox. \emph{Social Justice Research}, \emph{4}(1), 65--86. \url{https://doi.org/10.1007/BF01048536}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Wegener1987}{}}%
+Wegener, B. (1987). The {Illusion} of {Distributive Justice}. \emph{European Sociological Review}, \emph{3}(1), 1--13.
+
+\end{CSLReferences}
+
+\end{document}
