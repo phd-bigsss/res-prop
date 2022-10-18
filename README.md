@@ -1,4 +1,5 @@
 # Research Proposal
 
-Author: Julio Iturra
-Advisor: Prof. Dr. Patrick Sachweh
+**Author**: Julio Iturra
+
+**Advisor**: Prof. Dr. Patrick Sachweh
