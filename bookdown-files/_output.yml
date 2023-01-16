@@ -31,15 +31,14 @@ bookdown::pdf_book:
       in_header: preamble.tex
   #    before_body: frontpage.tex
   latex_engine: pdflatex
-  # citation_package: natbib
-  keep_tex: yes
   citation_package: default
+  keep_tex: yes
   pandoc_args: [ "--csl", "bib/apa.csl"]
 
-bookdown::word_document2:
-  reference_docx: "bib/template.docx"
-  citation_package: default
-  pandoc_args: [ "--csl", "bib/comision-economica-para-america-latina-y-el-caribe.csl", "-M","lang:es"]
+# bookdown::word_document2:
+#   reference_docx: "bib/template.docx"
+#   citation_package: default
+#   pandoc_args: [ "--csl", "bib/comision-economica-para-america-latina-y-el-caribe.csl", "-M","lang:es"]
 
 
 # [Cambiar el .csl]: https://stackoverflow.com/questions/48965247/use-csl-file-for-pdf-output-in-bookdown/49145699#49145699

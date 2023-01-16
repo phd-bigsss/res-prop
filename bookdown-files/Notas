@@ -1,0 +1,173 @@
+- Humanitarism [@Maldonadoetal2019;@aza;@feldman_humanitarian_2001]
+
+- Beliefs [@garcia-sanchez_creencias_2022]
+
+> Because there are arguments about ideological positions as an independent source of redistribution preferences (Margalit, 2013) 
+
+## Political ideology
+
+* Democratization and the political system are clearly linked to preferences for redistribution expressed by voters [@mengel_preferences_2022]
+
+* also political system variables, such as corruption perception [CITA] or political trust [CITA]
+
+
+Here, there are two main concepts or dimensions: risk exposure and insurance motivations.
+
+@rueda_who_2019 argues that expected income is the function of education and labour market experience (age could be a proxy). In this respect, they integrate, on the one hand the utility as a function of actual educational level and skills, and on the other hand, the mincer-inspired rationale mentioned above. Therefore, "concerns about insurance and risk into a simpler conception of expected individual life income" [@rueda_who_2019, p. 39]
+
+* insurance and social policy targets
+  
+When voters have both redistributive and insure welfare spending, the effect of inequality depends on how benefits are targeted [@moene_inequality_2001]
+
+- Variable de control **skill specificity** Cusack et al. (2006)
+- En Alemania EGP-6 se come el efecto del ingreso, manteniendo el efecto del expected income [@rueda_who_2019, p. 74]
+
+**Externalities**. We propose that poor people (regardless of their expected future income) value redistribution for its immediate tax and transfer consequences. The redistributive preferences of the rich, on the other hand, are less significantly affected by current tax and transfer considerations. For the rich, the negative externalities of inequality can become more relevant. [@rueda_who_2019, p. 89]
+
+- time-horizon and motivations differences between rich and poor. Poor people are less likely to invest in long-term objectives like increasing **educational capital** or **saving for retirement**. Lower social class and lower income are related to shorter time-horizons.
+
+- Por ejemplo, el retorno vía impuestos para los ricos es menor en términos de ingreso. ¿cuánto representan las pensiones en el ingreso de los hogares más pobres? 
+
+- how much is the ammount of market income after taxes for the highests income decile?
+
+- negative externalities of inequality to be associadtes with less support for redistribution. Poor with highest/lower inequality does not differ too much. The rich are more concerned about the **externalities** of inequality, not by inequality by itself. Therefore, they support more redistribution in more unequal contexts.
+
+- *fear of crime* is more important than *objective crime* por parte de los ricos.
+- mujeres mayores tienen menos victimizacion, pero mayor miedo. Opuesto en hombres jovenes.
+- debe haber 1) percepción del crimen, y 2) asociar crimen con desigualdad
+
+- dependency rate in society [@steele_attitudes_2019]
+- migration and share of migrants
+- divorce in last years [@alesina_preferences_2010] 
+
+- religion. Protestants in the US are less redistributive than atheist. Catholics have greater preferences for redistribution than atheists [@alesina_preferences_2010]
+
+-  Scheve & Stasavage 2006: sostienen que la religión puede tener un efecto negativo en las preferencias, dado que modera el riesgo en la medida que contrubuye a bienestar inmaterial (e.g. compañía y consuelo) o material (e.g. ofrecer trabajo, prestar dinero). Decrese la demanda por **insurance**.  
+
+# Mobility
+
+* Prospective upward mobility (POUM) [@benabou_social_2001;@Fong2004;@Jaime-Castillo2008]
+
+* Social Mobility (SM) [@jaime-castillo_social_2019;@valdimarsdottir_social_2022;@alesina_intergenerational_2018]
+
+Education can be considered as proxy for mobility prospects. 
+Educational mobility does not have an effect. However, occupational mobility does it. [@alesina_preferences_2010]
+
+How previous research intended to capture the influence of prospects about future income relies mainly on subjective expectations about future abstract status position [@Alesina2005]. In this regard, @rueda_who_2019 discuss this approach because it only considers short periods in time, not the complete life cycle.  
+
+future_income = age + age2 + education + age*education + e
+
+They assume that individuals have some knowledge about life-cycle income profile of people with the same level of education [@rueda_who_2019, p. 41]
+
+- expectations of income are not related to risk aversion
+- an individual demands more redistribution today, for example, if she knows she will be poorer in the future
+
+- correlation of future income is low (0.2 to 0.3) with actual income.
+- estimaron el ingreso futuro usando ols
+
+Ideas:
+- cuánto crees que esta persona gana
+- cuánto crees que esta persona va ganar en X años
+- cuánto crees que esta persona debería ganar
+
+@rueda_who_2019 "the importance of present income as a determinant of redistribution preferences is highly variable, both cross-nationally and temporally."
+
+lifetime income model based on labour economics that considers education and experience as key drivers of income, therefore, preferences for redistribution. The key concepts here are social insurance, risk and mobility [@rueda_who_2019]
+
+The prospective social mobility model assumes that the tax revenues are fixed for both, origin and destination [@alesina_preferences_2010]
+
+# Information and media exposure
+ 
+* Este approach me deja con dudas. Es bastante gringo y el argumento central es que la gente justifica mayor desigualdad por desinformación [@Bartels2008].
+
+- has been posit that mass media could influence preferences [@digioacchino_mass_2020].
+- Concentration of media negatively affects preferences [@neimanns_welfare_2021]
+# Demography
+# Time and life-cycle
+
+social mobility and life-cycle profiles [@rueda_who_2019]
+
+# Less discussed
+
+Individual level controls are age, female, education, labor force status, household size. Regional level controls are percentage of foreigners, unemployment rate, gross-domestic product, and high-tech specialization. Estimates for t and controls not shown. [@rueda_who_2019, p. 109]
+
+
+# Notas 
+
+but most important, the possibility to address change over time regarding preferences for redistribution 
+
+These contributions have discussed the limitations of the theory and its implications       
+
+Authors like @mengel_preferences_2022 have discussed the distinction between income and wealth inequality as drivers of self-interest.  
+
+Other evidence have shown the importance of wealth, as an additional source of economic self-interest [@]. 
+
+@mengel_preferences_2022 says that wealth versus income Inequality are different. In this regard, @steele_wealth_2022 compared income and wealth as drivers of redistributive preferences.
+
+* self-interest hypothesis [@Meltzer1981;@dimick_models_2018], 
+
+why the rich would be in favour of higher levels of redistribution? @alesina_preferences_2010 posit two factors: positive externalities of education, reduced crime and secure property
+
+On the other hand, another factor is the incentives generated by inequality as an aggregate social value. Greater inequality means that individuals would have to work harder and become more educated 
+--- 
+Un argumento a desarrollar o especificas es 1) cuáles instituciones y 2) cuáles condiciones ambientales. Alternativamente es si existe un concepto paraguas para juntar ambos. Contexto? Regime? 
+
+@mengel_preferences_2022 talk about environmental conditions or institutions that affect behaviour and preferences
+
+harsh contexts social cohesion (solidarity/competition) increase redistributive preferences?
+
+@dimick_models_2018 sugieren emplear la distancia promedio del ingreso del hogar con el promedio de los ingresos de hogares nacionales. Medida simple.
+
+Qué explica que los ricos, en países con menor desigualdad, apoyen menos la redistribución que en países con mayor desigualdad.
+
+Puede ser que la percepción de desigualdad sea menor.
+
+Es la preferencia de los ricos más alta cuando se perciben de estatus más bajo?
+
+Alternativa sería testear el mismo modelo de altruismo condicional a desigualdad en estatus percibido alto.
+
+Otro puzzle son las brecha salario objetivo/subjetivo (uppward y downward).
+
+We are interested specifically in the determinants of preferences for redistribution, but the modern welfare state has two main objectives: to redistribute from the richer to the poorer and to provide social insurance. Some aspects of the welfare state (think of the progressivity of the income tax) are primarily redistributive, others provide primarily, but not exclusively, social insurance (think of unemployment compensations), others (such as health insurance financed by progressive taxation) have both components, and one could go on. In theory, one can conceptually distinguish the two. [@alesina_preferences_2010]
+
+the distinction between social spending/providing social insuranceand redistribution. 
+
+@breznau_moderating_2022 adressed through the concept of "Government Heuristics" to dilucidate the role of concerns about economic inequality and government's responsability on reducing income differences between rich and poor.
+
+**Sobre el efecto de social comparison en ricos y pobres**
+
+Para alguien de altos ingresos, una upward comparison puede ser con un "super-rich". Mientras que para alguien de bajos ingresos, una upward comparison es simplemente con los ricos. 
+
+Ambas en teoría tienen el mismo efecto (positivo) pero la gracias es la heterogeneidad del efecto.
+
+Lo que hemos visto es que tanto los ricos como los pobres, sub y sobre estiman su posición. El rico, al compararse con "alguien más rico" ¿en qupe piensa? El pobre, al compararse con "alguien más rico" ¿en qué piensa?
+
+Sirve la medición indirecta de comparación social (ingreso propio respecto de ingreso de ocupaciones) puede ser una manera de abrir esa caja negra. 
+
+en la literatura de brechas, sabemos que los ricos tienen una menor percepción de desigualdad porque tienen información sobre los salarios de los CEOs. En cambio, entre los pobres, la información del salario de un CEO es menos precisa y es más alta, respecto a los pobres.
+
+**Puzzle 0: social comparison on subjective status**
+
+- brecha objetivo/subjetivo (upward [-]/downward[+]) sobre estatus subjetivo?
+- comparación social upward [-]/downward[+] sobre estatus subjetivo?
+
+**Puzzle 2: direct effect on preferences**
+- estatus subjetivo sobre redistribución (+)
+- comparación social upward [+]/downward[+] on preferences? 
+  - Both positive effects have different theoretical meanings. The first one follows the prediction of the material self-interest approach. The second is based on altruistic preferences. 
+  - Nevertheless, both effects are very likely to depend on individual objective SES and subjective social status. 
+
+**Puzzle 3: individual effect heterogeneity**
+
+- estatus subjetivo x brecha objetivo/subjetivo sobre redistribución
+- estatus subjetivo x comparacion social sobre redistribución
+
+**Puzzle 4: contextual effect**
+
+- Economic Inequality [Gini]
+- Social segregation [under-review]
+
+a) social comparison (upward/ downward) moderated by economic inequality
+b) subjective social status moderated by economic inequality
+
+Esta hipótesis del income-dependent altruism se da en Europa, no controlan las preferencias por nada ideológico ni subjetivo.

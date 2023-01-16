@@ -4,8 +4,10 @@
 \usepackage{geometry}
 \geometry{letterpaper,left=2cm,top=2cm, right=2cm}
 \usepackage{times}           
-\usepackage{caption}
-\captionsetup[figure, table]{labelfont={bf},labelformat={default},labelsep=period}
+% \usepackage{caption}
+% \captionsetup[figure, table]{labelfont={bf},labelformat={default},labelsep=period,list=no}
+% \captionsetup[figure]{list=no}
+% \captionsetup[table]{list=no}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{booktabs}
@@ -20,6 +22,24 @@
 \usepackage{tabu}
 \usepackage{threeparttable}
 \usepackage{pdfpages} %para pdf portada
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\cfoot{\thepage} % get the page number 
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+% \fancypagestyle{plain}{%
+%   % \fancyhf{}% Clear header/footer
+%   % \fancyfoot[OR]{\textbf{\thepage}}%
+%   % \fancyfoot[EL]{\textbf{\thepage}}%
+%   \renewcommand{\headrulewidth}{0pt}%
+% }
+
 
 % fuente: https://stackoverflow.com/questions/45963505/coverpage-and-copyright-notice-before-title-in-r-bookdown
 %\let\oldmaketitle\maketitle 

@@ -5,14 +5,14 @@ author: "Julio Iturra"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [bib/proposal.bib, packages.bib, book-ocs.bib]
+bibliography: [proposal.bib]
 biblio-style: apalike
 link-citations: yes
 linkcolor: blue
 # description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
-geometry: "left=4cm, right=3cm, top=2.5cm, bottom=2.5cm"
+geometry: "left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm"
 fontsize: 12pt
-linestretch: 1.5
+linestretch: 1
 toc-depth: 1
 lof: True
 lot: True
