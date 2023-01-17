@@ -30,9 +30,13 @@ bookdown::pdf_book:
   includes:
       in_header: preamble.tex
   #    before_body: frontpage.tex
-  latex_engine: pdflatex
-  citation_package: default
-  keep_tex: yes
+#  toc: true
+#  lof: false
+#  lot: false
+#  papersize: a4
+#  latex_engine: pdflatex
+#  citation_package: default
+#  keep_tex: yes
   pandoc_args: [ "--csl", "bib/apa.csl"]
 
 # bookdown::word_document2:

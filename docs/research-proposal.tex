@@ -1,16 +1,16 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
-\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
 %
 \documentclass[
   12pt,
 ]{book}
-\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
 \usepackage{setspace}
-\usepackage{iftex}
-\ifPDFTeX
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
@@ -36,9 +36,20 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Social Comparison, subjetive social status and preferences for redistribution},
+  pdfauthor={Julio Iturra},
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=Maroon,
+  citecolor=Blue,
+  urlcolor=Blue,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
 \usepackage[left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
-\usepackage{longtable,booktabs,array}
-\usepackage{calc} % for calculating minipage widths
+\usepackage{longtable,booktabs}
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
 \makeatletter
@@ -64,29 +75,6 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
-\newlength{\cslhangindent}
-\setlength{\cslhangindent}{1.5em}
-\newlength{\csllabelwidth}
-\setlength{\csllabelwidth}{3em}
-\newlength{\cslentryspacingunit} % times entry-spacing
-\setlength{\cslentryspacingunit}{\parskip}
-\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
- {% don't indent paragraphs
-  \setlength{\parindent}{0pt}
-  % turn on hanging indent if param 1 is 1
-  \ifodd #1
-  \let\oldpar\par
-  \def\par{\hangindent=\cslhangindent\oldpar}
-  \fi
-  % set entry spacing
-  \setlength{\parskip}{#2\cslentryspacingunit}
- }%
- {}
-\usepackage{calc}
-\newcommand{\CSLBlock}[1]{#1\hfill\break}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
-\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 \usepackage[utf8]{inputenc}
 % \usepackage[spanish,es-tabla]{babel}
 % \usepackage[fixlanguage]{babelbib}
@@ -97,6 +85,8 @@
 % \captionsetup[figure, table]{labelfont={bf},labelformat={default},labelsep=period,list=no}
 % \captionsetup[figure]{list=no}
 % \captionsetup[table]{list=no}
+% \usepackage{nottoc,notlof,notlot]{tocbibind}
+\usepackage[notlof,notlot]{tocbibind}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{booktabs}
@@ -121,7 +111,6 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-
 % \fancypagestyle{plain}{%
 %   % \fancyhf{}% Clear header/footer
 %   % \fancyfoot[OR]{\textbf{\thepage}}%
@@ -145,35 +134,12 @@
 %   % \usepackage[spanish,es-tabla]{babel}
 % \fi
 
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{array}
-\usepackage{multirow}
-\usepackage{wrapfig}
-\usepackage{float}
-\usepackage{colortbl}
-\usepackage{pdflscape}
-\usepackage{tabu}
-\usepackage{threeparttable}
-\usepackage{threeparttablex}
-\usepackage[normalem]{ulem}
-\usepackage{makecell}
-\usepackage{xcolor}
-\ifLuaTeX
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\urlstyle{same} % disable monospaced font for URLs
-\hypersetup{
-  pdftitle={Social Comparison, subjetive social status and preferences for redistribution},
-  pdfauthor={Julio Iturra},
-  colorlinks=true,
-  linkcolor={blue},
-  filecolor={Maroon},
-  citecolor={Blue},
-  urlcolor={Blue},
-  pdfcreator={LaTeX via pandoc}}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{cslreferences}%
+  {\setlength{\parindent}{0pt}%
+  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces}%
+  {\par}
 
 \title{Social Comparison, subjetive social status and preferences for redistribution}
 \author{Julio Iturra}
@@ -182,13 +148,8 @@
 \begin{document}
 \maketitle
 
-{
-\hypersetup{linkcolor=}
-\setcounter{tocdepth}{1}
-\tableofcontents
-}
-\listoffigures
 \listoftables
+\listoffigures
 \setstretch{1}
 \hypertarget{abstract}{%
 \chapter*{Abstract}\label{abstract}}
@@ -199,9 +160,9 @@ In recent years, the relationship between social comparison and redistributive p
 \hypertarget{introduction}{%
 \chapter{Introduction}\label{introduction}}
 
-How individuals perceive the world around them has been a central issue in sociology and social psychology. In this regard, the literature on preference formation suggests that these rely on normative structures such as values, ideological or political conceptions about the world (\protect\hyperlink{ref-Janmaat2013}{Janmaat, 2013}; \protect\hyperlink{ref-smithCulturalValuesModerate2018}{Smith et al., 2018}).
+How individuals perceive the world around them has been a central issue in sociology and social psychology. In this regard, the literature on preference formation suggests that these rely on normative structures such as values, ideological or political conceptions about the world (Janmaat, \protect\hyperlink{ref-Janmaat2013}{2013}; Smith et al., \protect\hyperlink{ref-smithCulturalValuesModerate2018}{2018}).
 
-In addition, the theoretical and empirical development in sociological social justice research has focused on the role of situations and societal context over justice evaluations and distributive preferences (\protect\hyperlink{ref-Liebig-Sauer2016}{Liebig \& Sauer, 2016}).
+In addition, the theoretical and empirical development in sociological social justice research has focused on the role of situations and societal context over justice evaluations and distributive preferences (Liebig \& Sauer, \protect\hyperlink{ref-Liebig-Sauer2016}{2016}).
 
 \hypertarget{preferences-and-economic-redistribution}{%
 \chapter{Preferences and Economic Redistribution}\label{preferences-and-economic-redistribution}}
@@ -209,15 +170,15 @@ In addition, the theoretical and empirical development in sociological social ju
 \hypertarget{preference-formation}{%
 \section{Preference formation}\label{preference-formation}}
 
-During the past decade, the research field of individual preferences toward economic redistribution constitute an interdisciplinary field in the social sciences (\protect\hyperlink{ref-alesina_preferences_2010}{Alesina \& Giuliano, 2010}; \protect\hyperlink{ref-steele_attitudes_2019}{Steele \& Breznau, 2019}). In this regard, as a result of disciplinary boundaries, the phenomenon has been addressed through a range of concepts, such as \emph{attitudes} toward redistribution (\protect\hyperlink{ref-Garcia-Sanchez19}{García-Sánchez et al., 2019}), \emph{social or welfare policy} preferences (\protect\hyperlink{ref-breznau_economic_2010}{Breznau, 2010}; \protect\hyperlink{ref-rehm_risk_2016}{Rehm, 2016}) and \emph{preferences, support or demand} for redistribution (\protect\hyperlink{ref-evans_strong_2018}{M. Evans \& Kelley, 2018}; \protect\hyperlink{ref-jaime-castillo_social_2019}{Jaime-Castillo \& Marqués-Perales, 2019}; \protect\hyperlink{ref-steele_wealth_2022}{Steele et al., 2022}). Across this body of literature, the common denominator is that individuals in society hold different views about what should be the role of government in taking measures for providing welfare and to what extent this role has to be accomplished. In order to establish boundaries and properly conceptualize this phenomenon, we need to review previous discussions in the literature.
+During the past decade, the research field of individual preferences toward economic redistribution constitute an interdisciplinary field in the social sciences (Alesina \& Giuliano, \protect\hyperlink{ref-alesina_preferences_2010}{2010}; Steele \& Breznau, \protect\hyperlink{ref-steele_attitudes_2019}{2019}). In this regard, as a result of disciplinary boundaries, the phenomenon has been addressed through a range of concepts, such as \emph{attitudes} toward redistribution (García-Sánchez et al., \protect\hyperlink{ref-Garcia-Sanchez19}{2019}), \emph{social or welfare policy} preferences (Breznau, \protect\hyperlink{ref-breznau_economic_2010}{2010}; Rehm, \protect\hyperlink{ref-rehm_risk_2016}{2016}) and \emph{preferences, support or demand} for redistribution (Evans \& Kelley, \protect\hyperlink{ref-evans_strong_2018}{2018}; Jaime-Castillo \& Marqués-Perales, \protect\hyperlink{ref-jaime-castillo_social_2019}{2019}; Steele et al., \protect\hyperlink{ref-steele_wealth_2022}{2022}). Across this body of literature, the common denominator is that individuals in society hold different views about what should be the role of government in taking measures for providing welfare and to what extent this role has to be accomplished. In order to establish boundaries and properly conceptualize this phenomenon, we need to review previous discussions in the literature.
 
-The theoretical framework proposed by Janmaat (\protect\hyperlink{ref-Janmaat2013}{2013}) distinguishes between the concepts of perceptions, beliefs and judgments about economic inequality. First, perceptions refer to subjective descriptive estimations, in other words, how individuals think existing inequality is. Second, beliefs are understood as the normative dimension regarding how income distribution should be. Finally, judgments are considered as the normative evaluation of the existing inequality, referring to what extent it is considered good or desired (\protect\hyperlink{ref-Janmaat2013}{Janmaat, 2013, p. 4}). Within this framework, the concept of preference is occasionally misled with beliefs or judgments. In this regard, is relevant to point out that the ideas about how the object (e.g.~inequality) should be, do not explicitly consider its' evaluation. In this line, the concept of preference needs to be distinguished from the previous framework, because the phenomenon studied in the redistributive preferences literature corresponds to the subjective appraisal regarding measures (e.g.~social policies) to afront the existing levels of inequality.
+The theoretical framework proposed by Janmaat (\protect\hyperlink{ref-Janmaat2013}{2013}) distinguishes between the concepts of perceptions, beliefs and judgments about economic inequality. First, perceptions refer to subjective descriptive estimations, in other words, how individuals think existing inequality is. Second, beliefs are understood as the normative dimension regarding how income distribution should be. Finally, judgments are considered as the normative evaluation of the existing inequality, referring to what extent it is considered good or desired (Janmaat, \protect\hyperlink{ref-Janmaat2013}{2013}, p. 4). Within this framework, the concept of preference is occasionally misled with beliefs or judgments. In this regard, is relevant to point out that the ideas about how the object (e.g.~inequality) should be, do not explicitly consider its' evaluation. In this line, the concept of preference needs to be distinguished from the previous framework, because the phenomenon studied in the redistributive preferences literature corresponds to the subjective appraisal regarding measures (e.g.~social policies) to afront the existing levels of inequality.
 
-Another approach for the study preferences has been developed by Druckman \& Lupia (\protect\hyperlink{ref-druckman_preference_2000}{2000}). On their view, the formation of preferences can be understood as the combination of internal and external dynamics, suggesting that preferences derive from the evaluation of an external object and its' attributes relative to another (e.g.~public policy). Objects can be observable physically continuous phenomena (e.g.~furniture) and unobservable, physically discontinuous phenomena (e.g.~shared ideas) (\protect\hyperlink{ref-druckman_preference_2000}{Druckman \& Lupia, 2000, p. 4}). In addition, individuals evaluate based on beliefs toward the attributes of the object, which in turn depends on previous information which is directly linked to perception and previous experience (\protect\hyperlink{ref-druckman_preference_2000}{Druckman \& Lupia, 2000, p. 5}).
+Another approach for the study preferences has been developed by Druckman \& Lupia (\protect\hyperlink{ref-druckman_preference_2000}{2000}). On their view, the formation of preferences can be understood as the combination of internal and external dynamics, suggesting that preferences derive from the evaluation of an external object and its' attributes relative to another (e.g.~public policy). Objects can be observable physically continuous phenomena (e.g.~furniture) and unobservable, physically discontinuous phenomena (e.g.~shared ideas) (Druckman \& Lupia, \protect\hyperlink{ref-druckman_preference_2000}{2000}, p. 4). In addition, individuals evaluate based on beliefs toward the attributes of the object, which in turn depends on previous information which is directly linked to perception and previous experience (Druckman \& Lupia, \protect\hyperlink{ref-druckman_preference_2000}{2000}, p. 5).
 
 Both approaches mentioned constitute an insightful understanding of what preferences are and how they are formed. Nevertheless, there is a difference that needs to be clarified. On the one hand, Janmaat's (\protect\hyperlink{ref-Janmaat2013}{2013}) approach allows distinguishing the descriptive from the normative dimension in the study of subjective inequality but is less clear toward the concept of preferences. In this regard, we do not posit that preferences do not have a normative component, but this framework is not enough to understand preference formation. On the other hand, Druckman \& Lupia (\protect\hyperlink{ref-druckman_preference_2000}{2000}) don not explicitly consider preferences to be linked with norms. They suggest that preferences are the function of beliefs, and the latter are systematically formed through perception and experience. In this regard, preferences correspond to the evaluation of an external object to be ranked by the observer based on actual beliefs. What we say is that both approaches share the assumption that the formation of preferences is not entirely neither internal nor external to the subjects. To be precise, a shared point is that perception is the basis for evaluations, that lead to the formation of preferences towards objects.
 
-The crucial point in which both approaches differ is how they define beliefs. In our view, for Janmaat (\protect\hyperlink{ref-Janmaat2013}{2013}) beliefs are more static, in order that they correspond to the normative dimension, but for Druckman \& Lupia (\protect\hyperlink{ref-druckman_preference_2000}{2000}) due to beliefs being a function of perception and experiences they are more dynamic and susceptible to being updated by external shocks (e.g.~information) (\protect\hyperlink{ref-druckman_preference_2000}{Druckman \& Lupia, 2000, p. 6}). In this regard, preferences for redistribution can be understood as the individual's evaluation towards the role of government in managing the economic distribution on top of their actual perceptions and beliefs. Furthermore, preferences are influenced by the attributes of governmental actions that are represented by public policies. Hence, preferences can be addressed through the evaluation of government responsibility for the reduction of economic inequality globally, or by focusing on the characteristics of a concrete welfare policy.
+The crucial point in which both approaches differ is how they define beliefs. In our view, for Janmaat (\protect\hyperlink{ref-Janmaat2013}{2013}) beliefs are more static, in order that they correspond to the normative dimension, but for Druckman \& Lupia (\protect\hyperlink{ref-druckman_preference_2000}{2000}) due to beliefs being a function of perception and experiences they are more dynamic and susceptible to being updated by external shocks (e.g.~information) (Druckman \& Lupia, \protect\hyperlink{ref-druckman_preference_2000}{2000}, p. 6). In this regard, preferences for redistribution can be understood as the individual's evaluation towards the role of government in managing the economic distribution on top of their actual perceptions and beliefs. Furthermore, preferences are influenced by the attributes of governmental actions that are represented by public policies. Hence, preferences can be addressed through the evaluation of government responsibility for the reduction of economic inequality globally, or by focusing on the characteristics of a concrete welfare policy.
 
 \hypertarget{redistribution-what-how-and-who}{%
 \section{Redistribution: what, how and who}\label{redistribution-what-how-and-who}}
@@ -226,49 +187,49 @@ How the redistributive preferences literature has addressed the phenomena, apart
 
 Preferences can be approached according to how concrete the attributes of the evaluated object are. One way to empirically addressed preferences for redistribution is the \textbf{reduction of economic inequality} which refers to what extent individuals believe that the government should be responsible for the reduction of the income gap between rich and poor, which has become one of the most common approaches for the study of preferences in the literature. For example, based on the General Social Survey Alesina \& Giuliano (\protect\hyperlink{ref-alesina_preferences_2010}{2010}) analyse the evaluation of citizens about the role of government in Washington in improving the standard of living of all poor or if they should take care of themselves. From a cross-national approach, using data from the World Value Survey the Alesina \& Giuliano (\protect\hyperlink{ref-alesina_preferences_2010}{2010}) analysed to what degree citizens believe that welfare should be the responsibility of individuals or that the government should provide universal support. On the same line, García-Sánchez et al. (\protect\hyperlink{ref-Garcia-Sanchez19}{2019}) scrutinise to what extent individuals agree that the government is responsible for reducing the differences between high and low incomes by employing the International Social Survey Programme. Looking at regional comparisons, Jaime-Castillo \& Marqués-Perales (\protect\hyperlink{ref-jaime-castillo_social_2019}{2019}) examined European citizens' opinions on the idea that government should take measures to reduce income differences by employing the European Social Survey. Finally, Franetovic \& Castillo (\protect\hyperlink{ref-franetovic_preferences_2022}{2022}) compared Latin American countries using the Latinobarometer survey, analysing to what extent subjects agree that government should implement policies to reduce income inequality between rich and poor. Overall, these cases briefly describe how the literature has empirically addressed general preferences for redistribution without addressing specific welfare policies.
 
-Second, another body of literature has addressed preferences for redistribution based on the evaluation of certain \textbf{social policies} (e.g.~unemployment benefits or health insurance). In this line, the individuals or groups that potentially become recipients of these welfare policies can be conceptually distinguished between those who are directly affected by policies in the short term (e.g.~the poor or unemployed) (\protect\hyperlink{ref-Aaroe2014}{Aarøe \& Petersen, 2014}) and those who are going be affected by them, potentially or directly, in the future (e.g.~ill or retired) (\protect\hyperlink{ref-castillo_deserving_2019}{Castillo et al., 2019}; \protect\hyperlink{ref-rehm_risk_2016}{Rehm, 2016}). In this regard, how the government enacts welfare policies also considers the characteristics of the recipients of the benefits. This subject has been addressed by the deservingness heuristic approach, which adverts to what extent a certain group or individuals are considered to be within the scope of benefits of a certain welfare policy (\protect\hyperlink{ref-Jensen2017}{Jensen \& Petersen, 2017}). Therefore, it has been argued that public preferences toward redistributive social policies represent the evaluation of the policy, taking into account to what extent it affects the present (or future) material interest of the evaluator (e.g.~income tax rise), but also the attributes of the recipients of the enacted policy (\protect\hyperlink{ref-garcia-sanchez_two_2022}{García-Sánchez et al., 2022})
+Second, another body of literature has addressed preferences for redistribution based on the evaluation of certain \textbf{social policies} (e.g.~unemployment benefits or health insurance). In this line, the individuals or groups that potentially become recipients of these welfare policies can be conceptually distinguished between those who are directly affected by policies in the short term (e.g.~the poor or unemployed) (Aarøe \& Petersen, \protect\hyperlink{ref-Aaroe2014}{2014}) and those who are going be affected by them, potentially or directly, in the future (e.g.~ill or retired) (Castillo et al., \protect\hyperlink{ref-castillo_deserving_2019}{2019}; Rehm, \protect\hyperlink{ref-rehm_risk_2016}{2016}). In this regard, how the government enacts welfare policies also considers the characteristics of the recipients of the benefits. This subject has been addressed by the deservingness heuristic approach, which adverts to what extent a certain group or individuals are considered to be within the scope of benefits of a certain welfare policy (Jensen \& Petersen, \protect\hyperlink{ref-Jensen2017}{2017}). Therefore, it has been argued that public preferences toward redistributive social policies represent the evaluation of the policy, taking into account to what extent it affects the present (or future) material interest of the evaluator (e.g.~income tax rise), but also the attributes of the recipients of the enacted policy (García-Sánchez et al., \protect\hyperlink{ref-garcia-sanchez_two_2022}{2022})
 
-Finally, another dimension is how individuals rationalize the link between tax policy and economic inequality. In this regard, there is research that employed the concept of preferences for progressive taxation as a way to study redistributive preferences. The argument is that the link between income and welfare is increasingly relevant in societies with a progressive tax regime in which households on the top of the income distribution are those who contribute more and get directly benefited less by redistribution in which the core assumption that links income and redistributive preferences relies on what extent individuals prefer a progressive tax policy (\protect\hyperlink{ref-cansunar_who_2021}{Cansunar, 2021, p. 1}). However, empirical findings have shown that even the more affluent are more willing to support progressive taxation when they perceive that someone is richer than them (\protect\hyperlink{ref-cansunar_who_2021}{Cansunar, 2021}). In addition, there is evidence that demonstrates that, even against their material interest, low-income individuals support regressive tax cuts as a result of their perceived own tax burden, but also due to a lack of political information (\protect\hyperlink{ref-bartels_homer_2005}{Bartels, 2005}).
+Finally, another dimension is how individuals rationalize the link between tax policy and economic inequality. In this regard, there is research that employed the concept of preferences for progressive taxation as a way to study redistributive preferences. The argument is that the link between income and welfare is increasingly relevant in societies with a progressive tax regime in which households on the top of the income distribution are those who contribute more and get directly benefited less by redistribution in which the core assumption that links income and redistributive preferences relies on what extent individuals prefer a progressive tax policy (Cansunar, \protect\hyperlink{ref-cansunar_who_2021}{2021}, p. 1). However, empirical findings have shown that even the more affluent are more willing to support progressive taxation when they perceive that someone is richer than them (Cansunar, \protect\hyperlink{ref-cansunar_who_2021}{2021}). In addition, there is evidence that demonstrates that, even against their material interest, low-income individuals support regressive tax cuts as a result of their perceived own tax burden, but also due to a lack of political information (Bartels, \protect\hyperlink{ref-bartels_homer_2005}{2005}).
 
 The literature on redistributive preferences has proposed different mechanisms for explaining the demand for redistribution.
 
 \hypertarget{objective-position-and-material-factors}{%
 \chapter{Objective position and material factors}\label{objective-position-and-material-factors}}
 
-The literature has pointed out structural position as one of the main drivers of preferences for redistribution. As an extension of the median voter theorem, the Meltzer \& Richard model (\protect\hyperlink{ref-Meltzer81}{Meltzer \& Richard, 1981}) proposed economic self-interest as an explanatory mechanism for redistributive preferences. The model proposes income as the representation of voters' material interests expressed by their preferences as the function of the distance from the income median, where those below it hold higher preferences for redistribution compared with those above. In other words, those close to the bottom are more benefited by redistribution and less affected by the tax burden increase, compared to those close to the top of the income distribution.
+The literature has pointed out structural position as one of the main drivers of preferences for redistribution. As an extension of the median voter theorem, the Meltzer \& Richard model (Meltzer \& Richard, \protect\hyperlink{ref-Meltzer81}{1981}) proposed economic self-interest as an explanatory mechanism for redistributive preferences. The model proposes income as the representation of voters' material interests expressed by their preferences as the function of the distance from the income median, where those below it hold higher preferences for redistribution compared with those above. In other words, those close to the bottom are more benefited by redistribution and less affected by the tax burden increase, compared to those close to the top of the income distribution.
 
 \hypertarget{income-wealth-and-future-income}{%
 \section{Income, wealth and future income}\label{income-wealth-and-future-income}}
 
-The negative influence of economic self-interest on redistributive preferences has been widely documented in the literature. Evidence from the United States (\protect\hyperlink{ref-alesina_preferences_2010}{Alesina \& Giuliano, 2010}), Europe (@ \protect\hyperlink{ref-dimick_models_2018}{Dimick et al., 2018}) and Latin America (\protect\hyperlink{ref-franetovic_preferences_2022}{Franetovic \& Castillo, 2022}) has supported the predictions of the theory. However, despite evidence in favour of the self-interest hypothesis, recent studies have shown mixed evidence regarding the adverse preferences of high-income groups, but also the role of market income as the main driver of self-interest. For example, a recent study on urban Brazilian citizens found a positive influence of income on redistributive preferences (\protect\hyperlink{ref-garcia-sanchez_creencias_2022}{García-Sánchez \& De Carvalho Galvão, 2022}). The authors suggest higher awareness regarding income inequality among rich and educated individuals in an unequal context like Brazil which makes them express altruistic views about inequality and support higher redistribution. Although, cross-national comparisons have shown the expected negative association, also null and positive effects of income among different redistributive domains, demonstrating that adverse preferences among the rich are not consistent across societies (\protect\hyperlink{ref-steele_wealth_2022}{Steele et al., 2022, pp. 10--13}). In this regard, the authors point out wealth as an alternative and more stable source of self-interest than market income.
+The negative influence of economic self-interest on redistributive preferences has been widely documented in the literature. Evidence from the United States (Alesina \& Giuliano, \protect\hyperlink{ref-alesina_preferences_2010}{2010}), Europe (@ Dimick et al., \protect\hyperlink{ref-dimick_models_2018}{2018}) and Latin America (Franetovic \& Castillo, \protect\hyperlink{ref-franetovic_preferences_2022}{2022}) has supported the predictions of the theory. However, despite evidence in favour of the self-interest hypothesis, recent studies have shown mixed evidence regarding the adverse preferences of high-income groups, but also the role of market income as the main driver of self-interest. For example, a recent study on urban Brazilian citizens found a positive influence of income on redistributive preferences (García-Sánchez \& De Carvalho Galvão, \protect\hyperlink{ref-garcia-sanchez_creencias_2022}{2022}). The authors suggest higher awareness regarding income inequality among rich and educated individuals in an unequal context like Brazil which makes them express altruistic views about inequality and support higher redistribution. Although, cross-national comparisons have shown the expected negative association, also null and positive effects of income among different redistributive domains, demonstrating that adverse preferences among the rich are not consistent across societies (Steele et al., \protect\hyperlink{ref-steele_wealth_2022}{2022}, pp. 10--13). In this regard, the authors point out wealth as an alternative and more stable source of self-interest than market income.
 
-The role of wealth has been little discussed in the redistributive preferences literature. Steele (\protect\hyperlink{ref-steele_wealth_2020}{2020}) argued that wealth can constitute a more comprehensive aspect for studying economic resources while it encompasses the totality of assets, which in turn can be subdivided into ``housing wealth'', representing ownership of a dwelling, as well as other types of property such as land or vehicles. In addition, there are financial assets, such as savings accounts or shares in the financial market, that can be understood as ``financial wealth'' (\protect\hyperlink{ref-steele_wealth_2020}{Steele, 2020, p. 2}). Using cross-national data from the International Social Survey (ISSP onwards), Steele (\protect\hyperlink{ref-steele_wealth_2020}{2020}) found higher relative importance of financial wealth in contrast to housing wealth. The author argues in favour of disaggregating both sources of wealth suggesting financial assets are often easily translated to liquid, rather than housing wealth that is commonly linked to mortgages and does not provide a direct income source. Thus, in contrast with market income, both house and financial wealth have an independent positive but heterogeneous influence on redistributive preferences across countries. In a similar vein, Steele et al. (\protect\hyperlink{ref-steele_wealth_2022}{2022}) took a deeper look into the influence of both wealth dimensions demonstrating that financial wealth has a stronger association among Nordic societies, arguing that income inequality in these countries is one of the lowest in the globe, therefore wealth inequality could be salient than income when individuals express their preferences. It is argued that wealth is related to a ``safety net'' effect. In other words, it provides economic security in the form of inheritance for the next generation, but also a protecting them from economic shocks (e.g.~unemployment) and enhances life chances (\protect\hyperlink{ref-steele_wealth_2022}{Steele et al., 2022, p. 4}).
+The role of wealth has been little discussed in the redistributive preferences literature. Steele (\protect\hyperlink{ref-steele_wealth_2020}{2020}) argued that wealth can constitute a more comprehensive aspect for studying economic resources while it encompasses the totality of assets, which in turn can be subdivided into ``housing wealth'', representing ownership of a dwelling, as well as other types of property such as land or vehicles. In addition, there are financial assets, such as savings accounts or shares in the financial market, that can be understood as ``financial wealth'' (Steele, \protect\hyperlink{ref-steele_wealth_2020}{2020}, p. 2). Using cross-national data from the International Social Survey (ISSP onwards), Steele (\protect\hyperlink{ref-steele_wealth_2020}{2020}) found higher relative importance of financial wealth in contrast to housing wealth. The author argues in favour of disaggregating both sources of wealth suggesting financial assets are often easily translated to liquid, rather than housing wealth that is commonly linked to mortgages and does not provide a direct income source. Thus, in contrast with market income, both house and financial wealth have an independent positive but heterogeneous influence on redistributive preferences across countries. In a similar vein, Steele et al. (\protect\hyperlink{ref-steele_wealth_2022}{2022}) took a deeper look into the influence of both wealth dimensions demonstrating that financial wealth has a stronger association among Nordic societies, arguing that income inequality in these countries is one of the lowest in the globe, therefore wealth inequality could be salient than income when individuals express their preferences. It is argued that wealth is related to a ``safety net'' effect. In other words, it provides economic security in the form of inheritance for the next generation, but also a protecting them from economic shocks (e.g.~unemployment) and enhances life chances (Steele et al., \protect\hyperlink{ref-steele_wealth_2022}{2022}, p. 4).
 
-Rueda \& Stegmueller (\protect\hyperlink{ref-rueda_who_2019}{2019}) have argued that most material self-interest literature focused on market income, but the relative importance of income prospects has not been explored appropriately. In other words, the analysis of the self-interest mechanism should not be limited to a measure of present income, but also pay attention to life course events and their potential consequences on \emph{future} material conditions. Their argument relies on the mincerian earning function, where income returns are a function of human capital and experience in the labour market (\protect\hyperlink{ref-rueda_who_2019}{Rueda \& Stegmueller, 2019, p. 42}). However, the proposed influence of future income relies on the assumption that individuals \emph{know} about the life cycle of people from their same educational group. Thus, knowledge about income prospects can negatively influence actual preferences for redistribution. First, they demonstrate that actual and expected income were not highly correlated, in favour of their expectation about the independency of the effect of both on redistributive preferences. Second, their analysis using European cross-sectional and panel survey data confirm the robust effect of future income undermines preferences for redistribution.
+Rueda \& Stegmueller (\protect\hyperlink{ref-rueda_who_2019}{2019}) have argued that most material self-interest literature focused on market income, but the relative importance of income prospects has not been explored appropriately. In other words, the analysis of the self-interest mechanism should not be limited to a measure of present income, but also pay attention to life course events and their potential consequences on \emph{future} material conditions. Their argument relies on the mincerian earning function, where income returns are a function of human capital and experience in the labour market (Rueda \& Stegmueller, \protect\hyperlink{ref-rueda_who_2019}{2019}, p. 42). However, the proposed influence of future income relies on the assumption that individuals \emph{know} about the life cycle of people from their same educational group. Thus, knowledge about income prospects can negatively influence actual preferences for redistribution. First, they demonstrate that actual and expected income were not highly correlated, in favour of their expectation about the independency of the effect of both on redistributive preferences. Second, their analysis using European cross-sectional and panel survey data confirm the robust effect of future income undermines preferences for redistribution.
 
 The contributions on the role of wealth and future income point out the importance of time-varying individual characteristics, but also turn our attention to long-term changes like intergenerational transmission of advantages and social mobility. In this vein, there is an important body of literature on the role of social mobility (actual or expected) on preferences for redistribution. In the following section, I will revise recent evidence in this respect.
 
 \hypertarget{social-mobility}{%
 \section{Social mobility}\label{social-mobility}}
 
-How social mobility influences preferences for redistribution has been influenced by disciplinary boundaries in the social sciences. For example, sociologists have focused on intergenerational social mobility employing occupational class schemes to analyse individual changes in labour market positions compared with the previous generation (\protect\hyperlink{ref-Connelly2016}{Connelly et al., 2016}; \protect\hyperlink{ref-Erikson1992}{Erikson \& Goldthorpe, 1992}), while economics has paid more attention to income mobility (\protect\hyperlink{ref-alesina_intergenerational_2018}{Alesina et al., 2018}). Research on the subjective dimension of social mobility has been also developed during the last years, focusing on the influence of perceived economic situation compared to previous generations (\protect\hyperlink{ref-mijs_belief_2022}{Mijs et al., 2022}). The redistributive preferences literature has conceived social mobility as a factor able to boost self-interest via two situational mechanisms. On the one side, experienced intergenerational upward (downward) mobility is associated with lower (higher) demand for redistributive measures. On the other side, it is expected that prospects of upward mobility in the future, or for future generations, undermine redistributive preferences.
+How social mobility influences preferences for redistribution has been influenced by disciplinary boundaries in the social sciences. For example, sociologists have focused on intergenerational social mobility employing occupational class schemes to analyse individual changes in labour market positions compared with the previous generation (Connelly et al., \protect\hyperlink{ref-Connelly2016}{2016}; Erikson \& Goldthorpe, \protect\hyperlink{ref-Erikson1992}{1992}), while economics has paid more attention to income mobility (Alesina et al., \protect\hyperlink{ref-alesina_intergenerational_2018}{2018}). Research on the subjective dimension of social mobility has been also developed during the last years, focusing on the influence of perceived economic situation compared to previous generations (Mijs et al., \protect\hyperlink{ref-mijs_belief_2022}{2022}). The redistributive preferences literature has conceived social mobility as a factor able to boost self-interest via two situational mechanisms. On the one side, experienced intergenerational upward (downward) mobility is associated with lower (higher) demand for redistributive measures. On the other side, it is expected that prospects of upward mobility in the future, or for future generations, undermine redistributive preferences.
 
-Evidence from the United States has shown intergenerational occupational upward mobility increases redistributive preferences, compared with the null effect of educational mobility (\protect\hyperlink{ref-alesina_preferences_2010}{Alesina \& Giuliano, 2010}). Similarly, evidence from European countries using diagonal reference models for social class mobility has shown lower preferences for redistribution for upward-mobile individuals (\protect\hyperlink{ref-jaime-castillo_social_2019}{Jaime-Castillo \& Marqués-Perales, 2019}). In the same vein, a study of Latin American countries demonstrates educational upward mobility has a robust positive influence on preferences redistribution and privatization of public services (\protect\hyperlink{ref-gavira_social_2008}{Gavira, 2008}). Overall, cross-national and single-case studies have shown evidence in favour of the unique explanatory capacity of having experienced upward social mobility through education and occupational class. However, it has been illustrated by the literature on subjective inequality, that perception plays a crucial role in how individuals rationalise their origin and destination positions.
+Evidence from the United States has shown intergenerational occupational upward mobility increases redistributive preferences, compared with the null effect of educational mobility (Alesina \& Giuliano, \protect\hyperlink{ref-alesina_preferences_2010}{2010}). Similarly, evidence from European countries using diagonal reference models for social class mobility has shown lower preferences for redistribution for upward-mobile individuals (Jaime-Castillo \& Marqués-Perales, \protect\hyperlink{ref-jaime-castillo_social_2019}{2019}). In the same vein, a study of Latin American countries demonstrates educational upward mobility has a robust positive influence on preferences redistribution and privatization of public services (Gavira, \protect\hyperlink{ref-gavira_social_2008}{2008}). Overall, cross-national and single-case studies have shown evidence in favour of the unique explanatory capacity of having experienced upward social mobility through education and occupational class. However, it has been illustrated by the literature on subjective inequality, that perception plays a crucial role in how individuals rationalise their origin and destination positions.
 
-Studies have demonstrated that higher subjective social mobility increases the willingness to justify the system (\protect\hyperlink{ref-Day2017}{Day \& Fiske, 2017}) and boosts acceptance of economic inequality (\protect\hyperlink{ref-fehr_social_2020}{Fehr et al., 2020}). A cross-national study found evidence in favour of the positive link of occupational and educational mobility on perceived social mobility but also demonstrated that subjective mobility weakens the effect of objective mobility on higher wage inequality justification (\protect\hyperlink{ref-kelley_subjective_2008}{Kelley \& Kelley, 2008}). A recent study in five western societies has shown that Europeans are more pessimistic about social mobility than Americans, but also their experimental results demonstrate that manipulation of perceived income mobility with pessimistic information increases support for redistribution, mainly through equality of opportunities policies (\protect\hyperlink{ref-alesina_intergenerational_2018}{Alesina et al., 2018}).
+Studies have demonstrated that higher subjective social mobility increases the willingness to justify the system (Day \& Fiske, \protect\hyperlink{ref-Day2017}{2017}) and boosts acceptance of economic inequality (Fehr et al., \protect\hyperlink{ref-fehr_social_2020}{2020}). A cross-national study found evidence in favour of the positive link of occupational and educational mobility on perceived social mobility but also demonstrated that subjective mobility weakens the effect of objective mobility on higher wage inequality justification (Kelley \& Kelley, \protect\hyperlink{ref-kelley_subjective_2008}{2008}). A recent study in five western societies has shown that Europeans are more pessimistic about social mobility than Americans, but also their experimental results demonstrate that manipulation of perceived income mobility with pessimistic information increases support for redistribution, mainly through equality of opportunities policies (Alesina et al., \protect\hyperlink{ref-alesina_intergenerational_2018}{2018}).
 
-Current or perceived levels of social mobility in society can influence the expectations about mobility prospects. In this regard, Benabou \& Ok (\protect\hyperlink{ref-benabou_social_2001}{2001}) have formalized the prospective upward mobility hypothesis (POUM) as an extension of the median voter model, where even those below the income median can develop adverse preferences toward redistribution assuming that progressive taxes can negatively affect them due to their expectations of achieve incomes above the median. Empirical evidence has demonstrated expectations about upward social mobility are associated with lower support for redistribution. For instance, using a sample of Italian students the experimental manipulation of mobility prospects increases the demand for redistribution, being more salient among middle and lower-income individuals (\protect\hyperlink{ref-Filippin2003}{Filippin \& Antonio, 2003}). Another study in Spain demonstrates that redistribute preferences decline among individuals with subjective income expectations above the median and higher perceived meritocracy (\protect\hyperlink{ref-Jaime-Castillo2008}{Jaime-Castillo, 2008}). On another approach, among Latin American countries higher expectations about the next generation's educational achievement diminish support for redistribution (\protect\hyperlink{ref-gavira_social_2008}{Gavira, 2008}). Using expected subjective well-being as a proxy of future economic security, Fong (\protect\hyperlink{ref-fong_prospective_2006}{2006}) demonstrates that well-being prospects decrease support for redistribution, but also discussed the negative influence of internal poverty attribution (e.g.~laziness).
+Current or perceived levels of social mobility in society can influence the expectations about mobility prospects. In this regard, Benabou \& Ok (\protect\hyperlink{ref-benabou_social_2001}{2001}) have formalized the prospective upward mobility hypothesis (POUM) as an extension of the median voter model, where even those below the income median can develop adverse preferences toward redistribution assuming that progressive taxes can negatively affect them due to their expectations of achieve incomes above the median. Empirical evidence has demonstrated expectations about upward social mobility are associated with lower support for redistribution. For instance, using a sample of Italian students the experimental manipulation of mobility prospects increases the demand for redistribution, being more salient among middle and lower-income individuals (Filippin \& Antonio, \protect\hyperlink{ref-Filippin2003}{2003}). Another study in Spain demonstrates that redistribute preferences decline among individuals with subjective income expectations above the median and higher perceived meritocracy (Jaime-Castillo, \protect\hyperlink{ref-Jaime-Castillo2008}{2008}). On another approach, among Latin American countries higher expectations about the next generation's educational achievement diminish support for redistribution (Gavira, \protect\hyperlink{ref-gavira_social_2008}{2008}). Using expected subjective well-being as a proxy of future economic security, Fong (\protect\hyperlink{ref-fong_prospective_2006}{2006}) demonstrates that well-being prospects decrease support for redistribution, but also discussed the negative influence of internal poverty attribution (e.g.~laziness).
 
 \hypertarget{risk-and-externalities}{%
 \section{Risk and externalities}\label{risk-and-externalities}}
 
-Redistributive preferences are not entirely guided by present or current individual situations. Therefore, expectations about potential negative outcomes in the future can influence support for redistribution, which has been addressed by the literature through the concept of risk exposure. The concept is commonly defined as the chances of experiencing shocks across the life course that can undermine economic security and welfare (\protect\hyperlink{ref-rehm_risk_2016}{Rehm, 2016}). Welfare state literature on the field has linked risk in two veins. One part of the literature has pointed out labour market outcomes focusing on individual unemployment risk (\protect\hyperlink{ref-rehm_risks_2009}{Rehm, 2009}). Another body of literature has focused on deservingness heuristics, pointing out that the risk of being affected by random events, such as sickness-based needs, could motivate higher demands for health or unemployment welfare (\protect\hyperlink{ref-Jensenux5cux26Nauman2016}{Jensen \& Naumann, 2016}).
+Redistributive preferences are not entirely guided by present or current individual situations. Therefore, expectations about potential negative outcomes in the future can influence support for redistribution, which has been addressed by the literature through the concept of risk exposure. The concept is commonly defined as the chances of experiencing shocks across the life course that can undermine economic security and welfare (Rehm, \protect\hyperlink{ref-rehm_risk_2016}{2016}). Welfare state literature on the field has linked risk in two veins. One part of the literature has pointed out labour market outcomes focusing on individual unemployment risk (Rehm, \protect\hyperlink{ref-rehm_risks_2009}{2009}). Another body of literature has focused on deservingness heuristics, pointing out that the risk of being affected by random events, such as sickness-based needs, could motivate higher demands for health or unemployment welfare (Jensen \& Naumann, \protect\hyperlink{ref-Jensenux5cux26Nauman2016}{2016}).
 
-It has been demonstrated by the literature that unemployment status increases demand for redistribution and social insurance (\protect\hyperlink{ref-alesina_preferences_2010}{Alesina \& Giuliano, 2010}; \protect\hyperlink{ref-steele_wealth_2020}{Steele, 2020}). In this line, the argument for studying risk from a labour market approach relies on potential outcomes, not current employment status, where the odds of losing the current market income can rise the demand for redistributive policies. Another dimension of the link of unemployment risk is to what extent can national redistribution compensate for the negative employment impacts of globalization on certain economic sectors, arguing that greater influence of international trade is associated with higher demand for redistribution (\protect\hyperlink{ref-rehm_risks_2009}{Rehm, 2009, p. 6}). However, empirical evidence has shown only an increment in redistributive claims for higher occupational risk at the individual level, but null evidence in favour of the compensation effect by the economic sector (\protect\hyperlink{ref-rehm_risks_2009}{Rehm, 2009}). In a similar vein, Svallfors (\protect\hyperlink{ref-Svallfors2006}{2006}) has argued that labour market position contributes with information about work conditions and wages. Thus, it has been shown that lower incomes and consequently higher labour market risk among the lower classes are associated with higher demand for redistribution (\protect\hyperlink{ref-Svallfors2006}{Svallfors, 2006}). Furthermore, a recent study has claimed automation as another source of risk, demonstrating higher levels of support for redistribution among lower-skilled workers with higher automation rates (\protect\hyperlink{ref-hoorn_automatability_2022}{Hoorn, 2022}).
+It has been demonstrated by the literature that unemployment status increases demand for redistribution and social insurance (Alesina \& Giuliano, \protect\hyperlink{ref-alesina_preferences_2010}{2010}; Steele, \protect\hyperlink{ref-steele_wealth_2020}{2020}). In this line, the argument for studying risk from a labour market approach relies on potential outcomes, not current employment status, where the odds of losing the current market income can rise the demand for redistributive policies. Another dimension of the link of unemployment risk is to what extent can national redistribution compensate for the negative employment impacts of globalization on certain economic sectors, arguing that greater influence of international trade is associated with higher demand for redistribution (Rehm, \protect\hyperlink{ref-rehm_risks_2009}{2009}, p. 6). However, empirical evidence has shown only an increment in redistributive claims for higher occupational risk at the individual level, but null evidence in favour of the compensation effect by the economic sector (Rehm, \protect\hyperlink{ref-rehm_risks_2009}{2009}). In a similar vein, Svallfors (\protect\hyperlink{ref-Svallfors2006}{2006}) has argued that labour market position contributes with information about work conditions and wages. Thus, it has been shown that lower incomes and consequently higher labour market risk among the lower classes are associated with higher demand for redistribution (Svallfors, \protect\hyperlink{ref-Svallfors2006}{2006}). Furthermore, a recent study has claimed automation as another source of risk, demonstrating higher levels of support for redistribution among lower-skilled workers with higher automation rates (Hoorn, \protect\hyperlink{ref-hoorn_automatability_2022}{2022}).
 
-Social insurance demand through health-related policies has been also linked with risk exposure. The argument is that random shocks across the life course can increase the demand for redistribution (\protect\hyperlink{ref-alesina_preferences_2010}{Alesina \& Giuliano, 2010, p. 18}). However, the support for specific policies is influenced by their content and affected target groups (\protect\hyperlink{ref-moene_inequality_2001}{Moene \& Wallerstein, 2001}). For instance, a cross-national study has shown that higher incomes increase the demand for governmental responsibility on health welfare, also a higher willingness to pay taxes for improving the health care system, but a null association with higher social spending for preventive medical check-ups (\protect\hyperlink{ref-Azaretal2018}{Azar et al., 2018}). Also, another research demonstrates a higher unemployment risk increases the willingness to pay taxes for universal healthcare in 28 countries (\protect\hyperlink{ref-Maldonadoetal2019}{Maldonado et al., 2019}). In addition, it has been demonstrated welfare system can influence the link between unemployment risk and health policy preferences, where high levels of health system privatization lead to less demand for healthcare spending to be negatively influenced by unemployment risk (\protect\hyperlink{ref-zhu_policy_2015}{Zhu \& Lipsmeyer, 2015}).
+Social insurance demand through health-related policies has been also linked with risk exposure. The argument is that random shocks across the life course can increase the demand for redistribution (Alesina \& Giuliano, \protect\hyperlink{ref-alesina_preferences_2010}{2010}, p. 18). However, the support for specific policies is influenced by their content and affected target groups (Moene \& Wallerstein, \protect\hyperlink{ref-moene_inequality_2001}{2001}). For instance, a cross-national study has shown that higher incomes increase the demand for governmental responsibility on health welfare, also a higher willingness to pay taxes for improving the health care system, but a null association with higher social spending for preventive medical check-ups (Azar et al., \protect\hyperlink{ref-Azaretal2018}{2018}). Also, another research demonstrates a higher unemployment risk increases the willingness to pay taxes for universal healthcare in 28 countries (Maldonado et al., \protect\hyperlink{ref-Maldonadoetal2019}{2019}). In addition, it has been demonstrated welfare system can influence the link between unemployment risk and health policy preferences, where high levels of health system privatization lead to less demand for healthcare spending to be negatively influenced by unemployment risk (Zhu \& Lipsmeyer, \protect\hyperlink{ref-zhu_policy_2015}{2015}).
 
-The influence of income inequality on the demand for insurance is not entirely related to labour market outcomes. It has been discussed by the literature that insurance motivation can be triggered by concerns about the negative consequences of inequality. In this regard, altruism has been proposed as an explanatory mechanism that links inequality with redistributive preferences of the top income groups (\protect\hyperlink{ref-dimick_models_2018}{Dimick et al., 2018}). It has been argued that negative externalities of income inequality on social welfare can motivate normative-driven altruistic preferences from affluent individuals (\protect\hyperlink{ref-dimick_models_2018}{Dimick et al., 2018}). Altruism relies on both individual and social utility of social welfare as desirable, assuming concerns about inequality as the normative foundation of altruistic preferences by the rich. Evidence from European societies has confirmed the claims of the theory, demonstrating an increase in redistributive preferences among the rich in highly unequal contexts, in contrast with the rich in lower inequality contexts (\protect\hyperlink{ref-dimick_models_2018}{Dimick et al., 2018}; \protect\hyperlink{ref-rueda_who_2019}{Rueda \& Stegmueller, 2019}). Additionally, a recent study has also found evidence in favour of the theory in Latin American countries (\protect\hyperlink{ref-franetovic_preferences_2022}{Franetovic \& Castillo, 2022, p. 15}). On the same line, derived from the altruistic model it has been argued that crime as a negative externality can increase insurance demands (\protect\hyperlink{ref-rueda_who_2019}{Rueda \& Stegmueller, 2019, p. 86}). In this regard, higher concerns about crime can motivate altruistic behaviour from the rich for high public spending aiming to mitigate crime rates as negative externalities. In this regard, it has been demonstrated that higher fear of crime or having been a victim of crime increase redistributive preferences Rueda \& Stegmueller (\protect\hyperlink{ref-rueda_who_2019}{2019}), p.~113{]}. Then, the evidence shows that higher preferences among the rich can be explained through concerns about crime in highly unequal contexts (\protect\hyperlink{ref-rueda_who_2019}{Rueda \& Stegmueller, 2019, p. 128})
+The influence of income inequality on the demand for insurance is not entirely related to labour market outcomes. It has been discussed by the literature that insurance motivation can be triggered by concerns about the negative consequences of inequality. In this regard, altruism has been proposed as an explanatory mechanism that links inequality with redistributive preferences of the top income groups (Dimick et al., \protect\hyperlink{ref-dimick_models_2018}{2018}). It has been argued that negative externalities of income inequality on social welfare can motivate normative-driven altruistic preferences from affluent individuals (Dimick et al., \protect\hyperlink{ref-dimick_models_2018}{2018}). Altruism relies on both individual and social utility of social welfare as desirable, assuming concerns about inequality as the normative foundation of altruistic preferences by the rich. Evidence from European societies has confirmed the claims of the theory, demonstrating an increase in redistributive preferences among the rich in highly unequal contexts, in contrast with the rich in lower inequality contexts (Dimick et al., \protect\hyperlink{ref-dimick_models_2018}{2018}; Rueda \& Stegmueller, \protect\hyperlink{ref-rueda_who_2019}{2019}). Additionally, a recent study has also found evidence in favour of the theory in Latin American countries (Franetovic \& Castillo, \protect\hyperlink{ref-franetovic_preferences_2022}{2022}, p. 15). On the same line, derived from the altruistic model it has been argued that crime as a negative externality can increase insurance demands (Rueda \& Stegmueller, \protect\hyperlink{ref-rueda_who_2019}{2019}, p. 86). In this regard, higher concerns about crime can motivate altruistic behaviour from the rich for high public spending aiming to mitigate crime rates as negative externalities. In this regard, it has been demonstrated that higher fear of crime or having been a victim of crime increase redistributive preferences Rueda \& Stegmueller (\protect\hyperlink{ref-rueda_who_2019}{2019}), p.~113{]}. Then, the evidence shows that higher preferences among the rich can be explained through concerns about crime in highly unequal contexts (Rueda \& Stegmueller, \protect\hyperlink{ref-rueda_who_2019}{2019}, p. 128)
 
 \hypertarget{normative-factors}{%
 \chapter{Normative factors}\label{normative-factors}}
@@ -276,35 +237,27 @@ The influence of income inequality on the demand for insurance is not entirely r
 \hypertarget{norms-and-values}{%
 \section{Norms and values}\label{norms-and-values}}
 
-Social norms constitute a crucial factor for the study of social order and behaviour (\protect\hyperlink{ref-esser_integrative_2015}{Esser \& Kroneberg, 2015}), but also provide an interpretative frame for understanding social welfare institutions (\protect\hyperlink{ref-esping-andersen_three_1990}{Esping-Andersen, 1990}). The literature on redistributive preferences has addressed this domain as an independent source of motivation for individual preferences as an alternative approach to the material self-interest explanations. Inspired by the sociological theory of action, Esser \& Kroneberg (\protect\hyperlink{ref-esser_integrative_2015}{2015}) suggest that the \emph{homo economicus} or utilitarian paradigm focused on opportunities, incentives and rational expectations focus the explanations of human behaviour in the self-interest mechanism. On the other hand, from the \emph{homo sociologicus} or normative paradigm, institutionalized rules of action are learned through socialization and internalization processes, therefore human behaviour will unconditionally be influenced by normative appraisals. A third proposed approach is the interpretative paradigm, which seeks to synthesise rational and normative approaches to develop a situational-dependent model of action based on frame selection (\protect\hyperlink{ref-esser_integrative_2015}{Esser \& Kroneberg, 2015, pp. 69--80}). Frames are ideal-typical situations based on previous experiences that can provide meaning to the evaluated situation, which can activate two possible modes: automatic-spontaneous (as) or reflecting-calculating (rc). The as-mode is strongly influenced by previous experience and choice selection is less reflexive. In contrast, the rc-mode takes into account several alternatives where uncertainty and future consequences activate moral evaluations. Thus, how action is guided by weighting utilitarian or normative evaluations can serve as an explanatory frame for variations in redistributive preferences.
+Social norms constitute a crucial factor for the study of social order and behaviour (Esser \& Kroneberg, \protect\hyperlink{ref-esser_integrative_2015}{2015}), but also provide an interpretative frame for understanding social welfare institutions (Esping-Andersen, \protect\hyperlink{ref-esping-andersen_three_1990}{1990}). The literature on redistributive preferences has addressed this domain as an independent source of motivation for individual preferences as an alternative approach to the material self-interest explanations. Inspired by the sociological theory of action, Esser \& Kroneberg (\protect\hyperlink{ref-esser_integrative_2015}{2015}) suggest that the \emph{homo economicus} or utilitarian paradigm focused on opportunities, incentives and rational expectations focus the explanations of human behaviour in the self-interest mechanism. On the other hand, from the \emph{homo sociologicus} or normative paradigm, institutionalized rules of action are learned through socialization and internalization processes, therefore human behaviour will unconditionally be influenced by normative appraisals. A third proposed approach is the interpretative paradigm, which seeks to synthesise rational and normative approaches to develop a situational-dependent model of action based on frame selection (Esser \& Kroneberg, \protect\hyperlink{ref-esser_integrative_2015}{2015}, pp. 69--80). Frames are ideal-typical situations based on previous experiences that can provide meaning to the evaluated situation, which can activate two possible modes: automatic-spontaneous (as) or reflecting-calculating (rc). The as-mode is strongly influenced by previous experience and choice selection is less reflexive. In contrast, the rc-mode takes into account several alternatives where uncertainty and future consequences activate moral evaluations. Thus, how action is guided by weighting utilitarian or normative evaluations can serve as an explanatory frame for variations in redistributive preferences.
 
-The literature on preference for redistribution has addressed the influence of normative factors under the concept of \emph{values}, but some research has used \emph{beliefs} or \emph{ideology} as interchangeable. However, political psychology and political science literature have suggested that values differ conceptual and empirically from the left-right continuum commonly used to study political ideology, arguing that egalitarian values can be shared by people placed on different points of the political spectrum (\protect\hyperlink{ref-feldman_understanding_2014}{Feldman \& Johnston, 2014}). The literature on social welfare preferences has discussed the role of egalitarian or humanitarian values as sources of normative motivations for redistribution. Feldman \& Steenbergen (\protect\hyperlink{ref-feldman_humanitarian_2001}{2001}) have that egalitarianism is related to the justice principle of equality and associated with higher support for government intervention in social and economic spheres, while humanitarianism is considered as a prosocial orientation close to the justice principle of need and commonly associated with poverty relief or health policies (\protect\hyperlink{ref-feldman_humanitarian_2001}{Feldman \& Steenbergen, 2001, p. 5}).
+The literature on preference for redistribution has addressed the influence of normative factors under the concept of \emph{values}, but some research has used \emph{beliefs} or \emph{ideology} as interchangeable. However, political psychology and political science literature have suggested that values differ conceptual and empirically from the left-right continuum commonly used to study political ideology, arguing that egalitarian values can be shared by people placed on different points of the political spectrum (Feldman \& Johnston, \protect\hyperlink{ref-feldman_understanding_2014}{2014}). The literature on social welfare preferences has discussed the role of egalitarian or humanitarian values as sources of normative motivations for redistribution. Feldman \& Steenbergen (\protect\hyperlink{ref-feldman_humanitarian_2001}{2001}) have that egalitarianism is related to the justice principle of equality and associated with higher support for government intervention in social and economic spheres, while humanitarianism is considered as a prosocial orientation close to the justice principle of need and commonly associated with poverty relief or health policies (Feldman \& Steenbergen, \protect\hyperlink{ref-feldman_humanitarian_2001}{2001}, p. 5).
 
-Egalitarian values are expected to be associated with higher support for redistribution. For example, distributive justice literature has shown lower justification of economic inequality is associated with stronger egalitarianism (\protect\hyperlink{ref-Castillo2011}{Castillo, 2011}, \protect\hyperlink{ref-Castillo2012b_multidimentional}{2012}). A study of six western industrialized societies demonstrated higher attachment to egalitarian values is strongly associated with support for government involvement in social services, price controls and basic needs subsidies (\protect\hyperlink{ref-breznau_economic_2010}{Breznau, 2010}). In a similar vein, a study on European countries shows that egalitarianism increases demand for progressive taxation and government social spending (\protect\hyperlink{ref-svallfors_government_2013}{Svallfors, 2013}). Furthermore, evidence from European countries has shown a stronger association of egalitarianism with policy preference among higher-class individuals, arguing higher economic risk can weaken the link between abstract human values and redistribution (\protect\hyperlink{ref-Kulin2013}{Kulin \& Svallfors, 2013}). Also, the relation of egalitarianism has been addressed in health policy preferences, where higher egalitarianism predicts higher support for public health provision and higher social spending on preventive health, but null support for progressive taxation for health policies (\protect\hyperlink{ref-Azaretal2018}{Azar et al., 2018}).
+Egalitarian values are expected to be associated with higher support for redistribution. For example, distributive justice literature has shown lower justification of economic inequality is associated with stronger egalitarianism (Castillo, \protect\hyperlink{ref-Castillo2012b_multidimentional}{2012}, \protect\hyperlink{ref-Castillo2011}{2011}). A study of six western industrialized societies demonstrated higher attachment to egalitarian values is strongly associated with support for government involvement in social services, price controls and basic needs subsidies (Breznau, \protect\hyperlink{ref-breznau_economic_2010}{2010}). In a similar vein, a study on European countries shows that egalitarianism increases demand for progressive taxation and government social spending (Svallfors, \protect\hyperlink{ref-svallfors_government_2013}{2013}). Furthermore, evidence from European countries has shown a stronger association of egalitarianism with policy preference among higher-class individuals, arguing higher economic risk can weaken the link between abstract human values and redistribution (Kulin \& Svallfors, \protect\hyperlink{ref-Kulin2013}{2013}). Also, the relation of egalitarianism has been addressed in health policy preferences, where higher egalitarianism predicts higher support for public health provision and higher social spending on preventive health, but null support for progressive taxation for health policies (Azar et al., \protect\hyperlink{ref-Azaretal2018}{2018}).
 
-On the side of humanitarian values, evidence has shown among American citizens those that hold stronger humanitarian values tend to provide higher support for policies focused on elderly needs and poverty relief (\protect\hyperlink{ref-feldman_humanitarian_2001}{Feldman \& Steenbergen, 2001}). The authors argue that humanitarian values are not blind to social inequality, but rationalise social problems as part of the human condition. Regardless of the shared concerns about the justice of humanitarian and egalitarian approaches, the focus on needs by humanitarian values leads to support specific policies rather than redistribution as a measure to accomplish the principle of equality. In this vein, a cross-national study of 28 countries has demonstrated a strong attachment to humanitarian values is associated with higher willingness to pay taxes for providing universal health care, but also moderate the negative influence of risk exposure (\protect\hyperlink{ref-Maldonadoetal2019}{Maldonado et al., 2019}).
+On the side of humanitarian values, evidence has shown among American citizens those that hold stronger humanitarian values tend to provide higher support for policies focused on elderly needs and poverty relief (Feldman \& Steenbergen, \protect\hyperlink{ref-feldman_humanitarian_2001}{2001}). The authors argue that humanitarian values are not blind to social inequality, but rationalise social problems as part of the human condition. Regardless of the shared concerns about the justice of humanitarian and egalitarian approaches, the focus on needs by humanitarian values leads to support specific policies rather than redistribution as a measure to accomplish the principle of equality. In this vein, a cross-national study of 28 countries has demonstrated a strong attachment to humanitarian values is associated with higher willingness to pay taxes for providing universal health care, but also moderate the negative influence of risk exposure (Maldonado et al., \protect\hyperlink{ref-Maldonadoetal2019}{2019}).
 
-\hypertarget{subjective-and-perceived-factors}{%
-\chapter{Subjective and perceived factors}\label{subjective-and-perceived-factors}}
+\hypertarget{subjective-factors}{%
+\chapter{Subjective factors}\label{subjective-factors}}
 
-A less developed aspect is subjective inequality
+As a brief overview, drawing on the early work of Kluegel \& Smith (\protect\hyperlink{ref-Kluegel-Smith1986}{1986}), the interdisciplinary field known as \emph{subjective inequality} has developed a wide body of literature on studying perceptions and preferences about economic inequality (Janmaat, \protect\hyperlink{ref-Janmaat2013}{2013}; Kluegel et al., \protect\hyperlink{ref-KluegelSmithWegener1995}{1995}). In addition, the theoretical and empirical contributions from the sociological distributive justice research on status and justice evaluations (Jasso, \protect\hyperlink{ref-jasso_justice_1978}{1978}; Wegener, \protect\hyperlink{ref-wegener_illusion_1987}{1987}) still constitute an inreasing research field on the causes and consequences of perceived economic inequality and social status (Castillo et al., \protect\hyperlink{ref-castillo_perception_2022}{2022}).
 
-\begin{itemize}
-\tightlist
-\item
-  Preferences (\protect\hyperlink{ref-alesina_preferences_2010}{Alesina \& Giuliano, 2010}). Este book chapter es una combinación literature review con evidencia de USA.
-\item
-  Perception of economic inequality (\protect\hyperlink{ref-Garcia-Sanchez19}{García-Sánchez et al., 2019}).
-\item
-  Reference group and Reality (\protect\hyperlink{ref-Evans2004}{M. D. R. Evans, 2004}; \protect\hyperlink{ref-Evans1992}{M. D. R. Evans et al., 1992}; \protect\hyperlink{ref-Evans2017}{M. D. R. Evans \& Kelley, 2017})
-\item
-  Welfarism, higher class fatigue (\protect\hyperlink{ref-evans_strong_2018}{M. Evans \& Kelley, 2018})
-\end{itemize}
+Regardless of the longstanding contributions of the subjective inequality and distributive justice fields, there is still a gap between this literature and the study of redistributive preferences (Condon \& Wichowsky, \protect\hyperlink{ref-condon_economic_2020}{2020}\protect\hyperlink{ref-condon_economic_2020}{a}; García-Sánchez et al., \protect\hyperlink{ref-Garcia-Sanchez19}{2019}). Recent efforts for reducing the stated knowledge gap, suggest further research on preferences for redistribution should go beyond the rational self-interest model and value-driven explanations, through the study of subjective social status and social comparison processes. Therefore, scrutinise their micro-macro foundations, dynamic and causal implications for redistributive preferences.
 
 \hypertarget{subjective-social-status}{%
 \section{Subjective social status}\label{subjective-social-status}}
 
-However, this body of literature has paid less attention to the role of perception on the emergence of redistributive preferences, especially how people perceive their standing on the social ladder, conceptualised as subjective social status (SSS) (\protect\hyperlink{ref-Evans2004}{M. D. R. Evans, 2004}; \protect\hyperlink{ref-Lundberg2008}{Lundberg \& Kristenson, 2008}; \protect\hyperlink{ref-slomczynski1987}{Słomczyński \& Kacprowicz, 1986}).
+\emph{micro}
+
+However, this body of literature has paid less attention to the role of perception on the emergence of redistributive preferences, especially how people perceive their standing on the social ladder, conceptualised as subjective social status (SSS) (Evans, \protect\hyperlink{ref-Evans2004}{2004}; Lundberg \& Kristenson, \protect\hyperlink{ref-Lundberg2008}{2008}; Słomczyński \& Kacprowicz, \protect\hyperlink{ref-slomczynski1987}{1986}).
 
 Para referencias del rol del estatus social subjetivo sobre actitudes revisar:
 
@@ -312,15 +265,38 @@ Brown-Iannuzzi et al. (\protect\hyperlink{ref-brown-iannuzzi_privileged_2021}{20
 Brown-Iannuzzi et al. (\protect\hyperlink{ref-brown-iannuzzi_relationship_2017}{2017})
 Brown-Iannuzzi et al. (\protect\hyperlink{ref-brown-iannuzzi_subjective_2015}{2015})
 
+\emph{macro}
+
 cómo elige compararse la gente en Europa?:
 
-Gugushvili (\protect\hyperlink{ref-gugushvili_which_2021}{2021})
+\begin{itemize}
+\tightlist
+\item
+\item
+  Gugushvili (\protect\hyperlink{ref-gugushvili_which_2021}{2021})
+\item
+  Buchel et al. (\protect\hyperlink{ref-buchel_objective_2021}{2021}) multinivel hibrido
+\end{itemize}
+
+A less developed aspect is subjective inequality
+
+\begin{itemize}
+\tightlist
+\item
+  Preferences (Alesina \& Giuliano, \protect\hyperlink{ref-alesina_preferences_2010}{2010}). Este book chapter es una combinación literature review con evidencia de USA.
+\item
+  Perception of economic inequality (García-Sánchez et al., \protect\hyperlink{ref-Garcia-Sanchez19}{2019}).
+\item
+  Reference group and Reality (Evans et al., \protect\hyperlink{ref-Evans1992}{1992}; Evans, \protect\hyperlink{ref-Evans2004}{2004}; Evans \& Kelley, \protect\hyperlink{ref-Evans2017}{2017})
+\item
+  Welfarism, higher class fatigue (Evans \& Kelley, \protect\hyperlink{ref-evans_strong_2018}{2018})
+\end{itemize}
 
 \hypertarget{contextual-factors}{%
 \chapter{Contextual factors}\label{contextual-factors}}
 
-\hypertarget{inequality}{%
-\section{Inequality}\label{inequality}}
+\hypertarget{economic-inequality}{%
+\section{Economic inequality}\label{economic-inequality}}
 
 \hypertarget{social-distance-and-spatial-segregation}{%
 \section{Social distance and Spatial Segregation}\label{social-distance-and-spatial-segregation}}
@@ -338,213 +314,233 @@ Rodden, J. (2010). The geographic distribution of political preferences. Annual 
 
 Main research question
 
-Considering the theoretical and empirical elements presented above, I would like to contribute to the redistributive preference literature and discuss the role of social comparison as a relevant explanatory mechanism. As a result, my main research question is \emph{What is the role of social comparison on redistributive preferences formation?}. In this respect, the first part of my research is to assess the relevance of subjective social status on redistributive preferences from a comparative perspective, considering that individuals' perception of their position in society can be understood as an outcome that derives from the social comparison that is also affected by a contextual characteristic such as objective income inequality at the country level (\protect\hyperlink{ref-Evans2004}{M. D. R. Evans, 2004}; \protect\hyperlink{ref-IturraMellado2019}{Iturra \& Mellado, 2018}; \protect\hyperlink{ref-Lindemann2014}{Lindemann \& Saar, 2014}).
+Considering the theoretical and empirical elements presented above, I would like to contribute to the redistributive preference literature and discuss the role of social comparison as a relevant explanatory mechanism. As a result, my main research question is \emph{What is the role of social comparison on redistributive preferences formation?}. In this respect, the first part of my research is to assess the relevance of subjective social status on redistributive preferences from a comparative perspective, considering that individuals' perception of their position in society can be understood as an outcome that derives from the social comparison that is also affected by a contextual characteristic such as objective income inequality at the country level (Evans, \protect\hyperlink{ref-Evans2004}{2004}; Iturra \& Mellado, \protect\hyperlink{ref-IturraMellado2019}{2018}; Lindemann \& Saar, \protect\hyperlink{ref-Lindemann2014}{2014}).
 
 The second part of my research is based on data from a five-wave panel survey conducted in Chile by the Centre for Social Conflict and Cohesion Studies (2016-2020). This data will allow understanding the role of subjective social status on redistributive preferences from a longitudinal perspective, focusing on how the changes on perceived economic inequality over time could moderate the impact of social comparison outcomes.
 
-Based on the model proposed by Condon \& Wichowsky (\protect\hyperlink{ref-Condon2020}{2020}), in the third part of my research, I would like to incorporate elements from the distributive justice literature to provide a complete image of the role of reference groups on social comparison and how these factors are associated with redistributive preferences. As Jasso (\protect\hyperlink{ref-Jasso1990}{1990}) suggested, the evaluation process is affected by both observer's and observed characteristics, allowing us to estimate how these factors impact a specific outcome. In this respect, on this stage, I will conduct a factorial survey design in Chile and Germany to assess the interplay of the observer characteristic with a set of different vignette characteristics on status perception and redistributive preferences.
+Based on the model proposed by Condon \& Wichowsky (\protect\hyperlink{ref-Condon2020}{2020}\protect\hyperlink{ref-Condon2020}{b}), in the third part of my research, I would like to incorporate elements from the distributive justice literature to provide a complete image of the role of reference groups on social comparison and how these factors are associated with redistributive preferences. As Jasso (\protect\hyperlink{ref-Jasso1990}{1990}) suggested, the evaluation process is affected by both observer's and observed characteristics, allowing us to estimate how these factors impact a specific outcome. In this respect, on this stage, I will conduct a factorial survey design in Chile and Germany to assess the interplay of the observer characteristic with a set of different vignette characteristics on status perception and redistributive preferences.
 
 \hypertarget{references}{%
 \chapter*{References}\label{references}}
 \addcontentsline{toc}{chapter}{References}
 
 \hypertarget{refs}{}
-\begin{CSLReferences}{1}{0}
-\leavevmode\vadjust pre{\hypertarget{ref-Aaroe2014}{}}%
-Aarøe, L., \& Petersen, M. B. (2014). Crowding out culture: {Scandinavians} and americans agree on social welfare in the face of deservingness cues. \emph{Journal of Politics}, \emph{76}(3), 684--697. \url{https://doi.org/10.1017/S002238161400019X}
+\begin{cslreferences}
+\leavevmode\hypertarget{ref-Aaroe2014}{}%
+Aarøe, L., \& Petersen, M. B. (2014). Crowding out culture: Scandinavians and americans agree on social welfare in the face of deservingness cues. \emph{Journal of Politics}, \emph{76}(3), 684--697. \url{https://doi.org/10.1017/S002238161400019X}
 
-\leavevmode\vadjust pre{\hypertarget{ref-alesina_preferences_2010}{}}%
-Alesina, A., \& Giuliano, P. (2010). Preferences for {Redistribution}. In J. Benhabib, M. O. Jackson, \& A. Bisin (Eds.), \emph{Handbook of social economics} (Vol. 1, pp. 93--131). {Elsevier}.
+\leavevmode\hypertarget{ref-alesina_preferences_2010}{}%
+Alesina, A., \& Giuliano, P. (2010). Preferences for Redistribution. In J. Benhabib, M. O. Jackson, \& A. Bisin (Eds.), \emph{Handbook of social economics} (Vol. 1, pp. 93--131). Elsevier.
 
-\leavevmode\vadjust pre{\hypertarget{ref-alesina_intergenerational_2018}{}}%
-Alesina, A., Stantcheva, S., \& Teso, E. (2018). Intergenerational {Mobility} and {Preferences} for {Redistribution}. \emph{American Economic Review}, \emph{108}(2), 521--554. \url{https://doi.org/10.1257/aer.20162015}
+\leavevmode\hypertarget{ref-alesina_intergenerational_2018}{}%
+Alesina, A., Stantcheva, S., \& Teso, E. (2018). Intergenerational Mobility and Preferences for Redistribution. \emph{American Economic Review}, \emph{108}(2), 521--554. \url{https://doi.org/10.1257/aer.20162015}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Azaretal2018}{}}%
+\leavevmode\hypertarget{ref-Azaretal2018}{}%
 Azar, A., Maldonado, L., Castillo, J. C., \& Atria, J. (2018). Income, egalitarianism and attitudes towards healthcare policy: A study on public attitudes in 29 countries. \emph{Public Health}, \emph{154}, 59--69. \url{https://doi.org/10.1016/j.puhe.2017.09.007}
 
-\leavevmode\vadjust pre{\hypertarget{ref-bartels_homer_2005}{}}%
-Bartels, L. (2005). Homer {Gets} a {Tax Cut}: {Inequality} and {Public Policy} in the {American Mind}. \emph{Perspectives on Politics}, \emph{3}(1), 15--31.
+\leavevmode\hypertarget{ref-bartels_homer_2005}{}%
+Bartels, L. (2005). Homer Gets a Tax Cut: Inequality and Public Policy in the American Mind. \emph{Perspectives on Politics}, \emph{3}(1), 15--31.
 
-\leavevmode\vadjust pre{\hypertarget{ref-benabou_social_2001}{}}%
-Benabou, R., \& Ok, E. A. (2001). Social {Mobility} and the {Demand} for {Redistribution}: {The Poum Hypothesis}. \emph{The Quarterly Journal of Economics}, \emph{116}(2), 447--487. \url{https://doi.org/10.1162/00335530151144078}
+\leavevmode\hypertarget{ref-benabou_social_2001}{}%
+Benabou, R., \& Ok, E. A. (2001). Social Mobility and the Demand for Redistribution: The Poum Hypothesis. \emph{The Quarterly Journal of Economics}, \emph{116}(2), 447--487. \url{https://doi.org/10.1162/00335530151144078}
 
-\leavevmode\vadjust pre{\hypertarget{ref-breznau_economic_2010}{}}%
-Breznau, N. (2010). Economic {Equality} and {Social Welfare}: {Policy Preferences} in {Five Nations}. \emph{International Journal of Public Opinion Research}, \emph{22}(4), 458--484. \url{https://doi.org/10.1093/ijpor/edq024}
+\leavevmode\hypertarget{ref-breznau_economic_2010}{}%
+Breznau, N. (2010). Economic Equality and Social Welfare: Policy Preferences in Five Nations. \emph{International Journal of Public Opinion Research}, \emph{22}(4), 458--484. \url{https://doi.org/10.1093/ijpor/edq024}
 
-\leavevmode\vadjust pre{\hypertarget{ref-brown-iannuzzi_relationship_2017}{}}%
-Brown-Iannuzzi, J. L., Dotsch, R., Cooley, E., \& Payne, B. K. (2017). The {Relationship Between Mental Representations} of {Welfare Recipients} and {Attitudes Toward Welfare}. \emph{Psychological Science}, \emph{28}(1), 92--103. \url{https://doi.org/10.1177/0956797616674999}
+\leavevmode\hypertarget{ref-brown-iannuzzi_relationship_2017}{}%
+Brown-Iannuzzi, J. L., Dotsch, R., Cooley, E., \& Payne, B. K. (2017). The Relationship Between Mental Representations of Welfare Recipients and Attitudes Toward Welfare. \emph{Psychological Science}, \emph{28}(1), 92--103. \url{https://doi.org/10.1177/0956797616674999}
 
-\leavevmode\vadjust pre{\hypertarget{ref-brown-iannuzzi_subjective_2015}{}}%
-Brown-Iannuzzi, J. L., Lundberg, K. B., Kay, A. C., \& Payne, B. K. (2015). Subjective {Status Shapes Political Preferences}. \emph{Psychological Science}, \emph{26}(1), 15--26. \url{https://doi.org/10.1177/0956797614553947}
+\leavevmode\hypertarget{ref-brown-iannuzzi_subjective_2015}{}%
+Brown-Iannuzzi, J. L., Lundberg, K. B., Kay, A. C., \& Payne, B. K. (2015). Subjective Status Shapes Political Preferences. \emph{Psychological Science}, \emph{26}(1), 15--26. \url{https://doi.org/10.1177/0956797614553947}
 
-\leavevmode\vadjust pre{\hypertarget{ref-brown-iannuzzi_privileged_2021}{}}%
-Brown-Iannuzzi, J. L., Lundberg, K. B., Kay, A. C., \& Payne, B. K. (2021). A {Privileged Point} of {View}: {Effects} of {Subjective Socioeconomic Status} on {Naïve Realism} and {Political Division}. \emph{Personality and Social Psychology Bulletin}, \emph{47}(2), 241--256. \url{https://doi.org/10.1177/0146167220921043}
+\leavevmode\hypertarget{ref-brown-iannuzzi_privileged_2021}{}%
+Brown-Iannuzzi, J. L., Lundberg, K. B., Kay, A. C., \& Payne, B. K. (2021). A Privileged Point of View: Effects of Subjective Socioeconomic Status on Naïve Realism and Political Division. \emph{Personality and Social Psychology Bulletin}, \emph{47}(2), 241--256. \url{https://doi.org/10.1177/0146167220921043}
 
-\leavevmode\vadjust pre{\hypertarget{ref-cansunar_who_2021}{}}%
-Cansunar, A. (2021). Who {Is High Income}, {Anyway}? {Social Comparison}, {Subjective Group Identification}, and {Preferences} over {Progressive Taxation}. \emph{The Journal of Politics}, 000--000. \url{https://doi.org/10.1086/711627}
+\leavevmode\hypertarget{ref-buchel_objective_2021}{}%
+Buchel, O., Luijkx, R., \& Achterberg, P. (2021). Objective and Subjective Socioeconomic Status as Sources of Status-Legitimacy Effect and Legitimation of Income Inequality. \emph{Political Psychology}, \emph{42}(3), 463--481. \url{https://doi.org/10.1111/pops.12707}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Castillo2011}{}}%
-Castillo, J. C. (2011). Legitimacy of {Inequality} in a {Highly Unequal Context}: {Evidence} from the {Chilean Case}. \emph{Social Justice Research}, \emph{24}(4), 314--340. \url{https://doi.org/10.1007/s11211-011-0144-5}
+\leavevmode\hypertarget{ref-cansunar_who_2021}{}%
+Cansunar, A. (2021). Who Is High Income, Anyway? Social Comparison, Subjective Group Identification, and Preferences over Progressive Taxation. \emph{The Journal of Politics}, 000--000. \url{https://doi.org/10.1086/711627}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Castillo2012b_multidimentional}{}}%
-Castillo, J. C. (2012). La legitimidad de las desigualdades salariales. {Una} aproximación multidimensional. \emph{Revista Internacional de Sociología}, \emph{70}(3), 533--560. \url{https://doi.org/10.3989/ris.2010.11.22}
+\leavevmode\hypertarget{ref-Castillo2012b_multidimentional}{}%
+Castillo, J. C. (2012). La legitimidad de las desigualdades salariales. Una aproximación multidimensional. \emph{Revista Internacional de Sociología}, \emph{70}(3), 533--560. \url{https://doi.org/10.3989/ris.2010.11.22}
 
-\leavevmode\vadjust pre{\hypertarget{ref-castillo_deserving_2019}{}}%
-Castillo, J. C., Olivos, F., \& Azar, A. (2019). Deserving a {Just Pension}: {A Factorial Survey Approach}. \emph{Social Science Quarterly}, \emph{100}(1), 359--378. \url{https://doi.org/10.1111/ssqu.12539}
+\leavevmode\hypertarget{ref-Castillo2011}{}%
+Castillo, J. C. (2011). Legitimacy of Inequality in a Highly Unequal Context: Evidence from the Chilean Case. \emph{Social Justice Research}, \emph{24}(4), 314--340. \url{https://doi.org/10.1007/s11211-011-0144-5}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Condon2020}{}}%
-Condon, M., \& Wichowsky, A. (2020). Inequality in the {Social Mind}: {Social Comparison} and {Support} for {Redistribution}. \emph{The Journal of Politics}, \emph{82}(1), 149--161. \url{https://doi.org/10.1086/705686}
+\leavevmode\hypertarget{ref-castillo_perception_2022}{}%
+Castillo, J. C., García-Castro, J.-D., \& Venegas, M. (2022). Perception of economic inequality: Concepts, associated factors and prospects of a burgeoning research agenda. \emph{International Journal of Social Psychology}, \emph{37}(1), 180--207. \url{https://doi.org/10.1080/02134748.2021.2009275}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Connelly2016}{}}%
-Connelly, R., Gayle, V., \& Lambert, P. S. (2016). A {Review} of occupation-based social classifications for social survey research. \emph{Methodological Innovations}, \emph{9}, 205979911663800. \url{https://doi.org/10.1177/2059799116638003}
+\leavevmode\hypertarget{ref-castillo_deserving_2019}{}%
+Castillo, J. C., Olivos, F., \& Azar, A. (2019). Deserving a Just Pension: A Factorial Survey Approach. \emph{Social Science Quarterly}, \emph{100}(1), 359--378. \url{https://doi.org/10.1111/ssqu.12539}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Day2017}{}}%
-Day, M. V., \& Fiske, S. T. (2017). Movin' on {Up}? {How Perceptions} of {Social Mobility Affect Our Willingness} to {Defend} the {System}. \emph{Social Psychological and Personality Science}, \emph{8}(3), 267--274. \url{https://doi.org/10.1177/1948550616678454}
+\leavevmode\hypertarget{ref-condon_economic_2020}{}%
+Condon, M., \& Wichowsky, A. (2020a). \emph{The Economic Other: Inequality in the American Political Imagination}. University of Chicago Press. \url{https://doi.org/10.7208/chicago/9780226691909.001.0001}
 
-\leavevmode\vadjust pre{\hypertarget{ref-dimick_models_2018}{}}%
-Dimick, M., Rueda, D., \& Stegmueller, D. (2018). \emph{Models of {Other-Regarding Preferences} , {Inequality} , and {Redistribution}}. \emph{December 2013}, 1--20. \url{https://doi.org/10.1146/annurev-polisci-091515-030034}
+\leavevmode\hypertarget{ref-Condon2020}{}%
+Condon, M., \& Wichowsky, A. (2020b). Inequality in the Social Mind: Social Comparison and Support for Redistribution. \emph{The Journal of Politics}, \emph{82}(1), 149--161. \url{https://doi.org/10.1086/705686}
 
-\leavevmode\vadjust pre{\hypertarget{ref-druckman_preference_2000}{}}%
-Druckman, J. N., \& Lupia, A. (2000). Preference {Formation}. \emph{Annual Review of Political Science}, \emph{3}(1), 1--24. \url{https://doi.org/10.1146/annurev.polisci.3.1.1}
+\leavevmode\hypertarget{ref-Connelly2016}{}%
+Connelly, R., Gayle, V., \& Lambert, P. S. (2016). A Review of occupation-based social classifications for social survey research. \emph{Methodological Innovations}, \emph{9}, 205979911663800. \url{https://doi.org/10.1177/2059799116638003}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Erikson1992}{}}%
-Erikson, R., \& Goldthorpe, J. H. (1992). \emph{The constant flux: A study of class mobility in industrial societies}. {Clarendon Press ; Oxford University Press}.
+\leavevmode\hypertarget{ref-Day2017}{}%
+Day, M. V., \& Fiske, S. T. (2017). Movin' on Up? How Perceptions of Social Mobility Affect Our Willingness to Defend the System. \emph{Social Psychological and Personality Science}, \emph{8}(3), 267--274. \url{https://doi.org/10.1177/1948550616678454}
 
-\leavevmode\vadjust pre{\hypertarget{ref-esping-andersen_three_1990}{}}%
-Esping-Andersen, G. (1990). \emph{The three worlds of welfare capitalism}. {Princeton University Press}.
+\leavevmode\hypertarget{ref-dimick_models_2018}{}%
+Dimick, M., Rueda, D., \& Stegmueller, D. (2018). \emph{Models of Other-Regarding Preferences , Inequality , and Redistribution}. \emph{December 2013}, 1--20. \url{https://doi.org/10.1146/annurev-polisci-091515-030034}
 
-\leavevmode\vadjust pre{\hypertarget{ref-esser_integrative_2015}{}}%
-Esser, H., \& Kroneberg, C. (2015). An {Integrative Theory} of {Action}: {The Model} of {Frame Selection}. In E. J. Lawler, S. R. Thye, \& J. Yoon (Eds.), \emph{Order on the {Edge} of {Chaos}} (First, pp. 63--85). {Cambridge University Press}. \url{https://doi.org/10.1017/CBO9781139924627.005}
+\leavevmode\hypertarget{ref-druckman_preference_2000}{}%
+Druckman, J. N., \& Lupia, A. (2000). Preference Formation. \emph{Annual Review of Political Science}, \emph{3}(1), 1--24. \url{https://doi.org/10.1146/annurev.polisci.3.1.1}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Evans2004}{}}%
-Evans, M. D. R. (2004). Subjective {Social Location}: {Data From} 21 {Nations}. \emph{International Journal of Public Opinion Research}, \emph{16}(1), 3--38. \url{https://doi.org/10.1093/ijpor/16.1.3}
+\leavevmode\hypertarget{ref-Erikson1992}{}%
+Erikson, R., \& Goldthorpe, J. H. (1992). \emph{The constant flux: A study of class mobility in industrial societies}. Clarendon Press ; Oxford University Press.
 
-\leavevmode\vadjust pre{\hypertarget{ref-Evans2017}{}}%
-Evans, M. D. R., \& Kelley, J. (2017). Communism, {Capitalism}, and {Images} of {Class}: {Effects} of {Reference Groups}, {Reality}, and {Regime} in 43 {Nations} and 110,000 {Individuals}, 1987-2009. \emph{Cross-Cultural Research}, \emph{51}(514), 315--359. \url{https://doi.org/10.1177/1069397116677963}
+\leavevmode\hypertarget{ref-esping-andersen_three_1990}{}%
+Esping-Andersen, G. (1990). \emph{The three worlds of welfare capitalism}. Princeton University Press.
 
-\leavevmode\vadjust pre{\hypertarget{ref-Evans1992}{}}%
-Evans, M. D. R., Kelley, J., \& Kolosi, T. (1992). Images of {Class}: {Public Perceptions} in {Hungary} and {Australia}. \emph{American Sociological Review}, \emph{57}(4), 461. \url{https://doi.org/10.2307/2096095}
+\leavevmode\hypertarget{ref-esser_integrative_2015}{}%
+Esser, H., \& Kroneberg, C. (2015). An Integrative Theory of Action: The Model of Frame Selection. In E. J. Lawler, S. R. Thye, \& J. Yoon (Eds.), \emph{Order on the Edge of Chaos} (First, pp. 63--85). Cambridge University Press. \url{https://doi.org/10.1017/CBO9781139924627.005}
 
-\leavevmode\vadjust pre{\hypertarget{ref-evans_strong_2018}{}}%
-Evans, M., \& Kelley, J. (2018). Strong {Welfare States Do Not Intensify Public Support} for {Income Redistribution}, but {Even Reduce It} among the {Prosperous}: {A Multilevel Analysis} of {Public Opinion} in 30 {Countries}. \emph{Societies}, \emph{8}(4), 105. \url{https://doi.org/10.3390/soc8040105}
+\leavevmode\hypertarget{ref-Evans2004}{}%
+Evans, M. D. R. (2004). Subjective Social Location: Data From 21 Nations. \emph{International Journal of Public Opinion Research}, \emph{16}(1), 3--38. \url{https://doi.org/10.1093/ijpor/16.1.3}
 
-\leavevmode\vadjust pre{\hypertarget{ref-fehr_social_2020}{}}%
-Fehr, D., Müller, D., \& Preuss, M. (2020). \emph{Social mobility perceptions and inequality acceptance} (Working Papers No. 2020-02). {Faculty of Economics and Statistics, University of Innsbruck}.
+\leavevmode\hypertarget{ref-Evans2017}{}%
+Evans, M. D. R., \& Kelley, J. (2017). Communism, Capitalism, and Images of Class: Effects of Reference Groups, Reality, and Regime in 43 Nations and 110,000 Individuals, 1987-2009. \emph{Cross-Cultural Research}, \emph{51}(514), 315--359. \url{https://doi.org/10.1177/1069397116677963}
 
-\leavevmode\vadjust pre{\hypertarget{ref-feldman_understanding_2014}{}}%
-Feldman, S., \& Johnston, C. (2014). Understanding the {Determinants} of {Political Ideology}: {Implications} of {Structural Complexity}: {Understanding Political Ideology}. \emph{Political Psychology}, \emph{35}(3), 337--358. \url{https://doi.org/10.1111/pops.12055}
+\leavevmode\hypertarget{ref-Evans1992}{}%
+Evans, M. D. R., Kelley, J., \& Kolosi, T. (1992). Images of Class: Public Perceptions in Hungary and Australia. \emph{American Sociological Review}, \emph{57}(4), 461. \url{https://doi.org/10.2307/2096095}
 
-\leavevmode\vadjust pre{\hypertarget{ref-feldman_humanitarian_2001}{}}%
-Feldman, S., \& Steenbergen, M. R. (2001). The {Humanitarian Foundation} of {Public Support} for {Social Welfare}. \emph{American Journal of Political Science}, \emph{45}(3), 658. \url{https://doi.org/10.2307/2669244}
+\leavevmode\hypertarget{ref-evans_strong_2018}{}%
+Evans, M., \& Kelley, J. (2018). Strong Welfare States Do Not Intensify Public Support for Income Redistribution, but Even Reduce It among the Prosperous: A Multilevel Analysis of Public Opinion in 30 Countries. \emph{Societies}, \emph{8}(4), 105. \url{https://doi.org/10.3390/soc8040105}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Filippin2003}{}}%
-Filippin, D., \& Antonio, C. (2003). An {Experimental Study} of the {POUM Hypothesis}. \emph{IZA Discussion Paper Series}, \emph{78}(3), 1284--1287.
+\leavevmode\hypertarget{ref-fehr_social_2020}{}%
+Fehr, D., Müller, D., \& Preuss, M. (2020). \emph{Social mobility perceptions and inequality acceptance} (Working Papers Nos. 2020-02). Faculty of Economics and Statistics, University of Innsbruck.
 
-\leavevmode\vadjust pre{\hypertarget{ref-fong_prospective_2006}{}}%
-Fong, C. M. (2006). Prospective {Mobility}, {Fairness}, and the {Demand} for {Redistribution}. \emph{Ssrn}. \url{https://doi.org/10.2139/ssrn.638302}
+\leavevmode\hypertarget{ref-feldman_understanding_2014}{}%
+Feldman, S., \& Johnston, C. (2014). Understanding the Determinants of Political Ideology: Implications of Structural Complexity: Understanding Political Ideology. \emph{Political Psychology}, \emph{35}(3), 337--358. \url{https://doi.org/10.1111/pops.12055}
 
-\leavevmode\vadjust pre{\hypertarget{ref-franetovic_preferences_2022}{}}%
-Franetovic, G., \& Castillo, J.-C. (2022). Preferences for {Income Redistribution} in {Unequal Contexts}: {Changes} in {Latin America Between} 2008 and 2018. \emph{Frontiers in Sociology}, \emph{7}, 806458. \url{https://doi.org/10.3389/fsoc.2022.806458}
+\leavevmode\hypertarget{ref-feldman_humanitarian_2001}{}%
+Feldman, S., \& Steenbergen, M. R. (2001). The Humanitarian Foundation of Public Support for Social Welfare. \emph{American Journal of Political Science}, \emph{45}(3), 658. \url{https://doi.org/10.2307/2669244}
 
-\leavevmode\vadjust pre{\hypertarget{ref-garcia-sanchez_two_2022}{}}%
-García-Sánchez, E., Castillo, J. C., Rodríguez-Bailón, R., \& Willis, G. B. (2022). The {Two Faces} of {Support} for {Redistribution} in {Colombia}: {Taxing} the {Wealthy} or {Assisting People} in {Need}. \emph{Frontiers in Sociology}, \emph{7}, 773378. \url{https://doi.org/10.3389/fsoc.2022.773378}
+\leavevmode\hypertarget{ref-Filippin2003}{}%
+Filippin, D., \& Antonio, C. (2003). An Experimental Study of the POUM Hypothesis. \emph{IZA Discussion Paper Series}, \emph{78}(3), 1284--1287.
 
-\leavevmode\vadjust pre{\hypertarget{ref-garcia-sanchez_creencias_2022}{}}%
+\leavevmode\hypertarget{ref-fong_prospective_2006}{}%
+Fong, C. M. (2006). Prospective Mobility, Fairness, and the Demand for Redistribution. \emph{Ssrn}. \url{https://doi.org/10.2139/ssrn.638302}
+
+\leavevmode\hypertarget{ref-franetovic_preferences_2022}{}%
+Franetovic, G., \& Castillo, J.-C. (2022). Preferences for Income Redistribution in Unequal Contexts: Changes in Latin America Between 2008 and 2018. \emph{Frontiers in Sociology}, \emph{7}, 806458. \url{https://doi.org/10.3389/fsoc.2022.806458}
+
+\leavevmode\hypertarget{ref-garcia-sanchez_two_2022}{}%
+García-Sánchez, E., Castillo, J. C., Rodríguez-Bailón, R., \& Willis, G. B. (2022). The Two Faces of Support for Redistribution in Colombia: Taxing the Wealthy or Assisting People in Need. \emph{Frontiers in Sociology}, \emph{7}, 773378. \url{https://doi.org/10.3389/fsoc.2022.773378}
+
+\leavevmode\hypertarget{ref-garcia-sanchez_creencias_2022}{}%
 García-Sánchez, E., \& De Carvalho Galvão, S. (2022). Las creencias que justifican la desigualdad moderan la relación entre el estatus socioeconómico y el apoyo a la redistribución. \emph{Revista Internacional de Sociología}, \emph{80}(3), e210. \url{https://doi.org/10.3989/ris.2022.80.3.21.29}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Garcia-Sanchez19}{}}%
+\leavevmode\hypertarget{ref-Garcia-Sanchez19}{}%
 García-Sánchez, E., Obsorne, D., Willis, G. B., \& Rodríguez-Bailón, R. (2019). Attitudes towards redistribution and the interplay between perceptions and beliefs about inequality. \emph{British Journal of Social Psychology}, bjso.12326. \url{https://doi.org/10.1111/bjso.12326}
 
-\leavevmode\vadjust pre{\hypertarget{ref-gavira_social_2008}{}}%
-Gavira, Alejandro. (2008). Social {Mobility} and {Preferences} for {Redistribution} in {Latin America}. \emph{Economía}, \emph{8}(1), 55--88. \url{https://doi.org/10.1353/eco.2008.0003}
+\leavevmode\hypertarget{ref-gavira_social_2008}{}%
+Gavira, A. (2008). Social Mobility and Preferences for Redistribution in Latin America. \emph{Economía}, \emph{8}(1), 55--88. \url{https://doi.org/10.1353/eco.2008.0003}
 
-\leavevmode\vadjust pre{\hypertarget{ref-gugushvili_which_2021}{}}%
+\leavevmode\hypertarget{ref-gugushvili_which_2021}{}%
 Gugushvili, A. (2021). Which socio-economic comparison groups do individuals choose and why? \emph{European Societies}, \emph{23}(4), 437--463. \url{https://doi.org/10.1080/14616696.2020.1793214}
 
-\leavevmode\vadjust pre{\hypertarget{ref-hoorn_automatability_2022}{}}%
-Hoorn, A. (2022). Automatability of {Work} and {Preferences} for {Redistribution}*. \emph{Oxford Bulletin of Economics and Statistics}, \emph{84}(1), 130--157. \url{https://doi.org/10.1111/obes.12460}
+\leavevmode\hypertarget{ref-hoorn_automatability_2022}{}%
+Hoorn, A. (2022). Automatability of Work and Preferences for Redistribution*. \emph{Oxford Bulletin of Economics and Statistics}, \emph{84}(1), 130--157. \url{https://doi.org/10.1111/obes.12460}
 
-\leavevmode\vadjust pre{\hypertarget{ref-IturraMellado2019}{}}%
-Iturra, J., \& Mellado, D. (2018). Subjective social status in three {Latin American} countries: {The} case of {Argentina}, {Chile} and {Venezuela}. \emph{Revista Contenido Cultura y Ciencias Sociales}, \emph{8}, 1--20.
+\leavevmode\hypertarget{ref-IturraMellado2019}{}%
+Iturra, J., \& Mellado, D. (2018). Subjective social status in three Latin American countries: The case of Argentina, Chile and Venezuela. \emph{Revista Contenido Cultura Y Ciencias Sociales}, \emph{8}, 1--20.
 
-\leavevmode\vadjust pre{\hypertarget{ref-Jaime-Castillo2008}{}}%
-Jaime-Castillo, A. M. (2008). Expectations of {Social Mobility}, {Meritocracy} and the {Demand} for {Redistribution} in {Spain}. \emph{Inequality {Beyond Globalization}}, 1--28. \url{https://doi.org/10.2139/ssrn.1278562}
+\leavevmode\hypertarget{ref-Jaime-Castillo2008}{}%
+Jaime-Castillo, A. M. (2008). Expectations of Social Mobility, Meritocracy and the Demand for Redistribution in Spain. \emph{Inequality Beyond Globalization}, 1--28. \url{https://doi.org/10.2139/ssrn.1278562}
 
-\leavevmode\vadjust pre{\hypertarget{ref-jaime-castillo_social_2019}{}}%
-Jaime-Castillo, A. M., \& Marqués-Perales, I. (2019). Social mobility and demand for redistribution in {Europe}: A comparative analysis. \emph{The British Journal of Sociology}, \emph{70}(1), 138--165. \url{https://doi.org/10.1111/1468-4446.12363}
+\leavevmode\hypertarget{ref-jaime-castillo_social_2019}{}%
+Jaime-Castillo, A. M., \& Marqués-Perales, I. (2019). Social mobility and demand for redistribution in Europe: A comparative analysis. \emph{The British Journal of Sociology}, \emph{70}(1), 138--165. \url{https://doi.org/10.1111/1468-4446.12363}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Janmaat2013}{}}%
-Janmaat, J. G. (2013). Subjective inequality: {A} review of international comparative studies on people's views about inequality. \emph{Archives Europeennes de Sociologie}, \emph{54}(03), 357--389. \url{https://doi.org/10.1017/S0003975613000209}
+\leavevmode\hypertarget{ref-Janmaat2013}{}%
+Janmaat, J. G. (2013). Subjective inequality: A review of international comparative studies on people's views about inequality. \emph{Archives Europeennes de Sociologie}, \emph{54}(03), 357--389. \url{https://doi.org/10.1017/S0003975613000209}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Jasso1990}{}}%
-Jasso, G. (1990). Methods for the {Theoretical} and {Empirical Analysis} of {Comparison Processes}. \emph{Sociological Methodology}, \emph{20}, 369. \url{https://doi.org/10.2307/271091}
+\leavevmode\hypertarget{ref-jasso_justice_1978}{}%
+Jasso, G. (1978). On the Justice of Earnings: A New Specification of the Justice Evaluation Function. \emph{American Journal of Sociology}, \emph{83}(6), 1398--1419.
 
-\leavevmode\vadjust pre{\hypertarget{ref-Jensenux5cux26Nauman2016}{}}%
-Jensen, C., \& Naumann, E. (2016). Increasing pressures and support for public healthcare in {Europe}. \emph{Health Policy}, \emph{120}(6), 698--705. \url{https://doi.org/10.1016/j.healthpol.2016.04.015}
+\leavevmode\hypertarget{ref-Jasso1990}{}%
+Jasso, G. (1990). Methods for the Theoretical and Empirical Analysis of Comparison Processes. \emph{Sociological Methodology}, \emph{20}, 369. \url{https://doi.org/10.2307/271091}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Jensen2017}{}}%
-Jensen, C., \& Petersen, M. B. (2017). The {Deservingness Heuristic} and the {Politics} of {Health Care}: {DESERVINGNESS AND HEALTH CARE}. \emph{American Journal of Political Science}, \emph{61}(1), 68--83. \url{https://doi.org/10.1111/ajps.12251}
+\leavevmode\hypertarget{ref-Jensenux5cux26Nauman2016}{}%
+Jensen, C., \& Naumann, E. (2016). Increasing pressures and support for public healthcare in Europe. \emph{Health Policy}, \emph{120}(6), 698--705. \url{https://doi.org/10.1016/j.healthpol.2016.04.015}
 
-\leavevmode\vadjust pre{\hypertarget{ref-kelley_subjective_2008}{}}%
-Kelley, S. M. C., \& Kelley, C. G. E. (2008). \emph{Subjective {Social Mobility}: {Data} from 30 {Nations}} (\{\{SSRN Scholarly Paper\}\} No. 1306242).
+\leavevmode\hypertarget{ref-Jensen2017}{}%
+Jensen, C., \& Petersen, M. B. (2017). The Deservingness Heuristic and the Politics of Health Care: DESERVINGNESS AND HEALTH CARE. \emph{American Journal of Political Science}, \emph{61}(1), 68--83. \url{https://doi.org/10.1111/ajps.12251}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Kulin2013}{}}%
-Kulin, J., \& Svallfors, S. (2013). Class, values, and attitudes towards redistribution: {A European} comparison. \emph{European Sociological Review}, \emph{29}(2), 155--167. \url{https://doi.org/10.1093/esr/jcr046}
+\leavevmode\hypertarget{ref-kelley_subjective_2008}{}%
+Kelley, S. M. C., \& Kelley, C. G. E. (2008). \emph{Subjective Social Mobility: Data from 30 Nations} (SSRN Scholarly Paper Nos. 1306242).
 
-\leavevmode\vadjust pre{\hypertarget{ref-Liebig-Sauer2016}{}}%
-Liebig, S., \& Sauer, C. (2016). Sociology of {Justice}. In C. Sabbagh \& M. Schmitt (Eds.), \emph{Handbook of {Social Justice Theory} and {Research}} (pp. 37--59). {Springer New York}. \url{https://doi.org/10.1007/978-1-4939-3216-0_3}
+\leavevmode\hypertarget{ref-KluegelSmithWegener1995}{}%
+Kluegel, J. R., Mason, D. S., \& Wegener, B. (Eds.). (1995). \emph{Social Justice and Political Change: Public Opinion in Capitalist and Post-Communist States} (First). Routledge. \url{https://doi.org/10.4324/9781351328401}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Lindemann2014}{}}%
-Lindemann, K., \& Saar, E. (2014). Contextual {Effects} on {Subjective Social Position}: {Evidence} from {European Countries}. \emph{International Journal of Comparative Sociology}, \emph{55}(1), 3--23. \url{https://doi.org/10.1177/0020715214527101}
+\leavevmode\hypertarget{ref-Kluegel-Smith1986}{}%
+Kluegel, J. R., \& Smith, E. R. (1986). \emph{Beliefs about Inequality: Americans' Views of What Is and What Ought to Be} (First). Routledge. \url{https://doi.org/10.4324/9781351329002}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Lundberg2008}{}}%
-Lundberg, J., \& Kristenson, M. (2008). Is {Subjective Status Influenced} by {Psychosocial Factors}? \emph{Social Indicators Research}, \emph{89}(3), 375--390. \url{https://doi.org/10.1007/sl}
+\leavevmode\hypertarget{ref-Kulin2013}{}%
+Kulin, J., \& Svallfors, S. (2013). Class, values, and attitudes towards redistribution: A European comparison. \emph{European Sociological Review}, \emph{29}(2), 155--167. \url{https://doi.org/10.1093/esr/jcr046}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Maldonadoetal2019}{}}%
-Maldonado, L., Olivos, F., Castillo, J. C., Atria, J., \& Azar, A. (2019). Risk {Exposure}, {Humanitarianism} and {Willingness} to {Pay} for {Universal Healthcare}: {A Cross-National Analysis} of 28 {Countries}. \emph{Social Justice Research}. \url{https://doi.org/10.1007/s11211-019-00336-6}
+\leavevmode\hypertarget{ref-Liebig-Sauer2016}{}%
+Liebig, S., \& Sauer, C. (2016). Sociology of Justice. In C. Sabbagh \& M. Schmitt (Eds.), \emph{Handbook of Social Justice Theory and Research} (pp. 37--59). Springer New York. \url{https://doi.org/10.1007/978-1-4939-3216-0_3}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Meltzer81}{}}%
-Meltzer, A. H., \& Richard, S. F. (1981). \emph{A {Rational Theory} of the {Size} of {Government Author}}. \emph{89}(5), 914--927.
+\leavevmode\hypertarget{ref-Lindemann2014}{}%
+Lindemann, K., \& Saar, E. (2014). Contextual Effects on Subjective Social Position: Evidence from European Countries. \emph{International Journal of Comparative Sociology}, \emph{55}(1), 3--23. \url{https://doi.org/10.1177/0020715214527101}
 
-\leavevmode\vadjust pre{\hypertarget{ref-mijs_belief_2022}{}}%
-Mijs, J., Daenekindt, S., de Koster, W., \& van der Waal, J. (2022). Belief in {Meritocracy Reexamined}: {Scrutinizing} the {Role} of {Subjective Social Mobility}. \emph{Social Psychology Quarterly}, \emph{85}(2), 131--141. \url{https://doi.org/10.1177/01902725211063818}
+\leavevmode\hypertarget{ref-Lundberg2008}{}%
+Lundberg, J., \& Kristenson, M. (2008). Is Subjective Status Influenced by Psychosocial Factors? \emph{Social Indicators Research}, \emph{89}(3), 375--390. \url{https://doi.org/10.1007/sl}
 
-\leavevmode\vadjust pre{\hypertarget{ref-moene_inequality_2001}{}}%
-Moene, K. O., \& Wallerstein, M. (2001). Inequality, {Social Insurance}, and {Redistribution}. \emph{The American Political Science Review}, \emph{95}(4), 859--874.
+\leavevmode\hypertarget{ref-Maldonadoetal2019}{}%
+Maldonado, L., Olivos, F., Castillo, J. C., Atria, J., \& Azar, A. (2019). Risk Exposure, Humanitarianism and Willingness to Pay for Universal Healthcare: A Cross-National Analysis of 28 Countries. \emph{Social Justice Research}. \url{https://doi.org/10.1007/s11211-019-00336-6}
 
-\leavevmode\vadjust pre{\hypertarget{ref-rehm_risk_2016}{}}%
-Rehm, P. (2016). \emph{Risk {Inequality} and {Welfare States}: {Social Policy Preferences}, {Development}, and {Dynamics}} (First). {Cambridge University Press}. \url{https://doi.org/10.1017/CBO9781316257777}
+\leavevmode\hypertarget{ref-Meltzer81}{}%
+Meltzer, A. H., \& Richard, S. F. (1981). \emph{A Rational Theory of the Size of Government Author}. \emph{89}(5), 914--927.
 
-\leavevmode\vadjust pre{\hypertarget{ref-rehm_risks_2009}{}}%
-Rehm, P. (2009). Risks and {Redistribution}: {An Individual-Level Analysis}. \emph{Comparative Political Studies}, \emph{42}(7), 855--881. \url{https://doi.org/10.1177/0010414008330595}
+\leavevmode\hypertarget{ref-mijs_belief_2022}{}%
+Mijs, J., Daenekindt, S., de Koster, W., \& van der Waal, J. (2022). Belief in Meritocracy Reexamined: Scrutinizing the Role of Subjective Social Mobility. \emph{Social Psychology Quarterly}, \emph{85}(2), 131--141. \url{https://doi.org/10.1177/01902725211063818}
 
-\leavevmode\vadjust pre{\hypertarget{ref-rueda_who_2019}{}}%
-Rueda, D., \& Stegmueller, D. (2019). \emph{Who {Wants What}?: {Redistribution Preferences} in {Comparative Perspective}} (First). {Cambridge University Press}. \url{https://doi.org/10.1017/9781108681339}
+\leavevmode\hypertarget{ref-moene_inequality_2001}{}%
+Moene, K. O., \& Wallerstein, M. (2001). Inequality, Social Insurance, and Redistribution. \emph{The American Political Science Review}, \emph{95}(4), 859--874.
 
-\leavevmode\vadjust pre{\hypertarget{ref-slomczynski1987}{}}%
-Słomczyński, K. M., \& Kacprowicz, G. (1986). The {Subjective Evaluation} of {Social Status}. \emph{International Journal of Sociology}, \emph{16}(1/2), 124--143.
+\leavevmode\hypertarget{ref-rehm_risk_2016}{}%
+Rehm, P. (2016). \emph{Risk Inequality and Welfare States: Social Policy Preferences, Development, and Dynamics} (First). Cambridge University Press. \url{https://doi.org/10.1017/CBO9781316257777}
 
-\leavevmode\vadjust pre{\hypertarget{ref-smithCulturalValuesModerate2018}{}}%
-Smith, H. J., Ryan, D. A., Jaurique, A., Pettigrew, T. F., Jetten, J., Ariyanto, A., Autin, F., Ayub, N., Badea, C., Besta, T., Butera, F., Costa-Lopes, R., Cui, L., Fantini, C., Finchilescu, G., Gaertner, L., Gollwitzer, M., Gómez, Á., González, R., \ldots{} Wohl, M. (2018). Cultural {Values Moderate} the {Impact} of {Relative Deprivation}. \emph{Journal of Cross-Cultural Psychology}, \emph{49}(8), 1183--1218. \url{https://doi.org/10.1177/0022022118784213}
+\leavevmode\hypertarget{ref-rehm_risks_2009}{}%
+Rehm, P. (2009). Risks and Redistribution: An Individual-Level Analysis. \emph{Comparative Political Studies}, \emph{42}(7), 855--881. \url{https://doi.org/10.1177/0010414008330595}
 
-\leavevmode\vadjust pre{\hypertarget{ref-steele_wealth_2020}{}}%
-Steele, L. (2020). Wealth and preferences for redistribution: {The} effects of financial assets and home equity in 31 countries. \emph{International Journal of Comparative Sociology}, \emph{61}(5), 331--362. \url{https://doi.org/10.1177/0020715220988088}
+\leavevmode\hypertarget{ref-rueda_who_2019}{}%
+Rueda, D., \& Stegmueller, D. (2019). \emph{Who Wants What?: Redistribution Preferences in Comparative Perspective} (First). Cambridge University Press. \url{https://doi.org/10.1017/9781108681339}
 
-\leavevmode\vadjust pre{\hypertarget{ref-steele_attitudes_2019}{}}%
-Steele, L., \& Breznau, N. (2019). Attitudes toward {Redistributive Policy}: {An Introduction}. \emph{Societies}, \emph{9}(3), 50. \url{https://doi.org/10.3390/soc9030050}
+\leavevmode\hypertarget{ref-smithCulturalValuesModerate2018}{}%
+Smith, H. J., Ryan, D. A., Jaurique, A., Pettigrew, T. F., Jetten, J., Ariyanto, A., Autin, F., Ayub, N., Badea, C., Besta, T., Butera, F., Costa-Lopes, R., Cui, L., Fantini, C., Finchilescu, G., Gaertner, L., Gollwitzer, M., Gómez, Á., González, R., \ldots{} Wohl, M. (2018). Cultural Values Moderate the Impact of Relative Deprivation. \emph{Journal of Cross-Cultural Psychology}, \emph{49}(8), 1183--1218. \url{https://doi.org/10.1177/0022022118784213}
 
-\leavevmode\vadjust pre{\hypertarget{ref-steele_wealth_2022}{}}%
-Steele, L., Cohen, J. N., \& van der Naald, J. R. (2022). Wealth, {Income}, and {Preferences} for {Redistribution}: {Evidence} from 30 countries. \emph{Social Science Research}, 102746. \url{https://doi.org/10.1016/j.ssresearch.2022.102746}
+\leavevmode\hypertarget{ref-steele_wealth_2020}{}%
+Steele, L. (2020). Wealth and preferences for redistribution: The effects of financial assets and home equity in 31 countries. \emph{International Journal of Comparative Sociology}, \emph{61}(5), 331--362. \url{https://doi.org/10.1177/0020715220988088}
 
-\leavevmode\vadjust pre{\hypertarget{ref-svallfors_government_2013}{}}%
-Svallfors, S. (2013). Government quality, egalitarianism, and attitudes to taxes and social spending: A {European} comparison. \emph{European Political Science Review}, \emph{5}(3), 363--380. \url{https://doi.org/10.1017/S175577391200015X}
+\leavevmode\hypertarget{ref-steele_attitudes_2019}{}%
+Steele, L., \& Breznau, N. (2019). Attitudes toward Redistributive Policy: An Introduction. \emph{Societies}, \emph{9}(3), 50. \url{https://doi.org/10.3390/soc9030050}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Svallfors2006}{}}%
-Svallfors, S. (2006). \emph{The moral economy of class: {Class} and attitudes in comparative perspective}. {Stanford University Press}. \url{https://doi.org/10.1515/9781503625624}
+\leavevmode\hypertarget{ref-steele_wealth_2022}{}%
+Steele, L., Cohen, J. N., \& van der Naald, J. R. (2022). Wealth, Income, and Preferences for Redistribution: Evidence from 30 countries. \emph{Social Science Research}, 102746. \url{https://doi.org/10.1016/j.ssresearch.2022.102746}
 
-\leavevmode\vadjust pre{\hypertarget{ref-zhu_policy_2015}{}}%
+\leavevmode\hypertarget{ref-Svallfors2006}{}%
+Svallfors, S. (2006). \emph{The moral economy of class: Class and attitudes in comparative perspective}. Stanford University Press. \url{https://doi.org/10.1515/9781503625624}
+
+\leavevmode\hypertarget{ref-svallfors_government_2013}{}%
+Svallfors, S. (2013). Government quality, egalitarianism, and attitudes to taxes and social spending: A European comparison. \emph{European Political Science Review}, \emph{5}(3), 363--380. \url{https://doi.org/10.1017/S175577391200015X}
+
+\leavevmode\hypertarget{ref-slomczynski1987}{}%
+Słomczyński, K. M., \& Kacprowicz, G. (1986). The Subjective Evaluation of Social Status. \emph{International Journal of Sociology}, \emph{16}(1/2), 124--143.
+
+\leavevmode\hypertarget{ref-wegener_illusion_1987}{}%
+Wegener, B. (1987). The Illusion of Distributive Justice. \emph{European Sociological Review}, \emph{3}(1), 1--13.
+
+\leavevmode\hypertarget{ref-zhu_policy_2015}{}%
 Zhu, L., \& Lipsmeyer, C. S. (2015). Policy feedback and economic risk: The influence of privatization on social policy preferences. \emph{Journal of European Public Policy}, \emph{22}(10), 1489--1511. \url{https://doi.org/10.1080/13501763.2015.1031159}
-
-\end{CSLReferences}
+\end{cslreferences}
 
 \end{document}
