@@ -1,5 +1,5 @@
 ---
-title: "Social comparison, subjetive social status and preferences for redistribution"
+title: "Social comparison and preferences for redistribution"
 subtitle: ""
 author: "Julio Iturra"
 date: "`r Sys.Date()`"
@@ -13,6 +13,7 @@ linkcolor: blue
 geometry: "left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm"
 fontsize: 12pt
 linestretch: 1
+#toc: false
 toc-depth: 1
 lof: false
 lot: false

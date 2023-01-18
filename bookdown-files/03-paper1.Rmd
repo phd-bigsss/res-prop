@@ -1,0 +1,45 @@
+---
+editor_options:
+  markdown:
+    wrap: 72
+---
+
+## Paper 1
+
+**Title:** Income Inequality, social comparison and preferences for redistribution: cross-sectional and longitudinal evidence
+
+In study 1, I will address the claimed link between income inequality, social comparison and subjective social status
+
+Individual level hypothesis:
+
+> $H_1$: Higher perceived economic distance from the high-income reference group is associated with lower subjective status
+
+Contextual level hypothesis:
+
+> $H_2$: Income inequality is associated with lower subjective social status
+
+Cross-level hypothesis
+
+> $H_3$: Income inequality strengths the association of social comparison on subjective social status
+
+In study 2, I will address the link between income inequality, subjective social status and redistributive preferences
+
+Individual level hypothesis:
+
+> $H_1$: Higher subjective social status is associated with higher redistributive preferences. This association will be higher than objective income.
+
+> $H_2$: The negative association of income will be stronger among low subjective status individuals.
+
+Contextual level hypothesis:
+
+> $H_3$: Income inequality increases redistributive preferences. Between-country will be more important than within-country effect.
+
+Cross-level hypothesis:
+
+> $H_4$: The association of subjective social status with redistributive preferences will be stronger in contexts of higher income inequality 
+
+>  $H_5$: Among higher subjective and objective status individuals the support for redistribution will be higher for those in context with higher income inequality (objective and subjective altruism)  
+
+### Data, variables and methods
+
+Pending.
