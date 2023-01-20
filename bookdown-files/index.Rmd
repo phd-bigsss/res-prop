@@ -5,7 +5,7 @@ author: "Julio Iturra"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [bib/proposal.bib]
+bibliography: [P:/library-full.bib]
 biblio-style: apalike
 link-citations: yes
 linkcolor: blue

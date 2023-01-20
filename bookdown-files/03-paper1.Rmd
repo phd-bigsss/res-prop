@@ -26,7 +26,7 @@ In study 2, I will address the link between income inequality, subjective social
 
 Individual level hypothesis:
 
-> $H_1$: Higher subjective social status is associated with higher redistributive preferences. This association will be higher than objective income.
+> $H_1$: Higher subjective social status is associated with lower redistributive preferences. This association will be stronger compared to income.
 
 > $H_2$: The negative association of income will be stronger among low subjective status individuals.
 
@@ -43,3 +43,5 @@ Cross-level hypothesis:
 ### Data, variables and methods
 
 Pending.
+
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.4)  18 JAN 2023 16:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.4)  20 JAN 2023 14:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -682,6 +682,10 @@ Chapter 5.
 ]
 Chapter 6.
 
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 332.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [18
@@ -710,12 +714,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [23]
-Underfull \hbox (badness 2310) in paragraph at lines 614--616
+Underfull \hbox (badness 2310) in paragraph at lines 610--612
 []\T1/ptm/m/n/12 Rueda, D., & Stegmueller, D. (2019). \T1/ptm/m/it/12 Who Wants What?: Re-dis-tri-bu-tion Pref-er-
  []
 
 
-Underfull \hbox (badness 3019) in paragraph at lines 614--616
+Underfull \hbox (badness 3019) in paragraph at lines 610--612
 \T1/ptm/m/it/12 ences in Com-par-a-tive Per-spec-tive \T1/ptm/m/n/12 (First). Cam-bridge Uni-ver-sity Press. [][]$https :
  []
 
@@ -731,21 +735,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [24] [25] (./research-proposal.aux)
 Package rerunfilecheck Info: File `research-proposal.out' has not changed.
-(rerunfilecheck)             Checksum: 67432964F3DA9520C2F3C628144A2E82;3442.
+(rerunfilecheck)             Checksum: 3F68CC0F705653C18F1E5F0F07F06E9F;3441.
  ) 
 Here is how much of TeX's memory you used:
- 14344 strings out of 478035
- 229579 string characters out of 5838192
+ 14342 strings out of 478035
+ 229548 string characters out of 5838192
  1867787 words of memory out of 5000000
  34051 multiletter control sequences out of 15000+600000
  563763 words of font info for 82 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  72i,12n,77p,2281b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on research-proposal.pdf (25 pages, 156346 bytes).
+Output written on research-proposal.pdf (25 pages, 155142 bytes).
 PDF statistics:
- 645 PDF objects out of 1000 (max. 8388607)
- 601 compressed objects within 7 object streams
- 158 named destinations out of 1000 (max. 500000)
+ 630 PDF objects out of 1000 (max. 8388607)
+ 587 compressed objects within 6 object streams
+ 156 named destinations out of 1000 (max. 500000)
  169 words of extra memory for PDF output out of 10000 (max. 10000000)
 
