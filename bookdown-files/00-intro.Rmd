@@ -4,7 +4,7 @@ editor_options:
     wrap: 72
 ---
 
-# Introduction {-}
+<!-- # Introduction {-}
 
 - cog and wheels 
 - comparison is the mechanism 
@@ -15,7 +15,7 @@ editor_options:
 - el contexto es qué tan rápido gira el cog y cómo eso altera el outcome
 
 First, a mechanism is identified by the kind of effect or phenomenon it produces.
-Second, a mechanism is an irreducibly causal notion.
+Second, a mechanism is an irreducibly causal notion. -->
 
 
 
