@@ -40,8 +40,27 @@ Cross-level hypothesis:
 
 >  $H_5$: Among higher subjective and objective status individuals the support for redistribution will be higher for those in context with higher income inequality (objective and subjective altruism)  
 
+
+```{r echo=FALSE,fig.cap='Theoretical model for paper 1',out.height='100%'}
+knitr::include_graphics(path = 'images/paper1-micromacro.PNG')
+```
+
 ### Data, variables and methods
 
-Pending.
+**Data**
+
+- ISSP Social inequality 1987-2019 
+<!-- - World Value Survey?
+- items redistribution
+- country-year 
+  -->
+
+**Methods**
+  
+- hybrid multilevel [@schmidt-catranRandomEffectsMultilevel2016]
+
+<!-- - Multilevel mediation analysis: https://www.youtube.com/watch?v=GZMXEq7GPvY
+
+- generalized additive models https://m-clark.github.io/generalized-additive-models/building_gam.html  -->
 
 

@@ -4,9 +4,22 @@ editor_options:
     wrap: 72
 ---
 
-<!-- # Introduction {-}
+# Introduction {-}
 
-How individuals perceive the world around them has been a central issue in sociology and social psychology. In this regard, the literature on preference formation suggests that these rely on normative structures such as values, ideological or political conceptions about the world [@smithCulturalValuesModerate2018; @Janmaat2013]. 
+- cog and wheels 
+- comparison is the mechanism 
+
+- comparison es la situación
+- el cog sería el SSS 
+- el outcome las preferencias
+- el contexto es qué tan rápido gira el cog y cómo eso altera el outcome
+
+First, a mechanism is identified by the kind of effect or phenomenon it produces.
+Second, a mechanism is an irreducibly causal notion.
+
+
+
+<!-- How individuals perceive the world around them has been a central issue in sociology and social psychology. In this regard, the literature on preference formation suggests that these rely on normative structures such as values, ideological or political conceptions about the world [@smithCulturalValuesModerate2018; @Janmaat2013]. 
 
 In addition, the theoretical and empirical development in sociological social justice research has focused on the role of situations and societal context over justice evaluations and distributive preferences [@Liebig-Sauer2016].  -->
 
