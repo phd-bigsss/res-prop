@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.27)  31 JAN 2023 10:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.27)  6 APR 2023 14:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -600,11 +600,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./research-proposal.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 2.
+(Font)              <12> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 2.
+(Font)              <8> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 2.
+(Font)              <6> on input line 3.
 )
 \tf@toc=\write4
 \openout4 = `research-proposal.toc'.
@@ -616,24 +616,10 @@ Chapter 1.
 [3
 
 ]
-<images/preferences.png, id=165, 957.5775pt x 453.19313pt>
-File: images/preferences.png Graphic file (type png)
-<use images/preferences.png>
-Package pdftex.def Info: images/preferences.png  used on input line 206.
-(pdftex.def)             Requested size: 341.42545pt x 161.58656pt.
+Chapter 2.
+[4
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--210
-[]\T1/ptm/m/n/12 Figure 1.1: []Conceptual frame-work for pref-er-ence for-ma-tion. 
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[4] [5 <./images/preferences.png>]
+] [5]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -642,8 +628,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6]
-Chapter 2.
-[7
+Underfull \vbox (badness 2547) has occurred while \output is active []
+
+[7]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[8]
+Chapter 3.
+[9
 
 ]
 
@@ -653,7 +650,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8] [9]
+[10] [11]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -661,15 +658,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[10] [11]
-Chapter 3.
-[12
-
-] [13]
+[12] [13]
 Chapter 4.
 [14
 
-] [15]
+]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 273.
+(c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Overfull \hbox (0.57158pt too wide) in paragraph at lines 283--285
+\T1/ptm/m/n/12 in-equal-ity per-cep-tions. So-cial Net-works 70, 306--324. doi: 10.1016/j.socnet.2022.02.007. 
+ []
+
+[15]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -679,25 +681,36 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [16] [17]
 Chapter 5.
-[18
-
-]
-Chapter 6.
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 353.
+(hyperref)                be the same. Added a new anchor on input line 385.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[19
+[18
 
 ]
-<images/paper1-micromacro.png, id=476, 1029.09468pt x 621.07031pt>
+Underfull \hbox (badness 10000) in paragraph at lines 406--408
+
+ []
+
+[19]
+<images/paper1-micromacro.png, id=416, 1029.09468pt x 621.07031pt>
 File: images/paper1-micromacro.png Graphic file (type png)
 <use images/paper1-micromacro.png>
-Package pdftex.def Info: images/paper1-micromacro.png  used on input line 414.
+Package pdftex.def Info: images/paper1-micromacro.png  used on input line 476.
 (pdftex.def)             Requested size: 341.4395pt x 206.0626pt.
+
+Underfull \hbox (badness 4391) in paragraph at lines 509--511
+[]\T1/ptm/m/n/12 Comparison of so-cial cap-i-tal in-di-ca-tors from po-si-tion gen-er-a-tors and name gen-er-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 509--511
+\T1/ptm/m/n/12 a-tors in pre-dict-ing ac-tiv-ity se-lec-tion [][]$https : / / www . sciencedirect . com / science / article / pii /
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -705,11 +718,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[20]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 429.
-(c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [21 <./images/paper1-micromacro.png>] [22
+[20 <./images/paper1-micromacro.png>] [21] [22
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -725,18 +734,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [24]
+Underfull \hbox (badness 1917) in paragraph at lines 690--692
+[]\T1/ptm/m/n/12 McPherson, M., & Smith, J. A. (2019). Net-work Ef-fects in Blau Space: Im-put-
+ []
+
+
+Underfull \hbox (badness 2865) in paragraph at lines 690--692
+\T1/ptm/m/n/12 ing So-cial Con-text from Sur-vey Data. \T1/ptm/m/it/12 So-cius\T1/ptm/m/n/12 , \T1/ptm/m/it/12 5\T1/ptm/m/n/12 , 2378023119868591. [][]$https :
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [25]
-Underfull \hbox (badness 2310) in paragraph at lines 663--665
-[]\T1/ptm/m/n/12 Rueda, D., & Stegmueller, D. (2019). \T1/ptm/m/it/12 Who Wants What?: Re-dis-tri-bu-tion Pref-er-
- []
-
-
-Underfull \hbox (badness 3019) in paragraph at lines 663--665
-\T1/ptm/m/it/12 ences in Com-par-a-tive Per-spec-tive \T1/ptm/m/n/12 (First). Cam-bridge Uni-ver-sity Press. [][]$https :
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -746,21 +756,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [26] (./research-proposal.aux)
 Package rerunfilecheck Info: File `research-proposal.out' has not changed.
-(rerunfilecheck)             Checksum: 3F68CC0F705653C18F1E5F0F07F06E9F;3441.
+(rerunfilecheck)             Checksum: 64D25E77841AC982996C92A7DFDAD4D9;3701.
  ) 
 Here is how much of TeX's memory you used:
- 14406 strings out of 478007
- 230834 string characters out of 5837628
+ 14360 strings out of 478007
+ 230184 string characters out of 5837628
  1869299 words of memory out of 5000000
- 34126 multiletter control sequences out of 15000+600000
- 566845 words of font info for 85 fonts, out of 8000000 for 9000
+ 34104 multiletter control sequences out of 15000+600000
+ 564077 words of font info for 83 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,12n,76p,2281b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on research-proposal.pdf (26 pages, 225513 bytes).
+ 75i,11n,76p,2141b,504s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on research-proposal.pdf (26 pages, 196290 bytes).
 PDF statistics:
- 677 PDF objects out of 1000 (max. 8388607)
- 626 compressed objects within 7 object streams
- 163 named destinations out of 1000 (max. 500000)
- 179 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 605 PDF objects out of 1000 (max. 8388607)
+ 559 compressed objects within 6 object streams
+ 142 named destinations out of 1000 (max. 500000)
+ 150 words of extra memory for PDF output out of 10000 (max. 10000000)
 

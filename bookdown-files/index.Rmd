@@ -1,5 +1,5 @@
 ---
-title: "Social comparison and preferences for redistribution"
+title: "Networks segregation, reference groups and preferences for redistribution"
 subtitle: ""
 author: "Julio Iturra"
 date: "`r Sys.Date()`"
