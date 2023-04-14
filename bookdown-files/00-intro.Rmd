@@ -4,13 +4,23 @@ editor_options:
     wrap: 72
 ---
 
+# Introduction
+
+When discussing preferences towards income redistribution, we must understand how people perceive inequality. Among the factors determining perceptions of economic inequality are those related to social statuses, such as income or educational level, labour market position, authority and control over work, also understood as a social class in sociology. The literature on perceptions of inequality often argues that people's views of inequality are incomplete or biased by the influence of social comparison with their reference groups. Along these lines, the literature defines reference groups in various ways, such as close people or acquaintances and their socioeconomic and demographic characteristics. 
+
+An individual who has a more homogeneous and segregated network of contacts would tend to hold views on inequality that are far removed from objective reality because the inferences he or she makes are based on more homogeneous groups, which has a "subjective sampling" effect that contributes to distorted views of low and high-status groups in society. In addition, the literature has shown that the socioeconomic composition of an individual's contacts influences perceptions of inequality. However, there is little evidence of whether this influence is affected by the frequency of ego-alter contact. This research aims to address this question to determine the association of ego's socioeconomic heterogeneity, tie strength and frequency of contact on preferences for economic redistribution. To do so, we use data from the ISSP 2017 Social networks. These data allow us to test our micro-level hypotheses from a cross-national perspective.
+
+
+Too much perceived inequality, a feeling of inequity in the distribution of resources, can endanger trust and solidarity in a society." [Joye et al., 2019, p. 44]
 <!-- # Introduction {-}
+
+
 
 - cog and wheels 
 - comparison is the mechanism 
 
 - comparison es la situación
-- el cog sería el SSS 
+- el cog sería el SSS ddd
 - el outcome las preferencias
 - el contexto es qué tan rápido gira el cog y cómo eso altera el outcome
 
@@ -22,26 +32,3 @@ Second, a mechanism is an irreducibly causal notion. -->
 <!-- How individuals perceive the world around them has been a central issue in sociology and social psychology. In this regard, the literature on preference formation suggests that these rely on normative structures such as values, ideological or political conceptions about the world [@smithCulturalValuesModerate2018; @Janmaat2013]. 
 
 In addition, the theoretical and empirical development in sociological social justice research has focused on the role of situations and societal context over justice evaluations and distributive preferences [@Liebig-Sauer2016].  -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

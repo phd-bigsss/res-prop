@@ -104,7 +104,6 @@ Social insurance demand through health-related policies has also been linked wit
 The influence of income inequality on demand for insurance is not entirely related to labour market outcomes. The literature has discussed how concerns about the negative consequences of inequality can trigger insurance motivation. In this regard, altruism has been proposed as an explanatory mechanism that links inequality with redistributive preferences of the top income groups [@dimick_models_2018]. It has been argued that negative externalities of income inequality on social welfare can motivate normative-driven altruistic preferences from affluent individuals [@dimick_models_2018]. Altruism relies on both individual and social utility of social welfare as desirable, assuming concerns about inequality as the normative foundation of altruistic preferences by the rich. Evidence from European societies has confirmed the theory's claims, demonstrating an increase in redistributive preferences among the rich in highly unequal contexts, in contrast with the rich in lower inequality contexts [@rueda_who_2019;@dimick_models_2018]. A recent study has also found evidence in favour of the theory in Latin American countries [@franetovic_preferences_2022, p.15]. On the same line, derived from the altruistic model, it has been argued that crime as a negative externality can increase insurance demands [@rueda_who_2019, p.86]. In this regard, more significant concerns about crime can motivate altruistic behaviour from the rich for high public spending to mitigate crime rates as negative externalities. In this regard, it has been demonstrated that higher fear of crime or being a victim of crime in the past increases redistributive preferences [@rueda_who_2019, p. 113]. Then, the evidence shows that higher preferences among the rich can be explained through concerns about crime in highly unequal contexts [@rueda_who_2019, p. 128] 
 
 # Normative factors {#normative}
-
 ## Norms and values
 
 Social norms constitute a crucial factor for studying social order and behaviour [@esser_integrative_2015], but also provide an interpretative frame for understanding social welfare institutions [@esping-andersen_three_1990]. The literature on redistributive preferences has addressed this domain as an independent source of motivation for individual preferences as an alternative approach to the material self-interest explanations. Inspired by the sociological theory of action, @esser_integrative_2015 suggest that the _homo economicus_ or utilitarian paradigm focuses on opportunities, incentives, and rational expectations as an explanation of human behaviour following the self-interest mechanism. On the other hand, from the _homo sociologicus_ or normative paradigm, institutionalised rules of action are learned through socialisation and internalisation processes. Therefore,  human behaviour will unconditionally be influenced by normative appraisals. A third approach is the interpretative paradigm, which seeks to synthesise rational and normative approaches to develop a situational-dependent model of action based on frame selection [@esser_integrative_2015, p. 69-80]. Frames are ideal-typical situations based on previous experiences that can provide meaning to the evaluated situation, which can activate two possible modes: automatic-spontaneous (as) or reflecting-calculating (rc). The as-mode is strongly influenced by previous experience, and choice selection tends to be less reflexive. In contrast, the rc-mode considers several alternatives where uncertainty and future consequences activate moral evaluations. Thus, a framework where actions are guided by weighting utilitarian and normative evaluations can serve as an explanatory frame for variations in redistributive preferences.
@@ -115,21 +114,148 @@ Egalitarian values are expected to be associated with higher support for redistr
 
 On the side of humanitarian values, evidence has shown that among American citizens, those with stronger humanitarian values tend to support policies focused on elderly needs and poverty relief [@feldman_humanitarian_2001]. The authors argue that humanitarian values are not blind to social inequality but rationalise social problems as part of the human condition. Regardless of the shared concerns about the justice of humanitarian and egalitarian approaches, the focus on needs by humanitarian values leads to support of specific policies rather than redistribution as a measure to accomplish the principle of equality. In this vein, a cross-national study of 28 countries has demonstrated that a solid attachment to humanitarian values is associated with a higher willingness to pay taxes for universal health care but also moderate the negative influence of risk exposure [@Maldonadoetal2019].
 
-# Subjective factors
+# Subjective inequality and reference groups
 
 As a brief overview, building on the early work of @Kluegel-Smith1986, the interdisciplinary field known as *subjective inequality* has developed extensive literature on the study of perceptions and preferences regarding economic inequality [@KluegelSmithWegener1995;@Janmaat2013]. In addition, the theoretical and empirical contributions of sociological distributive justice research on status and justice evaluations [@jasso_justice_1978;@wegener_illusion_1987] still constitute a growing field of research on the causes and consequences of perceived economic inequality and social status [@castillo_perception_2022].
 
-Notwithstanding the long-standing contributions of the fields of subjective inequality and distributive justice, there is still a gap between this literature and the study of redistributive preferences [@Garcia-Sanchez19;@condon_economic_2020]. Recent efforts to reduce the aforementioned knowledge gap suggest that further research on redistributive preferences should go beyond the rational self-interest model and value-driven explanations by studying subjective social status and social comparison processes. Their micro-foundations, dynamics and causal implications for redistributive preferences should therefore be examined. 
+Regardless of the long-standing contributions of the fields of subjective inequality and distributive justice, there is still a gap between this field and the study of redistributive preferences [@Garcia-Sanchez19;@condon_economic_2020]. Recent efforts to reduce the aforementioned knowledge gap suggest that further research on redistributive preferences should go beyond the rational self-interest model and value-driven explanations by studying economic inequality from a subjective point of view, focusing on the influence of reference groups on perceptions and inferences about economic inequality. In consequence, there is still a knowledge gap regarding the micro-foundations, dynamics and causal implications of reference groups on redistributive preferences to be addressed. 
 
-## Subjective social status 
+## Reference groups and perceived inequality 
 
-For the material self-interest model, the position within the income distribution is crucial for explaining preferences for redistribution. However, two propositions can be discussed. 1) individuals are *aware* of their income relative to others in society, and 2) their inference about the income of others is *accurate*. So there is no misperception. A fair amount of research on subjective inequality has discussed these assumptions, suggesting that the claimed utilitarian motivation in the self-interest model could be confounded by perception.
+For the material self-interest model, the position within the income distribution is crucial for explaining preferences for redistribution. However, two propositions can be discussed. 1) individuals are *aware* of their income relative to others in society, and 2) their inference about the income of others is *accurate*. Therefore, there is no misperception. A fair amount of research on subjective inequality has discussed these assumptions, suggesting that the claimed utilitarian motivation in the self-interest model could be confounded by the influence of reference groups on perception.
 
-The study of subjective views of status has developed around the concept of subjective social status (SSS), understood as individuals' perceptions of their place in the social hierarchy [@Evans2004]. There are three relevant empirical and theoretical contributions. First, the "middle class" perceptual bias is the persistent tendency of individuals to place themselves in the middle of the social hierarchy, with variation across countries in terms of wealth and income inequality [@Lindemann2014]. Second, the moderate and inconsistent association with objective measures of status, such as occupational class or education [@Castillo2013;@IturraMellado2019]. However, income has been shown to have a strong positive effect in cross-national [@Lindemann2014] and longitudinal studies [@ChenWilliams2018]. Furthermore, a sample of older Americans demonstrates the influence of personal wealth on rising subjective status [@Andersson2018a]. Third, the literature has pointed to the role of social comparison by developing the reference group and reality blending hypothesis [@KelleyEvans1995] as an explanatory mechanism for the above findings.
+The role of reference groups on perception has been previously addressed by social psychology and sociology. Social comparison theory suggests self-evaluation is driven by comparison with reference groups that are conceived as similar [@festinger1954theory]. This implies that comparison can be performed across objective or subjective domains, like physical ability or opinions, but also about economic wealth or social prestige. Equity Theory has contributed to the idea of proportionality of outcomes in justice evaluation. In this regard, when an exchange is carried out by individuals of similar characteristics, it is expected that the output corresponds with the initial investment [@Adams1965]. Consequently, justice evaluations will be a function of the input and output equivalence. For instance, disproportionately low results regarding the initial investment could lead to negative justice evaluations and more prominent experiences of deprivation. Likewise, contributions from the Relative Deprivation Theory [@Merton1968] highlight the perceived status of reference groups in the evaluation process. The assumption of inequality is crucial when evaluating the outcome of an exchange between multiple actors that are perceived as asymmetric. Moreover, the distributive justice literature has suggested that judgments about distributional outcomes are linked with previous perceptions of actual distribution [@Wegener1990]. The explanation suggests that the observer's social status can lead to illusionary distributional perceptions that consequently could bias distributional judgments [@wegener_illusion_1987]. Hence, even if there is a relative consensus about the relevance of reference groups in social comparison and justice evaluations, there is still little evidence that links their attributes to perceptions and preferences toward income inequality in a more comprehensive way.
 
-The reference groups and reality blend hypothesis (R&R-blend) was suggested as an explanatory mechanism of subjective social status [@KelleyEvans1995;@Evans2004], relying on two core assumptions. First, objective circumstances are represented by individuals' location on the social hierarchy, characterised by socioeconomic characteristics such as income or wealth, educational level, or occupation. In other words, these "material forces" can influence subjective status and class identification but are not the only explanatory factors [@KelleyEvans1995]. On the other hand, it is suggested that socioeconomic status entails "social closure" generated by homophily, arguing that the socioeconomic composition within and between reference groups can influence perceived inequality [@Evans2004]. These circumstances contribute to the "subjective sampling" phenomenon, described as a type of availability heuristic through which perceived images of society are systematically biased [@Evans2017]. As a result, the joint forces of material conditions and the composition of reference groups lead individuals to misperceive the size of the bottom and top groups in society and to perceive themselves in the middle of the social hierarchy.
+Studies on the perception of economic inequality and social status have proposed two dimensions to address the phenomenon [@Evans1992;@Evans2004]. First, objective circumstances are represented by individuals' location on the social structure, characterised by socioeconomic characteristics such as income or wealth, educational level, or occupation. In other words, it is argued that these material forces influence perceived economic inequality and status. Nevertheless, they are not able to explain the psychosocial processes involved in the emergence of images about social stratification [@Evans1992]. On the other hand, it is suggested that socioeconomic status entails a type of social closure generated by the homophily of personal networks, arguing that the socioeconomic composition of reference groups can influence perceived inequality and social status [@Evans2004]. These circumstances contribute to a subjective sampling phenomenon, described as a type of availability heuristic. The main argument is that individuals rank themselves according to the distribution of income, education, occupations and authority from the people around them [@Evans1992,p. 465]. However, it has been demonstrated that individuals in both high and low-status occupations tend to overestimate the size of those who are above or below them, like a family doctor compared to a medical school professor, or a skilled worker compared to a garbage collector. Therefore, as people compare with similar others, there is a tendency of perceiving themselves in the middle of the social hierarchy.
 
-The social comparison theory [@festinger1954theory] suggests that individuals evaluate themselves compared to reference groups. Comparison can be performed across objective or subjective domains, like physical ability or opinions, but also about individuals' or groups' economic wealth or social prestige. Previous contributions from social psychology on Equity Theory [@Adams1965] assume an exchange situation between individuals of similar characteristics, where proportionality of outcomes regarding inputs is expected. Therefore, the justice evaluation will be a function of the input and output equivalence. Additionally, sociological contributions from the Relative Deprivation Theory [@Merton1968] highlight the role of perceptions about reference groups in the evaluation process. Therefore, the inequality assumption regarding social status is crucial for evaluating the outcome of an exchange between two *asymmetric* actors. Finally, the distributive justice literature has suggested that judgments about distributional outcomes are linked with previous perceptions of actual distribution [@Wegener1990]. Therefore, the social status of the observer can lead to illusionary distributional perceptions that consequently could bias distributional judgments [@wegener_illusion_1987].
+The literature on subjective social status (SSS) has contributed with three main remarks [@Evans2004]. First, the middle-class perceptual bias is a persistent phenomenon across countries with different levels of wealth and income inequality [@Lindemann2014]. Second, there is a moderate and inconsistent association with objective measures of status, such as occupational class or education [@Castillo2013;@IturraMellado2019]. However, income has been shown to have a strong positive effect in cross-national [@Lindemann2014] and longitudinal studies [@ChenWilliams2018]. Furthermore, a sample of older Americans demonstrates the influence of personal wealth on rising subjective status [@Andersson2018a]. Third, the argument of the relevance of reference groups in personal networks and the influence of structural conditions has been theorised as the Reference Group and Reality blend (R&R-blend) hypothesis [@KelleyEvans1995]. This approach claims the joint influence of social interactions with others in personal networks and the forces of economic development and inequality on shaping perceptions about the stratification system. In this regard, in order to inquire about the validity of previous findings in broader contexts, @Evans2017 tested to what extent the theory is consistent in cross-national comparisons. They demonstrate that economic development as a macro condition has a micro consequence on perceived economic inequality because it influences the size of potential high-status reference groups [@Evans2017, p. 32]. They suggest as long as economic prosperity rise, socioeconomic status in terms of income, education and income also increases at the individual level, but also the average economic conditions of others around such as relatives, friends or co-workers.  
+
+One problem with this evidence is that they claim that the attributes of the reference groups influence perceived structural inequality, they are not able to measure either objective or subjective status characteristics in all the countries. However, they provide evidence for the United States and Australia
+
+- "reference groups play a vital role in the reference groups and reality blend hypothesis, they appear only indirectly through their many effects, especially on perceptions of inequality." [@Evans2017, p. 33] (...) "on the perceived location in the social hierarchy of respondent’s occupation, most of respondent’s friends, and most of respondent’s co-workers and they also include a social-legacy measure of the perceived location of respondent’s parents"[@Evans2017, p. 33] (...)"An OLS analysis including controls for respondent’s actual stratification position show that people with higher reference groups do indeed see their society as more egalitarian, as our theory posits." [@Evans2017, p. 33]
+
+Given the objective conditions, the heuristic availability and homophily of their reference groups tend to be positioned in the middle of the social hierarchy.
+
+For example, “education, occupation, and income rise with socioeconomic development, not only will one’s own SES rise but the pools of available network partners will include more and more high SES people” [@Evans2017 p. 8] (...)“People’s interactions and information exposure not only are limited to their social networks but also include a myriad of small events and impressions ranging from interactions with strangers to encounters with institutions to media stimuli.” [@Evans2017 p. 8] (...) “on average, any person’s collection of relatives, friends, and co-workers will have more middle and high SES members than in a society where middle and high SES members are rare.” [@Evans2017, p. 9]
+
+- "Higher economic development increases the chances of having high-status reference groups through educational and occupational upgrading. “the pools of potential reference group members in the upper strata expand with development.” (...) “United States and Australia, are informative” (...) “on the perceived location in the social hierarchy of respondent’s occupation, most of respondent’s friends, and most of respondent’s co-workers and they also include a social-legacy measure of the perceived location of respondent’s parents” (...) “With two exceptions, none of our data sets has direct information on reference groups” [@Evans2017, p. 33]. 
+
+- "With socioeconomic development, people become less tolerant of inequality, at least based on an implicit measure of tolerance (J. Kelley & Evans, 2009)." [@Evans2017, 2017, p. 37]
+
+They also demonstrate that holding higher perceived structural inequality diminishes perceived social status:
+
+- "The Procrustes hypothesis (Evans et al., 1992) proposes that, all else equal, holding a strongly inegalitarian image of one’s society weighs down one’s subjective social class (little room at the top), hence the more egalitarian one’s image of society, the higher one’s subjective social class, and the greater one’s subjective social mobility" [@Evans2017, p. 39]
+
+## Personal networks and reference groups    
+
+An important dimension to take into account when addressing the influence of reference groups relies on *who* are the observed target groups. The previous argument suggests that *Ego's* inequality perceptions are influenced by social comparison processes, which can be theoretically explained by the mechanism described in the R&R-blend hypothesis. However, this approach assumes that comparison focuses on individuals (_alters_) with similar attributes from the nearest network but does not clarify how this mechanism could apply to diverse groups that could lead to heterogeneous perceptual outcomes derived from an asymmetric comparison. Recent evidence in social psychology suggests that studying comparison processes and reference groups comprises three aspects that need to be considered: _direction_ (e.g., upward, downward), _target_ (e.g., friend, stranger), and _dimension_ (e.g., status, appearance) [@arigo_methods_2020] For example, it would be possible to expect that contact with individuals with higher (lower) status and prestige could lead to experience more (less) relative deprivation [@Smith-eta2020_relative-deprivation]. Furthermore, it has been especially suggested that upward comparisons can trigger experiences of relative deprivation and therefore be associated with higher perceived income inequality [@Jasso1990], what in turn could undermine life satisfaction and subjective well-being [@Olivos-etal2020;@schneider_why_2019]. Thus, if the composition of reference groups shapes experiences and perceptions around economic inequality, they might also affect preferences toward income distribution. Unfortunately, literature that directly addressed the role of reference groups on redistributive preferences is scarce, except for a few cross-sectional and experimental studies that share the same theoretical intuitions apart from their methodological differences.
+
+Given previous evidence, reference groups play a role in shaping perceptions about the social hierarchy. 
+
+Al respecto, existen dos aspectos a considerar en el argumento. Primero está la composición socioeconómica de la persona network. El argumento de la teoría sugiere que la percepción respecto de la posición individual está dada por las características socioeconómicas de sus cercanos y conocidos, la cual tiende a estar segregada y a concentrar lazos con personas similares, las cuales a su vez juegan el rol de grupos de referencia. La segregación u homofilia de las redes personales contribuye con información objetiva de la realidad, sin embargo el mecanismo psicosocial descrito en la avaliability heuristic sugiere que las personas tienden a sobre estimar el tamaño de sus grupos de referencia, por lo tanto poseen una visión distorsionada de aquellos que se encuentran en los tramos inferiores de la jerarquía social. 
+
+Otro aspecto menos explorado es la frecuencia del contacto con sus grupos de referencia. 
+
+The R&R-blend hypothesis suggests a theoretical link between social networks and subjective views about economic inequality. Thus, the role of network composition will be discussed  
+
+The assumption here is that the socioeconomic composition of the personal network influences perceptions about income distribution.
+
+A study by @kim_social_2021 demonstrates that a network with high-status individuals increases subjective social status in China and Taiwan, but has a null effect in Japan and Korea. 
+
+idea: if social status increase perceived also general inequality this should increase preferences [@otero_tesis]
+
+idea: if the socioeconomic composition of the personal network increases with status and economic development we should expect that higher occupational composition of the personal networks increase preferences [@otero_tesis]
+
+Hypothesis for reference groups:
+
+- homophily ? vs heterophily ?
+
+- isei_network (+) perc_ineq / deprivation
+- diversity_network (+) perc_ineq / deprivation
+
+- isei_network (+)  
+- diversity_network (+)
+
+Hypothesis of inequality experiences: 
+- perc_ineq (+) / deprivation (+)
+
+Hypothesis for networks and perceived inequality
+- isei_network x perc_ineq (+)
+- diversity_network x perc_ineq (+)
+
+"en la medida que aumenta las experiencias negativas sobre la desigualdad el efecto positivo de la composición de la red debería fortalecerse"
+
+"en la medida que aumenta las experiencias negativas sobre la desigualdad el efecto positivo de la diversidad de la red debería fortalecerse"
+
+Homophily: 
+Lee, E., Karimi, F., Wagner, C., Jo, H.-H., Strohmaier, M., & Galesic, M. (2019). Homophily and minority-group size explain perception biases in social networks. Nature Human Behaviour, 3(10), Art. 10. https://doi.org/10.1038/s41562-019-0677-4
+
+Friendship network composition and subjective wellbeing
+https://academic.oup.com/oep/article-abstract/72/1/191/5359496?redirectedFrom=fulltext&login=false 
+Mayor diversidad étnica y religiosa en amistades impacta negativamente el bienestar subjetivo. Se puede predecir que esto afecta positivamente las preferencias hacia la redistribución, donde menos bienestar implica mayor demanda por bienestar.
+
+Chapter: "How Social Networks Shape Social Comparison": 
+https://academic.oup.com/book/32304/chapter-abstract/268532645?redirectedFrom=fulltext&login=false
+
+Londoño-Vélez, J. (2022). The impact of diversity on perceptions of income distribution and preferences for redistribution. Journal of Public Economics, 214, 104732. https://doi.org/10.1016/j.jpubeco.2022.104732
+incremento de la diversidad incrementa el contacto lo cual aumenta la percepción de desigualdad y por ende las preferencias redistributivas
+
+<!-- 
+Olivos, F., Olivos-Jara, P., and Browne, M. (2020). Asymmetric Social Comparison and Life Satisfaction in Social Networks. Journal of Happiness Studies. doi: 10.1007/s10902-020-00234-8.
+
+Huang, X. (2021). Subjective Class Identification in Australia: Do Social Networks Matter? Sociol. Q. doi: 10.1080/00380253.2021.1997668.
+
+Kim, J. H., and Lee, C. S. (2021). Social Capital and Subjective Social Status: Heterogeneity within East Asia. Soc Indic Res. doi: 10.1007/s11205-020-02548-9.
+
+Schulz, J., Mayerhoffer, D. M., and Gebhard, A. (2022). A network-based explanation of inequality perceptions. Social Networks 70, 306–324. doi: 10.1016/j.socnet.2022.02.007.
+
+Marginalisation and Misperception: Perceiving Gender and Racial Wage Gaps in Ego Networks
+https://www.springerprofessional.de/en/marginalisation-and-misperception-perceiving-gender-and-racial-w/19984106
+
+--> 
+<!-- 
+cómo elige compararse la gente en Europa?: 
+
+* @gugushvili_which_2021
+
+* Welfarism, higher class fatigue [@evans_strong_2018] -->
+
+Social capital, household income, and preferences for income redistribution: 
+https://www.sciencedirect.com/science/article/abs/pii/S0176268012000389?via%3Dihub
+
+The Missing Link: Network Influences on Class Divides in Political Attitudes 
+https://academic.oup.com/esr/article/37/5/695/6298529#303841511 
+
+Medición de estado/mercado
+Public Opinion against Markets? Attitudes towards Market Distribution of Social Services – A Comparison of 17 Countries:
+https://onlinelibrary.wiley.com/doi/10.1111/spol.12105
+
+
+## Reference groups and redistributive preferences
+
+Cross-sectional evidence shows that a higher distance from the rich and frequency of contact with individuals of different statuses can trigger demand for redistribution. For example, @cansunar_who_2021 scrutinises if overestimating the income of the rich as the reference group and underestimating subjective status increases demand for progressive taxation employing data from the ISSP. Drawing on an adaptation of the justice income evaluation function [@Jasso1999], the author operationalises the individual income distance to a company's CEO as the high-status reference group. The results demonstrate that individuals that perceive themselves in the middle-class support higher progressive taxes. Similarly, high-income individuals support progressive taxation when they locate themselves on the top of the social hierarchy and believe others earn significantly more than them [@cansunar_who_2021, p. 7]. In other words, support for progressive taxation increases as subjective status is lower and is higher when the perceived distance from the CEO increases. Another study addressed the association of different perceived economic inequality measures on redistributive preferences in a cross-national sample of 22 countries [@garcia-castro_perceived_2022]. The results show that everyday life frequency of contact with people considered "a lot richer [poorer]" has a positive impact on redistributive preferences when the reference group is considered poorer, but a null when is richer. However, this association is not robust to other measures of perceived economic inequality.
+
+Experimental evidence has shown how experimentally manipulating exposure to specific reference groups can trigger shifts in preferences for redistribution. In this vein, @brown-iannuzzi_subjective_2015 have shown that redistributive preferences increase when individuals compare themselves with other and perceive being over the average in economic terms. Their findings showed that those who perceived a better monthly economic performance or get high profits in an investment game supported less redistribution. Then, in a new version of the investment game, an additional condition was included in which participants were randomly asked to evaluate others' self-interest motivations based on redistributive recommendations for the game rules. Their results show that only those who make higher profits tend to evaluate those who recommended higher redistribution as motivated by biased self-interest. Another study by @Condon2020 conducted an experimental study on American individuals to test the hypothesis that upward (downward) comparison should derive in more (less) demand higher government's responsibility to reduce income differences between the rich and poor. Nevertheless, they found that upward social comparison had a null effect on global redistribution but increased the demand for social security, education, food, and unemployment insurance. They also demonstrate that the upward comparison causal effect is higher among middle-higher income groups, explaining that individuals with incommensurable wealth and power generally represent the "imagined" rich other. 
+
+- comparabilidad de las mediciones
+- reference groups are abstract 
+- heterogeneidad del efecto
+- inconsistency in the treatment or measurements
+- substantively we don't know how often this comparison really happen in reality
+
+@sachweh_moral_2012 - thereby fostering segregation of life-worlds and social disintegration
+
+- For example, “education, occupation, and income rise with socioeconomic development, not only will one’s own SES rise but the pools of available network partners will include more and more high SES people” [@Evans2017 p. 8]
+
+- “People’s interactions and information exposure not only are limited to their social networks but also include a myriad of small events and impressions ranging from interactions with strangers to encounters with institutions to media stimuli.” [@Evans2017 p. 8]
+
+- “on average, any person’s collection of relatives, friends, and co-workers will have more middle and high SES members than in a society where middle and high SES members are rare.” [@Evans2017, p. 9]
+
+Percepción de desigualdad "diff income are too large":
+https://journals.sagepub.com/doi/full/10.1177/07311214211062106 
+- personas de clase servicios perciben menos desigualdad que los de clase trabajadora y media (países de europa)
+
+- “In Chile, income differences are too large.” This measure was conceptualized as tolerance of inequality (Gonthier, 2017; Larsen, 2016; Schröder, 2017). Considering higher scores of this measure have been shown to mean lower tolerance for inequality, we designate said measure as intolerance of inequality.” [@garcia-castro_changing_2022, p. 5]
 
 <!-- Misperception idea, starting from the  -->
 
@@ -138,22 +264,6 @@ The social comparison theory [@festinger1954theory] suggests that individuals ev
 Subjective status is a representation, but the imagined top-bottom groups are not clear. Conceptualization about this has to be developed.
 
 “Whether income inequality affects subjective social status by shifting the frames of reference for social comparison towards the upper end of the income stratum and/or by increasing the frequency with which individuals compare themselves to upper-income groups remains unclear.” (Schneider, 2019, p. 17) -->
-
-## Social comparison and redistributive preferences
-
-An essential component to link social comparison processes and preferences for redistribution relies on *who* are the target individuals or groups under comparison. The previous argument suggests that *Ego's* perceived social status is generated by social comparison processes, which can be theoretically explained by the mechanism described in the R&R-blend hypothesis. However, this approach assumes that social comparison *always* focuses on individuals with similar features from the nearest network but does not consider the contact with individuals or groups of different social status that could lead to variations in perceptual outcomes derived from an *asymmetric* social comparison. Thus, recent evidence in social psychology suggests that studying social comparison comprises three aspects that need to be considered: _direction_ (e.g., upward, downward), _target_ (e.g., friend, stranger), and _dimension_ (e.g., status, appearance) [@arigo_methods_2020] Therefore, an expectation is that individuals of low (high) subjective status experience more (less) relative deprivation [@Smith-eta2020_relative-deprivation]. Furthermore, it has been suggested that upward comparisons trigger negative judgments about economic distribution and feelings of deprivation that boost negative perceptions about economic inequality [@Jasso1990], decreasing life satisfaction and subjective well-being [@Olivos-etal2020]. In this regard, the literature directly addressing the role of social comparison and subjective social status on redistributive preference is scarce. However, cross-sectional and experimental evidence has shown some possibilities to address the link.
-
-### Imagined economic others 
-
-@condon_economic_2020 conducted an experimental study on American individuals to test the hypothesis that upward (downward) comparison should derive in more (less) demand higher government's responsibility to reduce income differences between the rich and poor. Nevertheless, they found that upward social comparison had a null effect on global redistribution but increased the demand for social security, education, food, and unemployment insurance. They also demonstrate that the upward comparison causal effect is higher among middle-higher income groups, explaining that individuals with incommensurable wealth and power generally represent the "imagined" rich other.
-
-### Frequency of contact
-
-A study by @garcia-castro_perceived_2022 scrutinises the association of different perceived economic inequality measures on redistributive preferences in a cross-national sample of 22 countries. Their results show a positive influence of both downward and upward experiences of social comparison operationalised through the following question: "How often do you have any contact with people who are a lot richer [poorer] than you when you are out and about"? These results provide the possibility of understanding to what extent social comparison can be associated with other dimensions of perceived economic inequality. However, an open question is related to the hypothetical conditional effect of social comparison across income groups, as was demonstrated by @condon_economic_2020. In other words, do social comparison experiences have the same influence on redistributive preferences among low and high-income individuals?
-
-### Perceived income distance 
-
-Another study by @cansunar_who_2021 employed cross-sectional data from the ISSP inequality module to test if overestimating the income of the rich as the reference group and underestimating subjective status increases demand for progressive taxation. Drawing on an adaptation of the justice income evaluation function [@Jasso1999], the author operationalises the individual income distance to a company's CEO as the high-status reference group. The results demonstrate that individuals that perceive themselves in the middle-class support higher progressive taxes. Similarly, high-income individuals support progressive taxation when they locate themselves on the top of the social hierarchy and believe others earn significantly more than them [@cansunar_who_2021, p. 7]. In other words, support for progressive taxation increases as subjective status is lower and is higher when the perceived distance from the CEO increases. 
 
 <!-- 
 @andersson_occupational_2022
@@ -166,55 +276,18 @@ Another study by @cansunar_who_2021 employed cross-sectional data from the ISSP 
 @ricci_perceived_2016 Europe and USA 
 @Rubin2014a  -->
 
-### Social networks as reference groups
-
-(To be developed)
-
-The R&R hypothesis suggests a theoretical link between acquaintance social networks and subjective views about economic inequality. Thus, the role of network composition will be discussed as a source of social comparison. The assumption here is that the size and composition of social networks influence perceptions about income inequality.
-
-A study by @kim_social_2021 demonstrates that a network with high-status individuals increases subjective social status in China and Taiwan, but has a null effect in Japan and Korea. 
-
-Proposition 1: high socioeconomic diversity of the network will increase subjective social status.
-
-<!-- 
-Olivos, F., Olivos-Jara, P., and Browne, M. (2020). Asymmetric Social Comparison and Life Satisfaction in Social Networks. Journal of Happiness Studies. doi: 10.1007/s10902-020-00234-8.
-
-Huang, X. (2021). Subjective Class Identification in Australia: Do Social Networks Matter? Sociol. Q. doi: 10.1080/00380253.2021.1997668.
-
-Kim, J. H., and Lee, C. S. (2021). Social Capital and Subjective Social Status: Heterogeneity within East Asia. Soc Indic Res. doi: 10.1007/s11205-020-02548-9.
-
-Schulz, J., Mayerhoffer, D. M., and Gebhard, A. (2022). A network-based explanation of inequality perceptions. Social Networks 70, 306–324. doi: 10.1016/j.socnet.2022.02.007.
-
---> 
-<!-- 
-Para referencias del rol del estatus social subjetivo sobre actitudes revisar
-
-
-* @brown-iannuzzi_privileged_2021
-* @brown-iannuzzi_relationship_2017
-* @brown-iannuzzi_subjective_2015
-
-cómo elige compararse la gente en Europa?: 
-
-* @gugushvili_which_2021
-* @buchel_objective_2021 multinivel hibrido 
-
-A less developed aspect is subjective inequality
-
-* Preferences [@alesina_preferences_2010]. Este book chapter es una combinación literature review con evidencia de USA.
-* Perception of economic inequality [@Garcia-Sanchez19]. 
-* Reference group and Reality [@Evans1992;@Evans2004;@Evans2017]
-* Welfarism, higher class fatigue [@evans_strong_2018] -->
 
 # Contextual factors
-
-(To be developed)
-
-## Economic inequality
 
 The self-interest model predicts a positive link between income inequality and the levels of redistribution. 
 
 It is based on the subjective median-voter hypothesis [@buchel_objective_2021]. The general assumption is that subjective status, compared to income, has a stronger negative impact on redistributive preferences (H1). As has been shown, economic inequality has a negative association with subjective social status (via increasing upward comparison). Therefore, the negative influence of subjective social status will be positively moderated by income inequality.
+
+"Higher economic development increases the chances of having high-status reference groups through educational and occupational upgrading. “the pools of potential reference group members in the upper strata expand with development.” [@Evans2017, p. 32]
+
+H_i: GDP increase the average SES of the reference groups
+H_i: Economic inequality (Gini) increases the segregation of reference groups
+H_i: What is the relation of inequality and personal network segregation? in theory it should be positive.
 
 <!-- @Schmidt-Catran2016
 
