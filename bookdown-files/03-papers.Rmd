@@ -1,0 +1,74 @@
+---
+editor_options:
+  markdown:
+    wrap: 72
+---
+
+<!-- ## Paper 1
+
+**Title:** Reference groups, perceived inequality and preferences for redistribution and welfare  
+
+**Hypothesis for reference groups:**
+
+Homophily
+
+- isei_network (-) perc_ineq / deprivation
+- diversity_network (-) perc_ineq / deprivation
+
+- isei_network (-)  
+- diversity_network (+) / basado en paper Londoño
+
+Hypothesis of inequality experiences: 
+- perc_ineq (+) / deprivation (+)
+
+Hypothesis for networks and perceived inequality
+- isei_network x perc_ineq (+)
+- diversity_network x perc_ineq (+)
+
+"en la medida que aumenta las experiencias negativas sobre la desigualdad el efecto positivo de la composición de la red debería fortalecerse"
+
+"en la medida que aumenta las experiencias negativas sobre la desigualdad el efecto positivo de la diversidad de la red debería fortalecerse" -->
+
+<!-- Medición de estado/mercado
+Public Opinion against Markets? Attitudes towards Market Distribution of Social Services – A Comparison of 17 Countries:
+https://onlinelibrary.wiley.com/doi/10.1111/spol.12105 -->
+
+
+
+
+<!-- 
+```{r echo=FALSE,fig.cap='Theoretical model for paper 1',out.height='100%'}
+knitr::include_graphics(path = 'images/paper1-micromacro.PNG')
+```
+
+### Data, variables and methods
+
+**Data**
+
+- ISSP Social networks 2017:
+
+**Variables**
+- Homophily of reference groups (EI homophily index) 
+- SES of alters (avg isei)
+- Experiences economic inequality
+- Subjective status
+- Redistributive (avg index) and Welfare (avg index)    -->
+
+<!-- - World Value Survey?
+- items redistribution
+- country-year 
+  -->
+
+
+
+<!-- - Multilevel mediation analysis: https://www.youtube.com/watch?v=GZMXEq7GPvY
+
+- generalized additive models https://m-clark.github.io/generalized-additive-models/building_gam.html  -->
+
+
+<!-- Comparison of social capital indicators from position generators and name generators in predicting activity selection
+https://www.sciencedirect.com/science/article/pii/S0965856417312454#f0015 
+
+Chapter 10: The position generator approach to social capital research: measurements and results
+https://www.elgaronline.com/display/edcoll/9780857935847/9780857935847.00014.xml -->
+

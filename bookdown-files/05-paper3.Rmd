@@ -4,6 +4,6 @@ editor_options:
     wrap: 72
 ---
 
-## Paper 3
+<!-- ## Paper 3
 
-Pending.
+Pending. -->

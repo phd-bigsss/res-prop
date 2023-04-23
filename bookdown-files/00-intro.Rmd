@@ -4,31 +4,40 @@ editor_options:
     wrap: 72
 ---
 
+<!-- rmarkdown::render_site(output_format = 'bookdown::pdf_book', encoding = 'UTF-8') -->
+
 # Introduction
 
-When discussing preferences towards income redistribution, we must understand how people perceive inequality. Among the factors determining perceptions of economic inequality are those related to social statuses, such as income or educational level, labour market position, authority and control over work, also understood as a social class in sociology. The literature on perceptions of inequality often argues that people's views of inequality are incomplete or biased by the influence of social comparison with their reference groups. Along these lines, the literature defines reference groups in various ways, such as close people or acquaintances and their socioeconomic and demographic characteristics. 
+Rising economic inequality over the past few decades [@piketty_capital_2014] and the ongoing sanitary crisis have raised citizens' concerns about economic inequality pushing governments to enact redistributive policies, which has tested the capacity of welfare systems to provide sufficient risk protection for the population  [@breznau_welfare_2021]. However, while the crisis has impacted societies, its consequences have been unequally distributed across the social structure. Therefore, the privileged access to resources held by the upper and intermediate classes has consolidated affluent groups' resilience capacity, allowing them to maintain a relatively stable standard of living, in contrast to the decline in the material conditions of working-class families [@moawad_myth_2023]. In addition, these transformations have been accompanied by a subjective corollary in which economic inequality experiences strengthen subjective economic deprivation and undermine perceived social status [@oesch_decline_2022;@nolan_rising_2022].  
 
-An individual who has a more homogeneous and segregated network of contacts would tend to hold views on inequality that are far removed from objective reality because the inferences he or she makes are based on more homogeneous groups, which has a "subjective sampling" effect that contributes to distorted views of low and high-status groups in society. In addition, the literature has shown that the socioeconomic composition of an individual's contacts influences perceptions of inequality. However, there is little evidence of whether this influence is affected by the frequency of ego-alter contact. This research aims to address this question to determine the association of ego's socioeconomic heterogeneity, tie strength and frequency of contact on preferences for economic redistribution. To do so, we use data from the ISSP 2017 Social networks. These data allow us to test our micro-level hypotheses from a cross-national perspective.
+The research on individual preferences toward economic redistribution constitutes an interdisciplinary field in the social sciences [@alesina_preferences_2010;@steele_attitudes_2019]. Across this body of literature, the common conceptual denominator is that individuals tend to hold different views about what should be the government's role in taking redistributive measures for providing welfare to their citizens. Likewise, different explanatory mechanisms for preference formation have been proposed, including explanations derived from the economic self-interest mechanism [@meltzer_rational_1981;@alesina_intergenerational_2018] as well as the normative or value-driven motivations [@feldman_humanitarian_2001;@Maldonadoetal2019]. Recently, the study of preferences towards redistribution has turned attention to the psychosocial processes involved in forming perceived economic inequality at the micro-level, focusing on (i) one's structural positions and (ii) the role of reference groups in social networks.  
 
+The idea that friends, family, or acquaintances influence how people experience social life has been previously addressed in the social network literature in sociology [@mcpherson_birds_2001]. However, there has been no systematic dialogue regarding the role of social circles in subjective perceptions of economic inequality and preferences for redistribution from a social network perspective. In this regard, one theoretical claim of the Reference Group and Reality blend hypothesis [@KelleyEvans1995;@Evans2004] suggests that structural positions imply a certain level of social closure which is reflected in the homophily of reference groups, making individuals embedded in more homogeneous and segregated networks hold inaccurate views about others' experiences regarding economic inequality, as well as their perceived position in the social hierarchy. Therefore, the level of segregation in social networks between different structural positions is not only a reflection of economic inequality but also represents the social distance between members of society, which can threaten social attachment and solidarity [@joye_measuring_2019;@otero_lives_2022]. Consequently, it is argued that redistributive preferences may be influenced by social networks, where the socioeconomic diversity of social ties provides a broader window for learning about others' lifestyles, economic conditions, and worldviews, which in turn contributes to supporting more egalitarian policy measures to strive against inequality [@lindh_missing_2021;@lee_consider_2023;@paskov_crossclass_2022]
 
-Too much perceived inequality, a feeling of inequity in the distribution of resources, can endanger trust and solidarity in a society." [Joye et al., 2019, p. 44]
-<!-- # Introduction {-}
+This research aims to contribute to the literature on preferences toward redistribution from a social network approach, focusing on how the structural properties of networks can influence people's preferences toward economic redistribution. Therefore, the question this research aims to answer is *What is the role of social networks on the preferences for economic redistribution?* Therefore, the present research proposal presents three main sections in which the related literature has addressed the role of (i) reference groups in shaping views about inequality, (ii) the structure of association and networks, and (iii) the consequences of both in the study of redistributive preferences. Finally, a research plan composed of three independent studies is proposed to address the claimed research gap.
 
+<!-- Along these lines, the literature defines reference groups in various ways, such as close people or acquaintances and their socioeconomic and demographic characteristics. 
 
+In addition, the literature has shown that the socioeconomic composition of an individual's contacts influences perceptions of inequality. However, there is little evidence of whether this influence is affected by the frequency of ego-alter contact. 
 
-- cog and wheels 
-- comparison is the mechanism 
+Sin embargo, este argumento ha sido escasamente abordado empiricamente  
 
-- comparison es la situación
-- el cog sería el SSS ddd
-- el outcome las preferencias
-- el contexto es qué tan rápido gira el cog y cómo eso altera el outcome
+At the meso-level, las redes sociales se han estudiado poco en relación a la percepción y las preferencias hacia la desigualdad economica.
 
-First, a mechanism is identified by the kind of effect or phenomenon it produces.
-Second, a mechanism is an irreducibly causal notion. -->
+how peopleperceived their economic situation, as well as others', on the ond side repsonde a las condiciones economicas personale pero también a la de sus cercanos, amigos y familia 
 
+estas relaciones sociales, incrsutadas en la red personal de una persona son las que contribuyen as a framerokw para relizar inferencias
 
+las redes se encuentran segregadas
 
-<!-- How individuals perceive the world around them has been a central issue in sociology and social psychology. In this regard, the literature on preference formation suggests that these rely on normative structures such as values, ideological or political conceptions about the world [@smithCulturalValuesModerate2018; @Janmaat2013]. 
+esto afecta la perepcion como también las preferencias hacia la desigualdad
 
-In addition, the theoretical and empirical development in sociological social justice research has focused on the role of situations and societal context over justice evaluations and distributive preferences [@Liebig-Sauer2016].  -->
+network member
+network dynamics
+how it affects
+
+structural approach to the study of social life 
+
+The family in which we grew up, the friendships that we make, as well as the diversity of people that we daily meet, 
+
+To do so, we use data from the ISSP 2017 Social networks. These data allow us to test our micro-level hypotheses from a cross-national perspective. -->
