@@ -10,3 +10,7 @@
 `r if (is_latex_output()) '
 # References {-}
 '`
+```{=tex}
+\scriptsize
+\singlespacing
+```

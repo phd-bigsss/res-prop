@@ -11,8 +11,8 @@ link-citations: yes
 linkcolor: blue
 # description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
 geometry: "left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm"
-fontsize: 12pt
-linestretch: 1
+fontsize: 11pt
+linestretch: 1.5
 #toc: false
 toc-depth: 1
 lof: false
