@@ -29,7 +29,7 @@ bookdown::gitbook:
 bookdown::pdf_book:
   includes:
       in_header: preamble.tex
-  #    before_body: frontpage.tex
+      before_body: frontpage.tex
 #  toc: true
 #  lof: false
 #  lot: false

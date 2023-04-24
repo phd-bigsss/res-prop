@@ -7,7 +7,7 @@ editor_options:
 
 Considering the theoretical and empirical elements presented above, I would like to contribute to the redistributive preference literature and discuss the role of social networks. As a result, my main research question is *What is the role of social networks on redistributive preferences?* and will be addressed in three independent studies. The Figure  \@ref(fig:theory-model)  represents the theoretical framework of the research project.
 
-```{r theory-model, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Theoretical framework of the dissertation', out.width='1.0\\linewidth', fig.pos='H'}
+```{r theory-model, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Theoretical framework of the dissertation', out.width='1.5\\linewidth', fig.pos='H'}
 knitr::include_graphics("images/theory-model.pdf")
 ```
 
