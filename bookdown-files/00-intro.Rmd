@@ -6,6 +6,8 @@ editor_options:
 
 <!-- rmarkdown::render_site(output_format = 'bookdown::pdf_book', encoding = 'UTF-8') -->
 
+\pagebreak
+
 # Introduction
 
 Rising economic inequality over the past few decades [@piketty_capital_2014] and the ongoing sanitary crisis have raised citizens' concerns about economic inequality pushing governments to enact redistributive policies, which has tested the capacity of welfare systems to provide sufficient risk protection for the population  [@breznau_welfare_2021]. However, while the crisis has impacted societies, its consequences have been unequally distributed across the social structure. Therefore, the privileged access to resources held by the upper and intermediate classes has consolidated affluent groups' resilience capacity, allowing them to maintain a relatively stable standard of living, in contrast to the decline in the material conditions of working-class families [@moawad_myth_2023]. In addition, these transformations have been accompanied by a subjective corollary in which economic inequality experiences strengthen subjective economic deprivation and undermine perceived social status [@oesch_decline_2022;@nolan_rising_2022].  
