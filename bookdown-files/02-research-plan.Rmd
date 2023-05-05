@@ -12,28 +12,26 @@ Considering the theoretical and empirical elements presented above, I would like
 knitr::include_graphics("images/theory-model.pdf")
 ```
 
-## Study 1 (S1)
+## Study 1 
 
-**Economic inequality, social networks, and redistributive preferences: A cross-national study of 33 countries**
+**Title:** Economic inequality, social networks, and redistributive preferences: A cross-national study of 33 countries
 
 This study will focus on the relationship between social network segregation and redistributive preferences. On the one side, part of the literature suggests that social networks directly affect preferences for redistribution and welfare, arguing that access to diverse social positions through social ties explains changes in attitudes through social influence and socialisation mechanisms [@lindh_missing_2021;@paskov_crossclass_2022]. Therefore, it is expected that contact diversity in social networks increases support for redistribution (H1). On the other hand, part of the literature suggests that redistributive preferences are influenced by network diversity through perception, arguing that attributes of reference groups in social networks shape people's views about economic inequality in homogenous reference groups via subjective sampling mechanism [@KelleyEvans1995;@londono-velez_impact_2022] leading them to perceived society as more egalitarian and supporting less redistribution [@garcia-castro_perceived_2022]. Thus,  a second inquiry is to clarify if the influence of network diversity on redistributive preferences is mediated by perceived economic inequality (H2). Finally, comparative research on social capital has suggested that economic inequality strengthens the current spatial and social distance between the lower and upper classes in the social structure, decreasing their meeting opportunities as well as their chances of establishing more diverse social environments  [@otero_lives_2022a;@pichler_social_2009]. Consequently, it is expected that the association between network diversity and redistributive preferences to be stronger in more unequal societies (H3). 
 
-*Data, variables and methods* 
-
-It is expected to employ data from the "Social Networks and Social Resources" module from the International Social Survey Programme [@isspresearchgroup_international_2019], a large-scale nationally representative sample of 44,492 individuals in 33 countries. 
+*Data, variables, and methods*. It is expected to employ data from the "Social Networks and Social Resources" module from the International Social Survey Programme [@isspresearchgroup_international_2019], a large-scale nationally representative sample of 44,492 individuals in 33 countries. 
 
 Regarding our main dependent variable, the survey includes a question regarding the extent that respondents agree that it is the government's responsibility to reduce income differences between high and low-income people, measured through a 1 to 5 Likert scale. Concerning the network structure, the survey includes the position generator that includes 10 occupations (e.g. Manager, school teacher, or car mechanic), enough for representing the diversity of positions in the occupational structure [@joye_measuring_2019]. For perceived inequality, the survey includes a general measure of perceived economic inequality ('Diff. in income are too large'), perceived household economic constraints ('How difficult or easy is it currently to your household to make ends meet (monthly)''), as well as the 10-rung MacArthur scale of subjective status ('top-bottom') 
 
 Given the hierarchical structure of the data (individuals nested in countries), a multilevel regression model [@Hox2008] will be used for testing the association of network heterogeneity on redistributive preferences (H1). Consequently, for testing the indirect effect of network diversity via perceived inequality (H2), mediation analysis will be used [@imai_general_2010].  Finally, the moderation of economic inequality on the association of network diversity  (H3) will be modeled using cross-level interactions with random slopes [@aguinis_bestpractice_2013].
 
-## Study 2 (S2)
+## Study 2 
 
-**Residential segregation, social networks and market distribution of social services: longitudinal evidence** 
+**Title:** Residential segregation, social networks and market distribution of social services: longitudinal evidence
 
 In order to clarify causality assumptions, longitudinal studies can provide evidence in that direction. Consequently, this study aims to address how changes in network composition affect preferences for market distribution of social services (e.g. pensions, education, and health), employing national representative panel data from the Chilean Longitudinal Social Survey (ELSOC) [@coes_estudio_2018]. First, in a similar approach to S1, it is expected that changes in network diversity have decreased the support for the market distribution of social services (H1). Second, the sampling design of the ELSOC allows testing hypotheses at the community level (*Municipalities*). Therefore, residential segregation is expected to increase preferences for marketization (H2) and strengthen the influence of network diversity on preferences (H3). Finally, in terms of empirical strategy, because repeated observations ($t$) are nested within individuals ($i$), which in turn belong to specific communities ($j$), a longitudinal multilevel strategy is the most suitable for modelling the data, assuming a three-level structure (observation-individual-community). 
 
-## Study 3 (S3)
+## Study 3 
 
-**Diversity, reference groups, and policy preferences: A vignette design**
+**Title:** Diversity, reference groups, and policy preferences: A vignette design
 
 The third part of my research will incorporate elements from the distributive justice literature to provide a complete image of the role of reference groups in redistributive preferences. In this regard, evaluations are affected by observer's and observed characteristics, allowing us to estimate how these factors impact an outcome. Therefore, I propose a factorial vignette design to assess the role vignette's attribute on the observer evaluation of the hypothetical individuals being affected or included by specific social policies (e.g. increased taxes, health or unemployment benefits). 

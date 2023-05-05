@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.26)  28 APR 2023 16:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.26)  5 MAY 2023 16:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -279,11 +279,53 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 \cslentryspacingunit=\skip64
 (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+) (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip65
+\cftbeforetoctitleskip=\skip66
+\cftaftertoctitleskip=\skip67
+\cftbeforepartskip=\skip68
+\cftpartnumwidth=\skip69
+\cftpartindent=\skip70
+\cftbeforechapskip=\skip71
+\cftchapindent=\skip72
+\cftchapnumwidth=\skip73
+\cftbeforesecskip=\skip74
+\cftsecindent=\skip75
+\cftsecnumwidth=\skip76
+\cftbeforesubsecskip=\skip77
+\cftsubsecindent=\skip78
+\cftsubsecnumwidth=\skip79
+\cftbeforesubsubsecskip=\skip80
+\cftsubsubsecindent=\skip81
+\cftsubsubsecnumwidth=\skip82
+\cftbeforeparaskip=\skip83
+\cftparaindent=\skip84
+\cftparanumwidth=\skip85
+\cftbeforesubparaskip=\skip86
+\cftsubparaindent=\skip87
+\cftsubparanumwidth=\skip88
+\cftbeforeloftitleskip=\skip89
+\cftafterloftitleskip=\skip90
+\cftbeforefigskip=\skip91
+\cftfigindent=\skip92
+\cftfignumwidth=\skip93
+\c@lofdepth=\count288
+\c@lotdepth=\count289
+\cftbeforelottitleskip=\skip94
+\cftafterlottitleskip=\skip95
+\cftbeforetabskip=\skip96
+\cfttabindent=\skip97
+\cfttabnumwidth=\skip98
+
+Package tocloft Warning: \@starttoc has already been redefined; tocloft bailing out. on input line 1156.
+
 ) (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \ttl@box=\box61
-\beforetitleunit=\skip65
-\aftertitleunit=\skip66
+\beforetitleunit=\skip99
+\aftertitleunit=\skip100
 \ttl@plus=\dimen179
 \ttl@minus=\dimen180
 \ttl@toksa=\toks27
@@ -292,29 +334,29 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \titlewidthfirst=\dimen183
 ) (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count288
+\c@float@type=\count290
 \float@exts=\toks28
 \float@box=\box62
 \@float@everytoks=\toks29
 \@floatcapt=\box63
 ) (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip67
-\multirow@cntb=\count289
-\multirow@dima=\skip68
+\multirow@colwidth=\skip101
+\multirow@cntb=\count291
+\multirow@dima=\skip102
 \bigstrutjot=\dimen184
 ) (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen185
 \WF@size=\dimen186
-\c@WF@wrappedlines=\count290
+\c@WF@wrappedlines=\count292
 \WF@box=\box64
 \WF@everypar=\toks30
 Package: wrapfig 2003/01/31  v 3.6
 ) (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
 \everycr=\toks31
-\minrowclearance=\skip69
-\rownum=\count291
+\minrowclearance=\skip103
+\rownum=\count293
 ) (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
 (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
@@ -328,16 +370,16 @@ Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box65
-\sift@deathcycles=\count292
+\sift@deathcycles=\count294
 \@vwid@loff=\dimen187
 \@vwid@roff=\dimen188
 )
-\c@taburow=\count293
-\tabu@nbcols=\count294
-\tabu@cnt=\count295
-\tabu@Xcol=\count296
-\tabu@alloc=\count297
-\tabu@nested=\count298
+\c@taburow=\count295
+\tabu@nbcols=\count296
+\tabu@cnt=\count297
+\tabu@Xcol=\count298
+\tabu@alloc=\count299
+\tabu@nested=\count300
 \tabu@target=\dimen189
 \tabu@spreadtarget=\dimen190
 \tabu@naturalX=\dimen191
@@ -353,7 +395,7 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \tabu@arstrutbox=\box67
 \tabu@hleads=\box68
 \tabu@vleads=\box69
-\tabu@cellskip=\skip70
+\tabu@cellskip=\skip104
 ) (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box70
@@ -362,7 +404,7 @@ Package: pdfpages 2022/12/19 v0.5x Insert pages of external PDF documents (AM)
 (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 ) (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2023/03/23 v3.0b eso-pic (RN)
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
 \ESO@tempdima=\dimen198
 \ESO@tempdimb=\dimen199
 )
@@ -372,25 +414,25 @@ Package: eso-pic 2023/03/23 v3.0b eso-pic (RN)
 (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2022/12/19 v0.5x Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count299
+\pdfpages@includegraphics@status=\count301
 \AM@pagebox=\box71
 \AM@global@opts=\toks34
-\AM@pagecnt=\count300
+\AM@pagecnt=\count302
 \AM@toc@title=\toks35
 \AM@lof@heading=\toks36
-\c@AM@survey=\count301
+\c@AM@survey=\count303
 \AM@templatesizebox=\box72
 ) (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip71
-\f@nch@O@elh=\skip72
-\f@nch@O@erh=\skip73
-\f@nch@O@olh=\skip74
-\f@nch@O@orh=\skip75
-\f@nch@O@elf=\skip76
-\f@nch@O@erf=\skip77
-\f@nch@O@olf=\skip78
-\f@nch@O@orf=\skip79
+\f@nch@headwidth=\skip105
+\f@nch@O@elh=\skip106
+\f@nch@O@erh=\skip107
+\f@nch@O@olh=\skip108
+\f@nch@O@orh=\skip109
+\f@nch@O@elf=\skip110
+\f@nch@O@erf=\skip111
+\f@nch@O@olf=\skip112
+\f@nch@O@orf=\skip113
 ) (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2023-04-22 v7.00x Hypertext links for LaTeX
 (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
@@ -418,11 +460,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count302
+\c@section@level=\count304
 )
 \@linkdim=\dimen259
-\Hy@linkcounter=\count303
-\Hy@pagecounter=\count304
+\Hy@linkcounter=\count305
+\Hy@pagecounter=\count306
 (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2023-04-22 v7.00x Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -430,7 +472,7 @@ Now handling font encoding PD1 ...
 ) (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count305
+\Hy@SavedSpaceFactor=\count307
 (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2023-04-22 v7.00x Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -444,7 +486,7 @@ Package hyperref Info: Plain pages OFF on input line 4197.
 Package hyperref Info: Backreferencing OFF on input line 4202.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4449.
-\c@Hy@tempcnt=\count306
+\c@Hy@tempcnt=\count308
 (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -456,7 +498,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count307
+\Fld@menulength=\count309
 \Field@Width=\dimen261
 \Fld@charsize=\dimen262
 Package hyperref Info: Hyper figures OFF on input line 6066.
@@ -470,9 +512,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6096.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count308
-\c@Item=\count309
-\c@Hfootnote=\count310
+\Hy@abspage=\count310
+\c@Item=\count311
+\c@Hfootnote=\count312
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -481,8 +523,8 @@ File: hpdftex.def 2023-04-22 v7.00x Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count311
-\c@bookmark@seq@number=\count312
+\Fld@listcount=\count313
+\c@bookmark@seq@number=\count314
 (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -490,37 +532,37 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip80
+\Hy@SectionHShift=\skip114
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 176.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 182.
+Package hyperref Info: Option `colorlinks' set `true' on input line 178.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 184.
 (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count313
+\l__color_backend_stack_int=\count315
 \l__pdf_internal_box=\box73
 ) (./research-proposal.aux)
 \openout1 = `research-proposal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
 (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -561,71 +603,71 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 182.
+Package hyperref Info: Link coloring ON on input line 184.
 (./research-proposal.out) (./research-proposal.out)
 \@outlinefile=\write3
 \openout3 = `research-proposal.out'.
 
-<images/frontpage.pdf, id=76, 542.025pt x 782.925pt>
+<images/frontpage.pdf, id=80, 542.025pt x 782.925pt>
 File: images/frontpage.pdf Graphic file (type pdf)
 <use images/frontpage.pdf>
-Package pdftex.def Info: images/frontpage.pdf  used on input line 185.
+Package pdftex.def Info: images/frontpage.pdf  used on input line 187.
 (pdftex.def)             Requested size: 483.71576pt x 698.70056pt.
 File: images/frontpage.pdf Graphic file (type pdf)
 <use images/frontpage.pdf>
-Package pdftex.def Info: images/frontpage.pdf  used on input line 185.
+Package pdftex.def Info: images/frontpage.pdf  used on input line 187.
 (pdftex.def)             Requested size: 483.71576pt x 698.70056pt.
-<images/frontpage.pdf, id=79, page=1, 542.025pt x 782.925pt>
+<images/frontpage.pdf, id=83, page=1, 542.025pt x 782.925pt>
 File: images/frontpage.pdf Graphic file (type pdf)
 <use images/frontpage.pdf, page 1>
-Package pdftex.def Info: images/frontpage.pdf , page1 used on input line 185.
+Package pdftex.def Info: images/frontpage.pdf , page1 used on input line 187.
 (pdftex.def)             Requested size: 542.02367pt x 782.9231pt.
 File: images/frontpage.pdf Graphic file (type pdf)
 <use images/frontpage.pdf, page 1>
-Package pdftex.def Info: images/frontpage.pdf , page1 used on input line 185.
+Package pdftex.def Info: images/frontpage.pdf , page1 used on input line 187.
 (pdftex.def)             Requested size: 542.02367pt x 782.9231pt.
 File: images/frontpage.pdf Graphic file (type pdf)
 <use images/frontpage.pdf, page 1>
-Package pdftex.def Info: images/frontpage.pdf , page1 used on input line 185.
+Package pdftex.def Info: images/frontpage.pdf , page1 used on input line 187.
 (pdftex.def)             Requested size: 542.02367pt x 782.9231pt.
 File: images/frontpage.pdf Graphic file (type pdf)
 <use images/frontpage.pdf, page 1>
-Package pdftex.def Info: images/frontpage.pdf , page1 used on input line 185.
+Package pdftex.def Info: images/frontpage.pdf , page1 used on input line 187.
 (pdftex.def)             Requested size: 542.02367pt x 782.9231pt.
 File: images/frontpage.pdf Graphic file (type pdf)
 <use images/frontpage.pdf, page 1>
-Package pdftex.def Info: images/frontpage.pdf , page1 used on input line 185.
+Package pdftex.def Info: images/frontpage.pdf , page1 used on input line 187.
 (pdftex.def)             Requested size: 542.02367pt x 782.9231pt.
 [1
 
  <./images/frontpage.pdf>] (./research-proposal.toc
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1.
 (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1.
 (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 3.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 1.
 (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 3.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 1.
 (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 3.
+(Font)              <10.95> on input line 1.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 3.
+(Font)              <8> on input line 1.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 3.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+(Font)              <6> on input line 1.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
 (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
 (c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
@@ -637,12 +679,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [2{c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}]
 Chapter 1.
-[3]
-Chapter 2.
-[4]
-Underfull \vbox (badness 3449) has occurred while \output is active []
 
-[5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[3
+
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -650,12 +692,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[6] [7]
-Chapter 3.
+[4]
+Chapter 2.
+[5
 
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[8] [9]
+[7]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[9]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -664,7 +727,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [10] [11]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
+
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -674,14 +739,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [12]
-Underfull \vbox (badness 2617) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [13]
-Chapter 4.
-[14]
-Underfull \vbox (badness 3449) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[15]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 320--321
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -690,24 +767,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [16] [17]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[18]
-Chapter 5.
-<images/theory-model.pdf, id=528, 426.8748pt x 260.17201pt>
+Chapter 3.
+<images/theory-model.pdf, id=523, 426.8748pt x 260.17201pt>
 File: images/theory-model.pdf Graphic file (type pdf)
 <use images/theory-model.pdf>
-Package pdftex.def Info: images/theory-model.pdf  used on input line 332.
+Package pdftex.def Info: images/theory-model.pdf  used on input line 329.
 (pdftex.def)             Requested size: 426.89328pt x 260.18326pt.
+[18
 
+ <./images/theory-model.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[19 <./images/theory-model.pdf>]
+[19{c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -717,8 +788,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [20]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 378.
-[21{c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}]
+(Font)              <5> on input line 373.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[21
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -728,34 +804,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[22]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[23]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[24] (./research-proposal.aux)
+[22] [23] (./research-proposal.aux)
 Package rerunfilecheck Info: File `research-proposal.out' has not changed.
-(rerunfilecheck)             Checksum: 218AB3AD252C0BCEDC6EA7D0DD64F235;4115.
+(rerunfilecheck)             Checksum: 8DE13F2D2A359E72CBCB485717132AE1;4257.
  ) 
 Here is how much of TeX's memory you used:
- 14379 strings out of 477943
- 231222 string characters out of 5835805
- 1884068 words of memory out of 5000000
- 34150 multiletter control sequences out of 15000+600000
- 554669 words of font info for 71 fonts, out of 8000000 for 9000
+ 14667 strings out of 477943
+ 235927 string characters out of 5835805
+ 1885068 words of memory out of 5000000
+ 34435 multiletter control sequences out of 15000+600000
+ 563563 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 66i,18n,67p,2304b,559s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 66i,18n,67p,2235b,559s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on research-proposal.pdf (24 pages, 261195 bytes).
+Output written on research-proposal.pdf (23 pages, 253562 bytes).
 PDF statistics:
- 794 PDF objects out of 1000 (max. 8388607)
- 743 compressed objects within 8 object streams
- 187 named destinations out of 1000 (max. 500000)
- 170 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 786 PDF objects out of 1000 (max. 8388607)
+ 736 compressed objects within 8 object streams
+ 184 named destinations out of 1000 (max. 500000)
+ 178 words of extra memory for PDF output out of 10000 (max. 10000000)
 

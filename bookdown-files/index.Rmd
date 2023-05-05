@@ -14,7 +14,7 @@ geometry: "left=2cm, right=2cm, top=2cm, bottom=2cm"
 fontsize: 11pt
 linestretch: 1.5
 #toc: false
-toc-depth: 1
+toc-depth: 2
 lof: false
 lot: false
 template: null
