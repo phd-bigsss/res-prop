@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.9)  9 MAY 2023 18:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.9)  9 MAY 2023 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -818,13 +818,13 @@ Package rerunfilecheck Info: File `research-proposal.out' has not changed.
 Here is how much of TeX's memory you used:
  14718 strings out of 477989
  236645 string characters out of 5836854
- 1886242 words of memory out of 5000000
+ 1887242 words of memory out of 5000000
  34409 multiletter control sequences out of 15000+600000
  582565 words of font info for 95 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  66i,18n,67p,2235b,559s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on research-proposal.pdf (24 pages, 266889 bytes).
+Output written on research-proposal.pdf (24 pages, 266901 bytes).
 PDF statistics:
  867 PDF objects out of 1000 (max. 8388607)
  815 compressed objects within 9 object streams
