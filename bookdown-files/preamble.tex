@@ -65,9 +65,9 @@
 
 % https://tex.stackexchange.com/questions/24066/start-new-chapter-on-same-page
 % same page chapter
-% \usepackage{etoolbox}
-% \makeatletter
-% \patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
-% \makeatother
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
 
 

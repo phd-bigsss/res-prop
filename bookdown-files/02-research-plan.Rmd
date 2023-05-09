@@ -43,7 +43,49 @@ Regarding empirical strategy, it is crucial to consider that individuals have co
 
 ## Study 3 
 
-**Title:** "Diversity, reference groups, and policy deservingness: a comparative vignette study in Chile and Germany"
+**Title:** "Similarity of reference groups and welfare policy inclusion: a vignette study"
+
+On the one hand, the literature on reference groups has suggested that the characteristics of these groups influence perceptions and evaluations of current economic inequality. On the other hand, the tendency to prefer similar people has also been described extensively in social network research. Therefore, both demographic and socioeconomic characteristics of individuals and their reference groups have been demonstrated to be influential on evaluations of policy-related topics such as pensions or taxes [@castillo2019;@sachweh_deserving_2023]. However, a less explored dimension is to what extent similarity with certain groups increases positive attitudes towards them regarding trust [@simonds_effect_2021;@navarro-carrillo_you_2018]. Therefore, it would be possible to argue that trust in similar others might motivate the willingness of people to include certain groups in welfare schemes [@mcpherson_birds_2001;@diprete_segregation_2011], which can be especially important for specific policies that imply redistributive measures [@daniele_interpersonal_2015]. Consequently, does similarity increase interpersonal trust? Also, does trust in similar others increase welfare policy deservingness?
+
+A factorial vignette study will be implemented to address the questions presented above. This method allows the researcher to understand the role of the observed characteristic of a fictitious subject or vignette in the external observer evaluation  [@Jasso1990]. Therefore, the evaluations are adjusted according to the attributes of the vignettes [@dulmer_factorial_2016]. Also, each vignette is described in terms of specific demographic or socioeconomic characteristics (e.g. gender, occupation), which the survey participants consequently evaluate. For efficiency reasons, each respondent evaluates only a limited number of vignettes to guarantee between and within-subject in the expected responses  (e.g. ten vignettes ).  
+
+Regarding the target population, it would be possible to implement the study in Chile, employing the current sample of the ELSOC survey in Chile (N $\approx$ 1500) [@elsoc_estudio_2018], as well as the online sample of the Cohesion Panel of the Research Institute for Social Cohesion (N $\approx$ 4000) in Germany [^3]. Also, given that the socioeconomic and demographic characteristics are already registered, it will possible to match this data to the responses to the survey. It expected to implement the questionnaire using an online survey specially designed for this purpose. Therefore, the survey flow will include two main sections: (1) introduction, and (2) vignette evaluation.  First, for measuring interpersonal trust, the respondents will evaluate the vignettes responding to the following question: *How much do you personally trust in this person?* from  "No trust at all (0)" to "Complete trust (10)". Then, for measuring the willingness for welfare inclusion, the following question will be presented *to pay more taxes to provide better welfare for this person?* not at all (0) to very much (10).  Ordinary least square regression with clusterized standard errors at the respondent level will be used.
+
+[^3]:For more details see: https://www.fgz-risc.de/forschung/datenzentrum 
+
+The working plan of the dissertation is specified in Table \@ref(tab:workplan), considering the three independent studies for the following months.
+```{r workplan, echo=FALSE}
+pacman::p_load(knitr,kableExtra)
+options(knitr.kable.NA = '')
+xlsx::read.xlsx(file = "images/working_plan.xlsx",sheetIndex = 1) %>% 
+  kable(col.names = c("Task", 1:10),
+        booktabs=T,
+        format = "latex",
+        caption = "Working plan") %>%
+  kable_styling(full_width = F,
+   latex_options = c("striped","HOLD_position"),
+   font_size = 7,
+   position = "center") %>%
+  add_header_above(c(" " = 1, "Month" = 10)) %>% 
+  pack_rows("Study 1", 1, 5) %>%
+  row_spec(5, hline_after = T) %>% 
+  pack_rows("Study 2", 6, 10) %>%
+  row_spec(10, hline_after = T) %>% 
+  pack_rows("Study 3", 11, 18)
+```
+
+
+
+
+
+<!-- *How much would you like to become friends with her/him?*, from not at all (0) to very much (10)  [see @walther_attitudes_2023] -->
+
+<!-- - gender (2)
+- age (4)
+- national/non-national (2)
+- social class/occupations (5) - based on EGP5 
+- education (4) - 
+- income (5) -  quintiles
 
 - Argumento reference groups homophily ?
 - Argumento deservingness e inclusion on social welfare schemes 
@@ -53,10 +95,21 @@ Regarding empirical strategy, it is crucial to consider that individuals have co
 
 The third part of my research will incorporate elements from the distributive justice literature to provide a complete image of the role of reference groups in redistributive preferences. In this regard, evaluations are affected by observer's and observed characteristics, allowing us to estimate how these factors impact an outcome. 
 
-Therefore, I propose a factorial vignette design to assess the role vignette's attribute on the observer evaluation of the hypothetical individuals being affected or included by specific social policies (e.g. increased taxes, health or unemployment benefits).  As @Jasso1990 proposed, a factorial survey methodological approach allows the researcher to understand the role of the observed characteristic from a fictitious subject on the justice evaluation of an external observer. Conceptually, social comparison is understood as the evaluation that an individual does about others, and as a result, they adjust their evaluations concerning these characteristics [@dulmer_factorial_2016]. 
+Therefore, I propose a factorial vignette design to assess the role vignette's attribute on the observer evaluation of the hypothetical individuals being affected or included by specific social policies (e.g. increased taxes, health or unemployment benefits).  
 
-Therefore, I propose a factorial design to evaluate how the observed features of a set of vignettes influences, in the first place, the subjective social status of the observer.  In the second place, following the model proposed by @Condon2020, test how these changes affect the observer's attitudes toward a more general income-inequality redistributive question and over specific welfare topics such health aid, educational support, and social security [@castillo2019;@breznau_economic_2010].
 
 Idea B: 
 
-The study aims to investigate the role of reference groups in shaping perceptions of deservingness of social policies. The research design will involve a vignette study with a sample of participants from diverse backgrounds. Each participant will be presented with a hypothetical scenario describing a person in need of social assistance. The scenario will vary systematically in terms of the demographic characteristics of the person in need (e.g., age, gender, race/ethnicity) and the type of assistance needed. Participants will then be asked to rate the deservingness of the individual in the scenario to receive social assistance. We will also collect data on participants' own demographic characteristics, social status, and their reference groups in terms of social networks, both online and offline. We will examine the extent to which perceptions of deservingness are influenced by the demographic characteristics of the person in need, the type of assistance needed, and the participant's own demographic and social characteristics. Additionally, we will investigate whether the homophily of reference groups plays a role in shaping perceptions of deservingness, by examining whether participants' ratings of deservingness vary based on the demographic characteristics of their reference groups. The study aims to shed light on the ways in which reference groups and the homophily of reference groups may shape perceptions of deservingness and have implications for social policy.
+The study aims to investigate the role of reference groups in shaping perceptions of deservingness of social policies. 
+
+The research design will involve a vignette study with a sample of participants from diverse backgrounds. 
+
+
+
+The scenario will vary systematically in terms of the demographic characteristics of the person in need (e.g., age, gender, race/ethnicity) and the type of assistance needed. Participants will then be asked to rate the deservingness of the individual in the scenario to receive social assistance. 
+
+We will also collect data on participants' own demographic characteristics, social status, and their reference groups in terms of social networks. We will examine the extent to which perceptions of deservingness are influenced by the demographic characteristics of the person in need, the type of assistance needed, and the participant's own demographic and social characteristics. 
+
+Additionally, we will investigate whether the homophily of reference groups plays a role in shaping perceptions of deservingness, by examining whether participants' ratings of deservingness vary based on the demographic characteristics of their reference groups. 
+
+The study aims to shed light on the ways in which reference groups and the homophily of reference groups may shape perceptions of deservingness and have implications for social policy. -->
