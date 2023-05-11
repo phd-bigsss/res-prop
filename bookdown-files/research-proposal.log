@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.9)  9 MAY 2023 18:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.9)  11 MAY 2023 16:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -578,14 +578,14 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
 * h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* v-part:(T,H,B)=(49.79231pt, 745.46222pt, 49.79231pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=483.69687pt
-* \textheight=731.23584pt
+* \textheight=745.46222pt
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
-* \topmargin=-47.23828pt
+* \topmargin=-54.35147pt
 * \headheight=12.0pt
 * \headsep=19.8738pt
 * \topskip=11.0pt
@@ -608,7 +608,7 @@ Package hyperref Info: Link coloring ON on input line 184.
 \@outlinefile=\write3
 \openout3 = `research-proposal.out'.
 
-<images/frontpage.pdf, id=80, 542.025pt x 782.925pt>
+<images/frontpage.pdf, id=84, 542.025pt x 782.925pt>
 File: images/frontpage.pdf Graphic file (type pdf)
 <use images/frontpage.pdf>
 Package pdftex.def Info: images/frontpage.pdf  used on input line 187.
@@ -617,7 +617,7 @@ File: images/frontpage.pdf Graphic file (type pdf)
 <use images/frontpage.pdf>
 Package pdftex.def Info: images/frontpage.pdf  used on input line 187.
 (pdftex.def)             Requested size: 483.71576pt x 698.70056pt.
-<images/frontpage.pdf, id=83, page=1, 542.025pt x 782.925pt>
+<images/frontpage.pdf, id=87, page=1, 542.025pt x 782.925pt>
 File: images/frontpage.pdf Graphic file (type pdf)
 <use images/frontpage.pdf, page 1>
 Package pdftex.def Info: images/frontpage.pdf , page1 used on input line 187.
@@ -684,10 +684,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [3]
 Chapter 2.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 [4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [5]
+Underfull \vbox (badness 3148) has occurred while \output is active []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -695,8 +700,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[6] [7]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[6]
+Underfull \vbox (badness 3148) has occurred while \output is active []
+
+[7]
+Underfull \vbox (badness 4634) has occurred while \output is active []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -721,6 +729,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 278--279
 
  []
 
+
+Underfull \vbox (badness 3148) has occurred while \output is active []
+
 [11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -732,9 +743,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [12]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1087) has occurred while \output is active []
 
 [13]
+Underfull \vbox (badness 3148) has occurred while \output is active []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -743,28 +756,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [14]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[15]
 Underfull \hbox (badness 10000) in paragraph at lines 320--321
 
  []
 
-Chapter 3.
-<images/theory-model.pdf, id=513, 426.8748pt x 260.17201pt>
-File: images/theory-model.pdf Graphic file (type pdf)
-<use images/theory-model.pdf>
-Package pdftex.def Info: images/theory-model.pdf  used on input line 329.
-(pdftex.def)             Requested size: 426.89328pt x 260.18326pt.
-[16 <./images/theory-model.pdf>]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[17]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 357.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 357.
+[15]
+Chapter 3.
+[16]
+Chapter 4.
+<images/theory-model.pdf, id=526, 426.8748pt x 260.17201pt>
+File: images/theory-model.pdf Graphic file (type pdf)
+<use images/theory-model.pdf>
+Package pdftex.def Info: images/theory-model.pdf  used on input line 336.
+(pdftex.def)             Requested size: 426.89328pt x 260.18326pt.
 
+Underfull \vbox (badness 2020) has occurred while \output is active []
+
+[17 <./images/theory-model.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -775,11 +786,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [18]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[19]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 381.
+(Font)              <9> on input line 358.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 358.
+[19]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -788,8 +799,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [20{c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 380.
 [21]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -813,21 +824,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [24] (./research-proposal.aux)
 Package rerunfilecheck Info: File `research-proposal.out' has not changed.
-(rerunfilecheck)             Checksum: 8DE13F2D2A359E72CBCB485717132AE1;4257.
+(rerunfilecheck)             Checksum: 0A4B84ADCCDF668C5D9ED22C2F0119D8;5951.
  ) 
 Here is how much of TeX's memory you used:
- 14718 strings out of 477989
- 236645 string characters out of 5836854
- 1887242 words of memory out of 5000000
- 34409 multiletter control sequences out of 15000+600000
+ 14721 strings out of 477989
+ 237205 string characters out of 5836854
+ 1891242 words of memory out of 5000000
+ 34411 multiletter control sequences out of 15000+600000
  582565 words of font info for 95 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  66i,18n,67p,2235b,559s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/Users/jiturra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on research-proposal.pdf (24 pages, 266928 bytes).
+Output written on research-proposal.pdf (24 pages, 268860 bytes).
 PDF statistics:
- 867 PDF objects out of 1000 (max. 8388607)
- 815 compressed objects within 9 object streams
- 205 named destinations out of 1000 (max. 500000)
- 178 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 862 PDF objects out of 1000 (max. 8388607)
+ 810 compressed objects within 9 object streams
+ 206 named destinations out of 1000 (max. 500000)
+ 186 words of extra memory for PDF output out of 10000 (max. 10000000)
 

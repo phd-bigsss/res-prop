@@ -10,7 +10,7 @@ biblio-style: apalike
 link-citations: yes
 linkcolor: blue
 # description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
-geometry: "left=2cm, right=2cm, top=2cm, bottom=2cm"
+geometry: "left=2cm, right=2cm, top=1.75cm, bottom=1.75cm"
 fontsize: 11pt
 linestretch: 1.5
 #toc: false
